@@ -16,13 +16,23 @@ body {
 }
 
 .container {
-  background-color: salmon;
+  /* background-color: salmon; */
   width: 100%;
   /*max-width: 950px; adding max-width makes the width of the content box flexible as opposed to a fix width*/
   min-height: 200px;
   margin: 0 auto; /*0 margin top bottom and centeres the container left right*/
-  padding: 60px 50px;
+  /* padding: 60px 50px; */
   overflow: auto; /*anytime I add a float, it will automatically self-clear*/
+  background: linear-gradient(
+      rgba(141, 153, 174, 0.8),
+      rgba(141, 153, 174, 0.5)
+    ),
+    url(../images/hawaii.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+/* header */
+.background-img {
 }
 /*
 nav.navbar {
