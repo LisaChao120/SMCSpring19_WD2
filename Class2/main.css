@@ -1,11 +1,30 @@
-body {
-  margin: 0px;
+/* global styles */
+
+html {
+  /*border box fix must be on html tag before body tag*/
+  box-sizing: border-box;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: paleturquoise;
+  margin: 0px; /*this removes the default margin on edges of body so spans across browser viewport*/
+}
+
 .container {
   background-color: salmon;
   width: 100%;
+  /*max-width: 950px; adding max-width makes the width of the content box flexible as opposed to a fix width*/
   min-height: 200px;
+  margin: 0 auto; /*0 margin top bottom and centeres the container left right*/
+  padding: 60px 50px;
+  overflow: auto; /*anytime I add a float, it will automatically self-clear*/
 }
+/*
 nav.navbar {
   background-color: darkseagreen;
   width: 100%;
@@ -28,21 +47,47 @@ nav.navbar li {
 }
 nav.navbar li:last-child {
   border-bottom: none;
+}*/
+/* navigation  */
+nav {
+  text-align: center;
+  background: white;
+  position: fixed; /*elements in fixed position are removed from the default page flow and stacking order*/
+  width: 100%; /*if don't set a width to a positioned element, it will only be as wide as its content*/
+  top: 0; /*puts nav bar at top of browser viewport*/
 }
-
-@media (min-width: 768px) {
+nav a {
+  display: inline-block;
+  padding: 15px 20px; /*padding top btm is 15, left right is 20*/
+  text-decoration: none; /*removes the default underline on links*/
+  text-transform: uppercase;
+  font-weight: 700; /*equivalent to bold*/
+}
+@media (max-width: 767px) {
+  /*for screen sizes 767px or SMALLER*/
   .container {
-    background-color: dodgerblue;
-    width: 750px;
+    background-color: slategray;
+    width: 767px;
     margin: 0px auto;
   }
-
-  nav.navbar li {
-    display: inline-block;
-  }
 }
+@media (min-width: 768px) {
+  /*for screen sizes 768px or LARGER*/
+  .container {
+    background-color: dodgerblue;
+    width: 100%;
+    margin: 0px auto;
+  }
+  /* nav.navbar li {
+    display: inline-block;
+  } */
+}
+
 @media (min-width: 992px) {
+  /*for screen sizes 992px or LARGER*/
   .container {
     background-color: plum;
+    width: 100%;
+    margin: 0 auto;
   }
 }
