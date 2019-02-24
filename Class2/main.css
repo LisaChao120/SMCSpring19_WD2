@@ -51,7 +51,8 @@ nav.navbar li:last-child {
 /* navigation  */
 nav {
   text-align: center;
-  background: white;
+  background: lightgray;
+
   position: fixed; /*elements in fixed position are removed from the default page flow and stacking order*/
   width: 100%; /*if don't set a width to a positioned element, it will only be as wide as its content*/
   top: 0; /*puts nav bar at top of browser viewport*/
@@ -62,6 +63,7 @@ nav a {
   text-decoration: none; /*removes the default underline on links*/
   text-transform: uppercase;
   font-weight: 700; /*equivalent to bold*/
+  color: navy;
 }
 @media (max-width: 767px) {
   /*for screen sizes 767px or SMALLER*/
