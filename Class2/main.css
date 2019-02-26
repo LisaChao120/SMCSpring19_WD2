@@ -67,7 +67,7 @@ nav.navbar li:last-child {
 -------------*/
 nav {
   text-align: center;
-  /* background: lightgray; */
+  background: white;
   position: fixed; /*elements in fixed position are removed from the default page flow and stacking order*/
   width: 100%; /*if don't set a width to a positioned element, it will only be as wide as its content*/
   top: 0; /*puts nav bar at top of browser viewport*/
@@ -111,7 +111,7 @@ p {
   }
   nav a {
     size: 3rem;
-    color: white;
+    color: #2b2d42;
     padding: 30px 40px;
   }
   header {
@@ -132,7 +132,7 @@ p {
   }
   nav a {
     size: 3rem;
-    color: white;
+    color: white #2b2d42;
     padding: 20px 30px;
   }
 }
@@ -146,7 +146,7 @@ p {
   }
   nav a {
     size: 3rem;
-    color: white;
+    color: #2b2d42;
     padding: 15px 20px;
   }
   .col-narrow {
