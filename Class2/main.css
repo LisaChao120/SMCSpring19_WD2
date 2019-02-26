@@ -114,6 +114,9 @@ p {
     color: red;
     padding: 30px 40px;
   }
+  .profile-img {
+    width: 200px;
+  }
 }
 
 @media (min-width: 768px) {
