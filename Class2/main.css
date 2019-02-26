@@ -22,7 +22,7 @@ body {
   padding: 60px 50px;
   overflow: auto; /*anytime I add a float, it will automatically self-clear*/
 }
-.container {
+.main-container {
   /* background-color: salmon; */
   width: 100%;
   /*max-width: 950px; adding max-width makes the width of the content box flexible as opposed to a fix width*/
@@ -104,7 +104,7 @@ p {
 }
 @media (max-width: 767px) {
   /*for screen sizes 767px or SMALLER*/
-  .container {
+  .main-container {
     background-color: #2b2d42;
     width: 100%;
     margin: 0px auto;
@@ -125,7 +125,7 @@ p {
 
 @media (min-width: 768px) {
   /*for screen sizes 768px or LARGER*/
-  .container {
+  .main-container {
     background-color: #2b2d42;
     width: 100%;
     margin: 0px auto;
@@ -139,7 +139,7 @@ p {
 
 @media (min-width: 992px) {
   /*for screen sizes 992px or LARGER*/
-  .container {
+  .main-container {
     background-color: #2b2d42;
     width: 100%;
     margin: 0 auto;
