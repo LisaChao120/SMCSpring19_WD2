@@ -99,19 +99,22 @@ h1 {
 h2 {
   color: lightblue;
 }
-.packing .planning p {
+p {
   color: white;
 }
 .packing {
+  background: grey;
   color: white;
 }
 .planning {
-  background: linear-gradient(
+  background-image: linear-gradient(
       rgba(141, 153, 174, 0.8),
       rgba(141, 153, 174, 0.5)
     ),
-    url(../images/super-bloom.jpg) no-repeat fixed;
+    url("images/super-bloom.JPG");
   background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 767px) {
