@@ -13,7 +13,7 @@ html {
 
 body {
   size: 16px;
-  color: paleturquoise;
+  color: white;
   margin: 0px; /*this removes the default margin on edges of body so spans across browser viewport*/
 }
 .content-wrap {
@@ -67,7 +67,7 @@ nav.navbar li:last-child {
 -------------*/
 nav {
   text-align: center;
-  background: lightgray;
+  /* background: lightgray; */
   position: fixed; /*elements in fixed position are removed from the default page flow and stacking order*/
   width: 100%; /*if don't set a width to a positioned element, it will only be as wide as its content*/
   top: 0; /*puts nav bar at top of browser viewport*/
@@ -75,7 +75,7 @@ nav {
 }
 nav a {
   display: inline-block;
-  padding: 60px 80px; /*padding top btm is 15, left right is 20*/
+  padding: 15px 20px; /*padding top btm is 15, left right is 20*/
   text-decoration: none; /*removes the default underline on links*/
   text-transform: uppercase;
   font-weight: 700; /*equivalent to bold*/
@@ -92,7 +92,7 @@ nav a {
 }
 header {
   background: #2b2d42;
-  color: gold;
+  color: lightgoldenrodyellow;
   margin: 0px auto;
 }
 h1 {
@@ -105,30 +105,34 @@ p {
 @media (max-width: 767px) {
   /*for screen sizes 767px or SMALLER*/
   .container {
-    background-color: slategray;
+    background-color: #2b2d42;
     width: 100%;
     margin: 0px auto;
   }
   nav a {
     size: 3rem;
-    color: red;
+    color: white;
     padding: 30px 40px;
+  }
+  header {
+    text-align: center;
   }
   .profile-img {
     width: 200px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) {
   /*for screen sizes 768px or LARGER*/
   .container {
-    background-color: dodgerblue;
+    background-color: #2b2d42;
     width: 100%;
     margin: 0px auto;
   }
   nav a {
     size: 3rem;
-    color: yellow;
+    color: white;
     padding: 20px 30px;
   }
 }
@@ -136,13 +140,13 @@ p {
 @media (min-width: 992px) {
   /*for screen sizes 992px or LARGER*/
   .container {
-    background-color: plum;
+    background-color: #2b2d42;
     width: 100%;
     margin: 0 auto;
   }
   nav a {
     size: 3rem;
-    color: purple;
+    color: white;
     padding: 15px 20px;
   }
   .col-narrow {
