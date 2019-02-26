@@ -26,10 +26,10 @@ body {
   /* padding: 60px 50px; */
   overflow: auto; /*anytime I add a float, it will automatically self-clear*/
   background: linear-gradient(
-      rgba(141, 153, 174, 0.8),
-      rgba(141, 153, 174, 0.4)
+      rgba(141, 153, 174, 0.9),
+      rgba(141, 153, 174, 0.1)
     ),
-    url(../images/hawaii.jpg) no-repeat fixed;
+    url(../images/super-bloom.jpg) no-repeat fixed;
   background-size: cover;
 }
 /*
@@ -87,9 +87,10 @@ nav a {
   nav a {
     size: 3rem;
     color: red;
-    padding: 30px 40px; 
+    padding: 30px 40px;
   }
 }
+
 @media (min-width: 768px) {
   /*for screen sizes 768px or LARGER*/
   .container {
@@ -97,10 +98,11 @@ nav a {
     width: 100%;
     margin: 0px auto;
   }
-nav a {
+  nav a {
     size: 3rem;
     color: yellow;
-    padding: 20px 30px; 
+    padding: 20px 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -110,8 +112,9 @@ nav a {
     width: 100%;
     margin: 0 auto;
   }
-nav a {
+  nav a {
     size: 3rem;
     color: purple;
-    padding: 15px 20px; 
+    padding: 15px 20px;
+  }
 }
