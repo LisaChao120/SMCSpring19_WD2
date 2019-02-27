@@ -31,7 +31,9 @@ body {
   padding: 60px 50px;
   overflow: auto; /*anytime I add a float, it will automatically self-clear*/
 }
-
+.active {
+  color: lightblue;
+}
 /*
 nav.navbar {
   background-color: darkseagreen;
@@ -76,6 +78,9 @@ nav a {
   font-weight: 700; /*equivalent to bold*/
   color: #2b2d42;
   size: 1.5rem;
+}
+nav a:hover {
+  color: aquamarine;
 }
 /* Header styles
 ------------- */
@@ -125,6 +130,7 @@ p {
     margin: 0px auto;
   }
   nav a {
+    display: block;
     size: 3rem;
     color: #2b2d42;
     padding: 30px 40px;
@@ -147,10 +153,19 @@ p {
   }
   nav a {
     size: 3rem;
+    display: inline-block;
     color: white #2b2d42;
     padding: 20px 30px;
   }
 }
+/* .toggle {
+  display: block;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 100;
+  background-color: pink;
+  width: 100%;
+} */
 
 @media (min-width: 992px) {
   /*for screen sizes 992px or LARGER*/
@@ -160,7 +175,7 @@ p {
     margin: 0 auto;
   }
   nav a {
-    size: 3rem;
+    size: 4rem;
     color: #2b2d42;
     padding: 15px 20px;
   }
