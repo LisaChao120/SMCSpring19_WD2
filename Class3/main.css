@@ -31,18 +31,18 @@
 }
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
-}
-.small-width-25 {
-  width: 25%;
-}
-.small-width-33 {
-  width: 33.3333%;
-}
-.small-width-50 {
-  width: 50%;
-}
-.small-width-100 {
-  width: 100%;
+  .small-width-25 {
+    width: 25%;
+  }
+  .small-width-33 {
+    width: 33.3333%;
+  }
+  .small-width-50 {
+    width: 50%;
+  }
+  .small-width-100 {
+    width: 100%;
+  }
 }
 
 /*****************MEDIUM SCREEN*******************/
