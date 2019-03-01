@@ -1,14 +1,25 @@
+/*****COLOR PALETTE**********
+yellow #fff07c
+peach #f7a9a8
+purple #ca7df9
+pink #ff99c8
+green #c7efcf 
+****************************/
+
 .container {
   background-color: oldlace;
 }
 .red {
   background-color: lightcoral;
+  font-family: Coustard, Georgia, Palatino, serif;
 }
 .green {
   background-color: lightgreen;
+  font-family: Krub, Helvetica, Arial, sans-serif;
 }
 .blue {
   background-color: lightskyblue;
+  font-family: Krub, Helvetica, Arial, sans-serif;
 }
 .yellow {
   background-color: lightgoldenrodyellow;
