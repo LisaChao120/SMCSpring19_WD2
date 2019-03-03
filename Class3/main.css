@@ -1,3 +1,14 @@
+.hamburger-menu span {
+  background: #c7efcf;
+  width: 40px;
+  height: 5px;
+  display: block;
+  margin-bottom: 2px;
+  float: right;
+}
+.logo {
+  float: left;
+}
 /*****COLOR PALETTE**********
 yellow #fff07c
 peach #f7a9a8
