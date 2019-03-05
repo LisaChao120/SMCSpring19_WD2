@@ -1,13 +1,47 @@
-.hamburger-menu span {
+html {
+  /*border box fix must be on html tag before body tag*/
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+nav {
+  text-align: center;
+  background: white;
+  position: fixed; /*elements in fixed position are removed from the default page flow and stacking order*/
+  width: 100%; /*if don't set a width to a positioned element, it will only be as wide as its content*/
+  top: 0; /*puts nav bar at top of browser viewport*/
+  margin: 0 auto;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px; /*padding top btm is 15, left right is 20*/
+  text-decoration: none; /*removes the default underline on links*/
+  text-transform: uppercase;
+  font-weight: 700; /*equivalent to bold*/
+  color: #2b2d42;
+  size: 1.5rem;
+}
+nav a:hover {
+  color: aquamarine;
+}
+/* .hamburger-menu span {
   background: #c7efcf;
   width: 40px;
   height: 5px;
   display: block;
   margin-bottom: 2px;
   float: right;
-}
-.logo {
-  float: left;
+} */
+
+header {
+  height: 150px;
+  background: #fff07c;
+  color: lightgoldenrodyellow;
+  margin: 0px auto;
+  padding-top: 50px;
 }
 /*****COLOR PALETTE**********
 yellow #fff07c
@@ -19,27 +53,34 @@ green #c7efcf
 
 .container {
   background-color: oldlace;
+  padding: 10% auto;
 }
 .red {
   background-color: lightcoral;
+  padding: 10% auto;
   font-family: Coustard, Georgia, Palatino, serif;
 }
 .green {
   background-color: lightgreen;
+  padding: 0 auto;
   font-family: Krub, Helvetica, Arial, sans-serif;
 }
 .blue {
   background-color: lightskyblue;
+  padding: 10% auto;
   font-family: Krub, Helvetica, Arial, sans-serif;
 }
 .yellow {
   background-color: lightgoldenrodyellow;
+  padding: 10% auto;
 }
 .cyan {
   background-color: darkturquoise;
+  padding: 10% auto;
 }
 .purple {
   background-color: plum;
+  padding: 10% auto;
 }
 .floater-section {
   float: left;
