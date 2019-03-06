@@ -58,31 +58,45 @@ p {
 }
 .container {
   background-color: oldlace;
-  padding: 10% auto;
 }
 .red {
   background-color: lightcoral;
+  padding: 10px;
   margin: 0 auto;
+  float: left;
 }
 .green {
   background-color: lightgreen;
-  padding: 0 auto;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
 }
 .blue {
   background-color: lightskyblue;
-  padding: 10% auto;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
 }
 .yellow {
   background-color: lightgoldenrodyellow;
-  padding: 10% auto;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
 }
 .cyan {
   background-color: darkturquoise;
-  padding: 10% auto;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
 }
 .purple {
   background-color: plum;
-  padding: 10% auto;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
+}
+.clear {
+  clear: none;
 }
 .floater-section {
   float: left;
