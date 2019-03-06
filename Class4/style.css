@@ -22,7 +22,8 @@
   color: whitesmoke;
   text-shadow: 1px 0px 4px darkblue; /*this adds a border around the text and makes it pop out a little*/
 }
-.content .JKR-img-container {
+.JKR-img-container {
   position: relative;
   right: 2px;
+  width: 100%;
 }
