@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 nav.navbar {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   background-color: black;
@@ -31,9 +34,10 @@ nav a:active {
 }
 .content {
   width: 100%;
-  padding: 0px 10px;
+  margin: 0;
+  padding: 0;
   min-height: 572px;
-  /* border-bottom: 2px solid red; */
+  /* border: 2px solid red; */
   position: relative;
 }
 .content .img-container {
@@ -41,7 +45,7 @@ nav a:active {
 }
 .content img {
   max-width: 100%;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .content .abs-pos {
   position: absolute;
@@ -51,7 +55,7 @@ nav a:active {
 .hero-img-container {
   position: relative;
   width: 100%;
-  right: 10px;
+  /* right: 10px; */
 }
 
 #HeroTitle {
@@ -60,5 +64,14 @@ nav a:active {
   color: white;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 80px;
-  text-shadow: 1px 0px 4px grey; /*this adds a border around the text and makes it pop out a little*/
+  text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
 }
+.profile-img-container {
+  width: 100%;
+}
+.about-container {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+/* .content .profile-img-container {
+  width: 300px;
+} */
