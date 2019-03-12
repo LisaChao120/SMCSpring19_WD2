@@ -1,0 +1,64 @@
+nav.navbar {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  background-color: black;
+  width: 100%;
+  padding: 10px 0px;
+}
+nav.navbar a {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  line-height: 36px;
+}
+nav.navbar ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+nav.navbar li {
+  display: inline-block;
+  padding: 0px 50px;
+}
+nav.navbar li:last-child {
+  border-bottom: none;
+}
+nav a:hover {
+  color: red;
+}
+nav a:active {
+  color: grey;
+}
+.content {
+  width: 100%;
+  padding: 0px 10px;
+  min-height: 572px;
+  /* border-bottom: 2px solid red; */
+  position: relative;
+}
+.content .img-container {
+  min-height: 200px;
+}
+.content img {
+  max-width: 100%;
+  opacity: 0.3;
+}
+.content .abs-pos {
+  position: absolute;
+  width: 100%;
+}
+
+.hero-img-container {
+  position: relative;
+  width: 100%;
+  right: 10px;
+}
+
+#HeroTitle {
+  text-align: center;
+  padding-top: 210px;
+  color: white;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  text-shadow: 1px 0px 4px grey; /*this adds a border around the text and makes it pop out a little*/
+}
