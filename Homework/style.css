@@ -45,7 +45,7 @@ nav a:active {
 .content {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   min-height: 572px;
   /* border: 2px solid red; */
   position: relative;
@@ -89,10 +89,26 @@ nav a:active {
   margin: 0 auto;
 }
 .profile-img-container {
+  padding-top: 40px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 10px;
   width: 100%;
 }
 .about-container {
   font-family: Raleway, Arial, Helvetica, sans-serif;
+  margin: 50px auto;
+  padding: 0 10px;
+}
+.lisa {
+  margin-bottom: 50px;
+  font-size: 65px;
+}
+p {
+  color: grey;
+}
+li {
+  color: grey;
 }
 /* .content .profile-img-container {
   width: 300px;
