@@ -61,7 +61,10 @@ nav a:active {
   position: absolute;
   width: 100%;
 }
-
+.title-abs-pos {
+  position: absolute;
+  width: 100%;
+}
 .hero-img-container {
   position: relative;
   width: 100%;
@@ -71,10 +74,19 @@ nav a:active {
 #HeroTitle {
   text-align: center;
   padding-top: 210px;
+  margin: 0 auto;
   color: white;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 80px;
   text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
+}
+#HeroSub {
+  text-align: center;
+  color: white;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
+  margin: 0 auto;
 }
 .profile-img-container {
   width: 100%;
