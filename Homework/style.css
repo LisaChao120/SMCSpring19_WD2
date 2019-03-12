@@ -26,12 +26,22 @@ nav.navbar li {
 nav.navbar li:last-child {
   border-bottom: none;
 }
+nav a:link {
+  text-decoration: none;
+  color: white;
+}
+nav a:visited {
+  text-decoration: none;
+  color: grey;
+} /*visited links*/
+
 nav a:hover {
   color: red;
 }
 nav a:active {
   color: grey;
-}
+} /*pressed links*/
+
 .content {
   width: 100%;
   margin: 0;
