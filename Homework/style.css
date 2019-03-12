@@ -32,7 +32,7 @@ nav a:link {
 }
 nav a:visited {
   text-decoration: none;
-  color: grey;
+  color: white;
 } /*visited links*/
 
 nav a:hover {
