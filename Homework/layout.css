@@ -27,6 +27,12 @@
   .small-width-50 {
     width: 50%;
   }
+  .small-width-75 {
+    width: 75%;
+  }
+  .small-width-66 {
+    width: 66.6666%;
+  }
   .small-width-100 {
     width: 100%;
   }
@@ -46,6 +52,13 @@
   .med-width-50 {
     width: 50%;
   }
+  .med-width-75 {
+    width: 75%;
+  }
+
+  .med-width-66 {
+    width: 66.6666%;
+  }
   .med-width-100 {
     width: 100%;
   }
@@ -63,6 +76,13 @@
   }
   .large-width-50 {
     width: 50%;
+  }
+  .large-width-75 {
+    width: 75%;
+  }
+
+  .large-width-66 {
+    width: 66.6666%;
   }
   .large-width-100 {
     width: 100%;
