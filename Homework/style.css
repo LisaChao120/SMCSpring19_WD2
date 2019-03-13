@@ -64,7 +64,7 @@ nav a:active {
   /* right: 10px; */
 }
 
-.content .title {
+.title {
   padding-top: 50px;
   z-index: 10;
   position: fixed;
