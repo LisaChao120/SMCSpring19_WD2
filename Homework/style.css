@@ -44,7 +44,7 @@ nav a:active {
 
 .content {
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0px;
   min-height: 572px;
   /* border: 2px solid red; */
@@ -57,34 +57,35 @@ nav a:active {
   max-width: 100%;
   opacity: 0.2;
 }
-.content .abs-pos {
-  position: absolute;
-  width: 100%;
-}
-.title-abs-pos {
-  position: absolute;
-  width: 100%;
-}
-.hero-img-container {
-  position: relative;
+
+.hero-img-container img {
+  /* position: relative; */
   width: 100%;
   /* right: 10px; */
 }
 
+.content .title {
+  padding-top: 50px;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #HeroTitle {
   text-align: center;
-  padding-top: 210px;
+  /* padding-top: 210px; */
   margin: 0 auto;
   color: white;
   font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
 }
 #HeroSub {
   text-align: center;
   color: white;
   font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
   margin: 0 auto;
 }
@@ -98,7 +99,7 @@ nav a:active {
 .about-container {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   margin: 50px auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 .lisa {
   margin-bottom: 50px;
@@ -109,6 +110,9 @@ p {
 }
 li {
   color: grey;
+}
+.portfolio-img-container {
+  margin: 0;
 }
 /* .content .profile-img-container {
   width: 300px;
