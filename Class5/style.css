@@ -1,0 +1,41 @@
+.content {
+  padding: 0px 10px;
+  min-height: 572px;
+  border-bottom: 2px solid red;
+  position: relative;
+  background-color: turquoise;
+}
+#VertCenter1 {
+  position: relative;
+  height: 200px;
+}
+#VertCenter1 img {
+  position: absolute;
+  height: 100px;
+  margin-top: -50px;
+  top: 50%;
+  display: block;
+}
+.content .img-container {
+  min-height: 200px;
+}
+.content img {
+  max-width: 100%;
+}
+.content .abs-pos {
+  position: absolute;
+}
+#JkrOverlap {
+  top: 30px;
+}
+#JkrTitle {
+  top: 200px;
+  right: 30px;
+  color: whitesmoke;
+  text-shadow: 1px 0px 4px darkblue; /*this adds a border around the text and makes it pop out a little*/
+}
+.JKR-img-container {
+  position: relative;
+  right: 2px;
+  width: 100%;
+}
