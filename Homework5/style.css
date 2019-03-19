@@ -1,5 +1,5 @@
 .red {
-  background-color: lightcoral;
+  background-color: rgba(83, 17, 138);
 }
 
 .green {
@@ -11,11 +11,11 @@
 }
 
 .yellow {
-  background-color: lightgoldenrodyellow;
+  background: linear-gradient(rgba(231, 154, 10, 0.9), rgba(83, 17, 138, 1));
 }
 
 .cyan {
-  background-color: darkturquoise;
+  background: linear-gradient(rgba(83, 17, 138, 1), rgba(231, 154, 10, 0.9));
 }
 
 .purple {
@@ -24,46 +24,56 @@
 
 .content {
   position: relative;
+  padding: 20px;
 }
 
-#vertCenter1,
-#vertCenter2,
-#vertHorizCenter1 {
-  height: 200px;
-}
-
-#vertHorizCenter2 {
+#vertCenter1 {
   height: 400px;
+}
+#vertCenter2 {
+  height: 100px;
+}
+#vertHorizCenter1 {
+  height: 300px;
+}
+#vertHorizCenter2 {
+  height: 500px;
 }
 
 #vertCenter1 img {
   position: absolute;
-  height: 100px; /* because we need to calculate the margin */
-  margin-top: -50px;
-  top: 50%;
+  height: 400px; /* because we need to calculate the margin */
+  /* margin-top: -50px;
+  top: 50%; */
   display: block;
 }
-
+#VertCenter2 p {
+  color: bisque;
+}
+#vertHorizCenter2 img {
+  width: 100%;
+}
 #bio {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0px; /* MARGINS affect the centering in this method! */
+  top: 30%;
+  color: rgba(83, 17, 138);
+  /* transform: translateY(-50%);
+  margin: 0px; MARGINS affect the centering in this method! */
 }
 
-#vertHorizCenter1 h2 {
+#vertHorizCenter1 img {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 30px;
+  padding: 5px;
 
   /* Half the width accounting for padding and border */
-  margin-left: -159px;
-  width: 258px;
+  margin-left: -103px;
+  width: 194px;
 
   /* Half the height accounting for padding and border */
-  margin-top: -44px;
-  height: 28px;
+  margin-top: -136px;
+  height: 259px;
 
   background-color: beige;
 }
@@ -77,4 +87,16 @@
 
   margin: 0px;
   text-align: justify;
+  color: papayawhip;
+}
+.movie {
+  padding: 10px;
+  position: relative;
+}
+.synposis {
+  position: relative;
+  padding: 20px;
+}
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }

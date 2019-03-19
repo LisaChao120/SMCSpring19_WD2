@@ -1,13 +1,13 @@
 .container {
   margin: auto;
-  background-color: lemonchiffon;
+  background-color: yellowgreen;
 }
 
 .floater-section {
   float: left;
   width: 100%;
   min-height: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .hide {
