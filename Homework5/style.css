@@ -24,7 +24,8 @@
 
 .content {
   position: relative;
-  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #vertCenter1 {
@@ -37,11 +38,12 @@
   height: 300px;
 }
 #vertHorizCenter2 {
-  height: 500px;
+  min-height: 200px;
 }
 
 #vertCenter1 img {
   position: absolute;
+  max-width: 100%;
   height: 400px; /* because we need to calculate the margin */
   /* margin-top: -50px;
   top: 50%; */
@@ -49,13 +51,16 @@
 }
 #VertCenter2 p {
   color: bisque;
+  text-align: center;
 }
 #vertHorizCenter2 img {
-  width: 100%;
+  max-width: 100%;
 }
 #bio {
+  padding-bottom: 30px;
   position: absolute;
-  top: 30%;
+  width: 90%;
+  /* top: 30%; */
   color: rgba(83, 17, 138);
   /* transform: translateY(-50%);
   margin: 0px; MARGINS affect the centering in this method! */
@@ -81,12 +86,10 @@
 #vertHorizCenter2 p {
   position: absolute;
   top: 50%;
-  left: 50%;
+  /* left: 50%; */
 
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 
-  margin: 0px;
-  text-align: justify;
   color: papayawhip;
 }
 .movie {
@@ -95,7 +98,7 @@
 }
 .synposis {
   position: relative;
-  padding: 20px;
+  padding-left: 10px;
 }
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
