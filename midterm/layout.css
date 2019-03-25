@@ -1,11 +1,7 @@
-.container {
-  margin: 0;
-  background-color: white;
-}
 .floater-section {
   float: left;
   width: 100%;
-  min-height: 200px;
+  min-height: 300px;
   /* margin-bottom: 20px; */
 }
 /* use clear fix to keep parent container from collapsing down since everything inside was floated */

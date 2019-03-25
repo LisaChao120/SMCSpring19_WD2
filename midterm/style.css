@@ -6,78 +6,67 @@ body {
 }
 
 .container {
-  position: relative;
   margin: 0;
   width: 100%;
+  background-color: black;
 }
 
 .content {
-  width: 100%;
-  margin: 56px auto 0;
-  padding: 0px;
-  min-height: 572px;
-  /* border: 2px solid red; */
+  border: 2px solid yellow;
   position: relative;
 }
-.content .img-container {
-  min-height: 200px;
+.nav-fix {
+  height: 55px;
 }
-.content img {
+#VertHorzCtr1 {
+  height: 400px;
+}
+#VertHorzCtr2 {
+  height: 200px;
+}
+#VertHorzCtr1 img {
+  overflow: auto;
+  margin: 0 auto;
+  position: absolute;
+}
+#img-interior {
   max-width: 100%;
-  opacity: 0.2;
-}
-
-.hero-img-container img {
-  /* position: relative; */
-  width: 100%;
-  /* right: 10px; */
-}
-
-.title {
-  padding-top: 50px;
-  z-index: 10;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#HeroTitle {
-  text-align: center;
-  /* padding-top: 210px; */
-  margin: 0 auto;
-  color: white;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 60px;
-  text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
-}
-#HeroSub {
-  text-align: center;
-  color: white;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
-  margin: 0 auto;
-}
-.profile-img-container {
-  margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  width: 50%;
-}
-.about-container {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
   margin: 50px auto;
-  padding: 0 20px;
-}
-.lisa {
-  margin-bottom: 50px;
-  font-size: 65px;
-}
-p {
-  color: grey;
+  position: absolute;
+
+  #VertHorzCtr2 p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+  }
+
+  .title {
+    padding-top: 50px;
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #HeroTitle {
+    text-align: center;
+    /* padding-top: 210px; */
+    margin: 0 auto;
+    color: white;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
+  }
+  #HeroSub {
+    text-align: center;
+    color: white;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
+    margin: 0 auto;
+  }
 }
 li {
-  color: grey;
+  color: white;
 }
 .portfolio-img-container {
   margin: 0;
