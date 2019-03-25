@@ -1,0 +1,53 @@
+
+.floater-section {
+  float: left;
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+/* use clear fix to keep parent container from collapsing down since everything inside was floated */
+.clearfix {
+  clear: both;
+}
+/*****************SMALL SCREEN*******************/
+nav.navbar {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  background-color: black;
+  width: 100%;
+  padding: 10px 0px;
+  position: fixed;
+}
+nav.navbar a {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  line-height: 36px;
+}
+nav.navbar ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+nav.navbar li {
+  display: inline-block;
+  padding: 0px 50px;
+}
+nav.navbar li:last-child {
+  border-bottom: none;
+}
+nav a:link {
+  text-decoration: none;
+  color: white;
+}
+nav a:visited {
+  text-decoration: none;
+  color: white;
+} /*visited links*/
+
+nav a:hover {
+  color: red;
+}
+nav a:active {
+  color: grey;
+} /*pressed links*/
