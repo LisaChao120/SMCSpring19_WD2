@@ -1,26 +1,30 @@
-nav.navbar {
+nav {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   background-color: white;
   width: 100%;
   padding: 10px 0px;
   position: fixed;
+  z-index: 10;
 }
-nav.navbar a {
+nav a {
   width: 100%;
   font-size: 22px;
   text-decoration: none;
   color: white;
   line-height: 36px;
 }
-nav.navbar ul {
+nav ul {
   list-style: none;
   margin: 0 auto;
+  padding: 0;
+  text-align: center;
 }
-nav.navbar li {
+nav li {
   display: inline-block;
   padding: 0px 30px;
+  margin: 0 auto;
 }
-nav.navbar li:last-child {
+nav li:last-child {
   border-bottom: none;
 }
 nav a:link {

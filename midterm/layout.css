@@ -1,8 +1,17 @@
+html {
+  margin: 0px;
+}
+body {
+  margin: 0px;
+}
+.container {
+  width: 100%;
+  background-color: black;
+}
 .floater-section {
   float: left;
   width: 100%;
-  min-height: 300px;
-  /* margin-bottom: 20px; */
+  min-height: 200px;
 }
 /* use clear fix to keep parent container from collapsing down since everything inside was floated */
 .clearfix {
@@ -13,23 +22,25 @@
 @media (min-width: 450px) {
   .container {
     width: 440px;
+    margin: 0px auto;
+    background-color: black;
   }
-  .small-width-25 {
+  .sm-width-25 {
     width: 25%;
   }
-  .small-width-33 {
+  .sm-width-33 {
     width: 33.3333%;
   }
-  .small-width-50 {
+  .sm-width-50 {
     width: 50%;
   }
-  .small-width-75 {
+  .sm-width-75 {
     width: 75%;
   }
-  .small-width-66 {
+  .sm-width-66 {
     width: 66.6666%;
   }
-  .small-width-100 {
+  .sm-width-100 {
     width: 100%;
   }
 }
@@ -38,6 +49,8 @@
 @media (min-width: 768px) {
   .container {
     width: 760px;
+    margin: 0px auto;
+    background-color: black;
   }
   .med-width-25 {
     width: 25%;
@@ -63,24 +76,26 @@
 @media (min-width: 992px) {
   .container {
     width: 960px;
+    margin: 0px auto;
+    background-color: black;
   }
-  .large-width-25 {
+  .lg-width-25 {
     width: 25%;
   }
-  .large-width-33 {
+  .lg-width-33 {
     width: 33.3333%;
   }
-  .large-width-50 {
+  .lg-width-50 {
     width: 50%;
   }
-  .large-width-75 {
+  .lg-width-75 {
     width: 75%;
   }
 
-  .large-width-66 {
+  .lg-width-66 {
     width: 66.6666%;
   }
-  .large-width-100 {
+  .lg-width-100 {
     width: 100%;
   }
 }

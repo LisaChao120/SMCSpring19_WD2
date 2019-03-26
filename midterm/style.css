@@ -1,45 +1,44 @@
-html {
-  margin: 0;
-}
-body {
-  margin: 0;
-}
-
-.container {
-  margin: 0;
-  width: 100%;
-  background-color: black;
-}
-
 .content {
   border: 2px solid yellow;
   position: relative;
 }
 .nav-fix {
   height: 55px;
+  width: 100%;
 }
-#VertHorzCtr1 {
-  height: 400px;
+.img-container {
+  min-height: 237px;
+}
+.img-container2 {
+  min-height: 300px;
+}
+.content img {
+  /* max-height: 400px; */
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 #VertHorzCtr2 {
-  height: 200px;
+  height: 60px;
 }
-#VertHorzCtr1 img {
-  overflow: auto;
-  margin: 0 auto;
-  position: absolute;
-}
-#img-interior {
+
+.sm-logo {
   max-width: 100%;
-  margin: 50px auto;
+}
+#since1992 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  height: 100px;
   position: absolute;
-
-  #VertHorzCtr2 p {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: white;
-  }
-
-  .title {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+}
+/* .title {
     padding-top: 50px;
     z-index: 10;
     position: fixed;
@@ -49,28 +48,17 @@ body {
   }
   #HeroTitle {
     text-align: center;
-    /* padding-top: 210px; */
     margin: 0 auto;
     color: white;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 60px;
     text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
-  }
+/* }
   #HeroSub {
     text-align: center;
     color: white;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 30px;
     text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
-    margin: 0 auto;
-  }
-}
-li {
-  color: white;
-}
-.portfolio-img-container {
-  margin: 0;
-}
-/* .content .profile-img-container {
-  width: 300px;
-} */
+/* margin: 0 auto;
+  } */
