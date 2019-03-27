@@ -1,18 +1,42 @@
+/* ***********************************
+GLOBAL STYLES*********************** */
+html {
+  margin: 0px;
+}
+body {
+  margin: 0px;
+}
+.container {
+  width: 100%;
+  background-color: black;
+}
+.floater-section {
+  float: left;
+  width: 100%;
+  min-height: 100px;
+}
+/* use clear fix to keep parent container from collapsing down since everything inside was floated */
+.clearfix {
+  clear: both;
+}
 .content {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   position: relative;
+  min-height: 100px;
 }
 .nav-fix {
   height: 55px;
   width: 100%;
 }
-.img-container {
+/* CONTENT SPECIFIC STYLING**************************
+**************************************************** */
+/* Brown #c69c6d */
+/* text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
+.img-container1 {
   min-height: 237px;
+  max-width: 100%;
 }
-.img-container2 {
-  min-height: 300px;
-}
-.content img {
+.img-container1 img {
   /* max-height: 400px; */
   display: block;
   position: absolute;
@@ -20,45 +44,23 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-#VertHorzCtr2 {
-  height: 60px;
-}
-
-.sm-logo {
+.img-container2 {
+  min-height: 300px;
   max-width: 100%;
 }
-#since1992 {
+.img-container2 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-container {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
-  height: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
   text-align: center;
+  /* text-shadow: 1px 0px 4px #c69c6d; */
 }
-/* .title {
-    padding-top: 50px;
-    z-index: 10;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  #HeroTitle {
-    text-align: center;
-    margin: 0 auto;
-    color: white;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
-/* }
-  #HeroSub {
-    text-align: center;
-    color: white;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
-/* margin: 0 auto;
-  } */

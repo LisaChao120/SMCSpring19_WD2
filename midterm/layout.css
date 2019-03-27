@@ -1,23 +1,5 @@
-html {
-  margin: 0px;
-}
-body {
-  margin: 0px;
-}
-.container {
-  width: 100%;
-  background-color: black;
-}
-.floater-section {
-  float: left;
-  width: 100%;
-  min-height: 200px;
-}
-/* use clear fix to keep parent container from collapsing down since everything inside was floated */
-.clearfix {
-  clear: both;
-}
-
+/* RESPONSIVE LAYOUT STRUCTURE***************
+******************************************** */
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
   .container {
@@ -44,7 +26,6 @@ body {
     width: 100%;
   }
 }
-
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
   .container {
@@ -64,7 +45,6 @@ body {
   .med-width-75 {
     width: 75%;
   }
-
   .med-width-66 {
     width: 66.6666%;
   }
@@ -91,7 +71,6 @@ body {
   .lg-width-75 {
     width: 75%;
   }
-
   .lg-width-66 {
     width: 66.6666%;
   }
