@@ -1,7 +1,18 @@
 /* RESPONSIVE LAYOUT STRUCTURE***************
 ******************************************** */
+/* DEFAULT */
+
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
+  nav li {
+    display: inline-block;
+    padding: 0px 30px;
+    margin: 0 auto;
+  }
+  .nav-fix {
+    height: 92px;
+    width: 100%;
+  }
   .container {
     width: 440px;
     margin: 0px auto;

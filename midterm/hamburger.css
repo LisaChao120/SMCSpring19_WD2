@@ -1,0 +1,29 @@
+/* ---------------------------------------------------- Drawer/Hamburger */
+
+div {
+  position: fixed;
+  bottom: calc(15vh + 50px);
+  transform: translate(-100vw);
+  transition: transform 0.1s;
+  padding: 7vw;
+  background-color: #050304;
+}
+
+figure.divmenu {
+  width: 50px;
+  height: 37px;
+  position: fixed;
+  margin: 10px;
+  bottom: 12vh;
+  left: 2vw;
+  background-image: url("../IMG/hamburger1-1.png");
+  background-size: cover;
+}
+
+figure.divmenu:hover {
+  background-image: url("../IMG/hamburger2-1.png");
+}
+
+.slide-drawer {
+  transform: translate(0);
+}
