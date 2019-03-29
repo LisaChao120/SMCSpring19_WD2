@@ -70,3 +70,20 @@ body {
   text-align: center;
   /* text-shadow: 1px 0px 4px #c69c6d; */
 }
+.menu-container {
+  min-width: 300px;
+  max-height: 550px;
+  color: white;
+  overflow: auto;
+  margin: auto;
+}
+.ingredients {
+  size: 0.5em;
+  color: #c69c6d;
+  font-style: italic;
+  font-weight: lighter;
+}
+th {
+  text-transform: uppercase;
+  border-bottom: 3px solid #c69c6d;
+}
