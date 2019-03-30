@@ -1,5 +1,10 @@
+/************************************
+ DEFAULT ***************************/
+.SMlogo {
+  display: none;
+}
 nav {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: Prata, Georgia, serif;
   background-color: white;
   width: 100%;
   padding: 10px 0px;
@@ -20,7 +25,7 @@ nav ul {
   text-align: center;
 }
 nav li {
-  display: inline-block;
+  display: block;
   padding: 0px 30px;
   margin: 0 auto;
 }
@@ -43,3 +48,90 @@ nav a:active {
   color: #c69c6d;
   font-weight: bold;
 } /*pressed links*/
+
+/*****************SMALL SCREEN*******************/
+@media (min-width: 450px) {
+  .SMlogo {
+    display: none;
+  }
+}
+
+/*****************MEDIUM SCREEN*******************/
+@media (min-width: 768px) {
+  .SMlogo {
+    display: inline-block;
+  }
+  .clearfix {
+    clear: both;
+  }
+  nav {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .SMlogo {
+    margin: 0px;
+    padding: 0px;
+    top: 50%;
+  }
+  nav li {
+    display: inline-block;
+    padding: 0px 50px;
+    margin: 0 auto;
+  }
+  nav li:last-child {
+    border-bottom: none;
+  }
+  nav a {
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5rem;
+  }
+}
+/*****************LARGE SCREEN*******************/
+@media (min-width: 992px) {.SMlogo {
+  display: inline-block;
+}
+.clearfix {
+  clear: both;
+}
+nav {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.SMlogo {
+  margin: 0px;
+  padding: 0px;
+  top: 50%;
+}
+nav li {
+  display: inline-block;
+  padding: 0px 50px;
+  margin: 0 auto;
+}
+nav li:last-child {
+  border-bottom: none;
+}
+nav a {
+  width: 100%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  line-height: 1.5rem;
+}
+}

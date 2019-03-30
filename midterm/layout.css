@@ -4,20 +4,6 @@
 
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
-  nav li {
-    display: inline-block;
-    padding: 0px 30px;
-    margin: 0 auto;
-  }
-  .nav-fix {
-    height: 92px;
-    width: 100%;
-  }
-  .container {
-    width: 440px;
-    margin: 0px auto;
-    background-color: black;
-  }
   .sm-width-25 {
     width: 25%;
   }
@@ -39,11 +25,6 @@
 }
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
-  .container {
-    width: 760px;
-    margin: 0px auto;
-    background-color: black;
-  }
   .med-width-25 {
     width: 25%;
   }
@@ -65,11 +46,6 @@
 }
 /*****************LARGE SCREEN*******************/
 @media (min-width: 992px) {
-  .container {
-    width: 960px;
-    margin: 0px auto;
-    background-color: black;
-  }
   .lg-width-25 {
     width: 25%;
   }

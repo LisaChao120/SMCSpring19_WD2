@@ -1,5 +1,5 @@
 /* ***********************************
-GLOBAL STYLES*********************** */
+GLOBAL STYLES************************/
 html {
   margin: 0px;
 }
@@ -8,31 +8,28 @@ body {
 }
 .container {
   width: 100%;
+  margin: 0 auto;
   background-color: black;
-}
-.floater-section {
-  float: left;
-  /* width: 100%; */
-  min-height: 100px;
 }
 /* use clear fix to keep parent container from collapsing down since everything inside was floated */
 .clearfix {
   clear: both;
 }
-.content {
+.floater-section {
+  float: left;
+  width: 100%;
+  min-height: 100px;
+}
+.menu-container {
   /* border: 2px solid yellow; */
   position: relative;
   min-height: 100px;
 }
-.nav-fix {
+/* .nav-fix {
   height: 55px;
   width: 100%;
-}
-.SMlogo {
-  margin-left: 10px;
-  margin-top: 10px;
-  display: inline-block;
-}
+} */
+
 /* CONTENT SPECIFIC STYLING**************************
 **************************************************** */
 /* Brown #c69c6d */
@@ -69,13 +66,16 @@ body {
   margin: 0;
   text-align: center;
   /* text-shadow: 1px 0px 4px #c69c6d; */
+  background-color: black;
+  width: 100%;
 }
-.menu-container {
+.menu-content {
   min-width: 300px;
   max-height: 550px;
   color: white;
   overflow: auto;
   margin: auto;
+  position: relative;
 }
 .ingredients {
   size: 0.5em;
@@ -86,4 +86,59 @@ body {
 th {
   text-transform: uppercase;
   border-bottom: 3px solid #c69c6d;
+  padding: 10px 0px;
+}
+.menu-content table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.menu-content p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/*****************SMALL SCREEN*******************/
+@media (min-width: 450px) {
+  .img-container1 {
+    width: 440px;
+    /* margin: 0px auto; */
+    /* background-color: black; */
+  }
+  .text-container {
+    background-color: black;
+    width: 100%;
+  }
+}
+/*****************MEDIUM SCREEN*******************/
+@media (min-width: 768px) {
+  .img-container1 {
+    width: 760px;
+    /* margin: 0px auto; */
+    /* background-color: black; */
+  }
+  .text-container {
+    background-color: black;
+    width: 100%;
+  }
+}
+/*****************LARGE SCREEN*******************/
+@media (min-width: 992px) {
+  .img-container1 {
+    width: 960px;
+    /* margin: 0px auto; */
+    /* background-color: black; */
+  }
+  .text-container {
+    background-color: black;
+    width: 100%;
+  }
+  .content-home {
+    background: url(images/inside.psd.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 9;
+  }
 }
