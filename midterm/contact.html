@@ -35,17 +35,38 @@
       <div class="nav-fix"></div>
     </header>
     <div class="container">
-      <div class="floater-section sm-width-100 med-width-33 lg-width-66">
-        <div class="form-content">
+      <div class="floater-section sm-width-100 med-width-33 lg-width-33">
+        <div class="message-content">
+          <h2>Send us a message!</h2>
+          <p></p>
+
           <form>
-            <p>Subscribe to our email list!</p>
-            <input type="text" name="email" />
-            <input type="submit" name="subscribe" value="Subscribe" />
+            <textarea name="message" rows="10" cols="30">
+    Type your message here</textarea
+            >
+            <br />
+            <!-- <input type="submit" /> -->
+            <button type="button" onclick="alert('Cool beans!')">
+              Send
+            </button>
           </form>
         </div>
       </div>
-      <div class="floater-section sm-width-100 med-width-33 lg-width-33">
-        <div class="content"></div>
+      <div class="floater-section sm-width-100 med-width-66 lg-width-66">
+        <div class="form-content">
+          <form>
+            <h2>Join the Coffee Cartel family</h2>
+            <p>
+              Subscribe to our email list so we can send you discounts and
+              notify you of any upcoming events
+            </p>
+            <input type="text" name="email" /><br />
+            <button type="button" onclick="alert('Welcome to the Cartel')">
+              Subscribe
+            </button>
+            <!-- <input type="submit" name="subscribe" value="Subscribe" /> -->
+          </form>
+        </div>
       </div>
 
       <div class="clearfix"></div>

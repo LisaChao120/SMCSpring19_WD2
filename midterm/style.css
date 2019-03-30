@@ -31,18 +31,32 @@ body {
 } */
 .form-content {
 }
-input {
-  color: black;
+button {
+  color: #c69c6d;
+  text-shadow: 1px black;
   background-color: white;
-  border-bottom: 2px solid white;
+  border: 2px solid #c69c6d;
   border-radius: 5px;
+  font-size: 1.2em;
 }
-input:hover,
-input:focus {
+button:active {
   background-color: #c69c6d;
   color: white;
-  text-shadow: 0px 1px black;
   border-top: 2px solid #b2b2b2;
+  font-size: 1.2em;
+}
+button:hover,
+button:focus {
+  color: #c69c6d;
+  text-shadow: 1px 1px black;
+  font-size: 1.2em;
+}
+form h2,
+p {
+  color: white;
+}
+.message-content {
+  color: white;
 }
 /* CONTENT SPECIFIC STYLING**************************
 **************************************************** */
