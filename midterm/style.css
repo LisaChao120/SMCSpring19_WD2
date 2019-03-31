@@ -1,5 +1,8 @@
 /* ***********************************
 GLOBAL STYLES************************/
+.content-relative-pos {
+  position: relative;
+}
 html {
   margin: 0px;
 }
@@ -69,7 +72,7 @@ h2 {
 .about-content p {
   color: #c69c6d;
 }
-table.hours {
+.hours {
   color: white;
 }
 /* CONTENT SPECIFIC STYLING**************************
@@ -98,7 +101,7 @@ table.hours {
 }
 
 .text-container {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Domine, Martel, Prata, Georgia, "Times New Roman", Times, serif;
   color: white;
   size: 20px;
   position: absolute;
