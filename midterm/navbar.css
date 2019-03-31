@@ -76,9 +76,7 @@ nav a:active {
     transform: translateY(-50%);
   }
   .SMlogo {
-    margin: 0px;
-    padding: 0px;
-    top: 50%;
+    margin: 20px;
   }
   nav li {
     display: inline-block;
@@ -97,41 +95,35 @@ nav a:active {
   }
 }
 /*****************LARGE SCREEN*******************/
-@media (min-width: 992px) {.SMlogo {
-  display: inline-block;
-}
-.clearfix {
-  clear: both;
-}
-nav {
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-}
-.navbar {
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.SMlogo {
-  margin: 0px;
-  padding: 0px;
-  top: 50%;
-}
-nav li {
-  display: inline-block;
-  padding: 0px 50px;
-  margin: 0 auto;
-}
-nav li:last-child {
-  border-bottom: none;
-}
-nav a {
-  width: 100%;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white;
-  line-height: 1.5rem;
-}
+@media (min-width: 992px) {
+  .clearfix {
+    clear: both;
+  }
+  nav {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px 50px;
+    margin: 0 auto;
+  }
+  nav li:last-child {
+    border-bottom: none;
+  }
+  nav a {
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5rem;
+  }
 }

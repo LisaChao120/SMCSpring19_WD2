@@ -35,26 +35,24 @@ body {
 /* Brown #c69c6d */
 /* text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
 /* -------------------Home page----------------------------- */
-.img-container1 {
-  min-height: 237px;
-  max-width: 100%;
-}
-.img-container1 img {
-  /* max-height: 400px; */
-  display: block;
+.logoLG-container {
+  /* min-height: 237px; */
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+}
+.logoLG-container img {
+  text-shadow: 2px black;
 }
 .home-img-container {
 }
 .home-img-container img {
   width: 100%; /*keeps width same width as container*/
 }
-/* .img-container2 img {
+.img-container2 img {
   max-width: 100%;
-} */
+}
 
 .text-container {
   font-family: Domine, Martel, Prata, Georgia, "Times New Roman", Times, serif;
@@ -160,7 +158,6 @@ h2 {
     /* margin: 0px auto; */
     /* background-color: black; */
   }
-  
 }
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
@@ -169,7 +166,6 @@ h2 {
     /* margin: 0px auto; */
     /* background-color: black; */
   }
-
 }
 /*****************LARGE SCREEN*******************/
 @media (min-width: 992px) {
@@ -178,6 +174,4 @@ h2 {
     /* margin: 0px auto; */
     /* background-color: black; */
   }
-
- 
 }
