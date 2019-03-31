@@ -58,6 +58,20 @@ p {
 .message-content {
   color: white;
 }
+h1 {
+  color: white;
+  /* color: #c69c6d; */
+}
+h2 {
+  color: white;
+  /* color: #c69c6d; */
+}
+.about-content p {
+  color: #c69c6d;
+}
+table.hours {
+  color: white;
+}
 /* CONTENT SPECIFIC STYLING**************************
 **************************************************** */
 /* Brown #c69c6d */
