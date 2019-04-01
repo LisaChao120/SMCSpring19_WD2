@@ -104,26 +104,30 @@ th {
 
 /* -------------------Contact page--------------- */
 .form-content {
+  text-align: center;
 }
 button {
-  color: #c69c6d;
-  text-shadow: 1px black;
-  background-color: white;
+  color: white;
+  text-shadow: 3px black;
+  background-color: #c69c6d;
   border: 2px solid #c69c6d;
   border-radius: 5px;
-  font-size: 1.2em;
+  width: 100px;
+  margin: 10px;
+  font-size: 1.1em;
 }
 button:active {
   background-color: #c69c6d;
   color: white;
-  border-top: 2px solid #b2b2b2;
-  font-size: 1.2em;
 }
-button:hover,
-button:focus {
+button:hover {
   color: #c69c6d;
-  text-shadow: 1px 1px black;
-  font-size: 1.2em;
+  background-color: white;
+  border: 2px solid white;
+}
+button:focus {
+  color: black;
+  font-size: bold;
 }
 form h2,
 p {
@@ -131,6 +135,7 @@ p {
 }
 .message-content {
   color: white;
+  text-align: center;
 }
 h1 {
   color: white;
