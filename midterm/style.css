@@ -103,8 +103,27 @@ th {
 }
 
 /* -------------------Contact page--------------- */
-.form-content {
+.subscribe-content,
+.message-content {
   text-align: center;
+  color: white;
+  margin: 40px 0px auto;
+}
+.message-content,
+.subscribe-content h2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.subscribe-content p,
+.message-content p {
+  max-width: 200px;
+  color: #c69c6d;
+  text-align: center;
+  margin: 10px auto;
+}
+.input {
+  width: 200px;
 }
 button {
   color: white;
@@ -114,7 +133,7 @@ button {
   border-radius: 5px;
   width: 100px;
   margin: 10px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 button:active {
   background-color: #c69c6d;
@@ -129,22 +148,7 @@ button:focus {
   color: black;
   font-size: bold;
 }
-form h2,
-p {
-  color: white;
-}
-.message-content {
-  color: white;
-  text-align: center;
-}
-h1 {
-  color: white;
-  /* color: #c69c6d; */
-}
-h2 {
-  color: white;
-  /* color: #c69c6d; */
-}
+
 /* -----------------About page-------------- */
 .about-content p {
   color: #c69c6d;
