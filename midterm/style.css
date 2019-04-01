@@ -122,8 +122,8 @@ th {
   text-align: center;
   margin: 10px auto;
 }
-.input {
-  width: 200px;
+input[type="text"] {
+  width: 192px;
 }
 button {
   color: white;
