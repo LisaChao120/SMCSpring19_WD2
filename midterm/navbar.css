@@ -82,7 +82,7 @@ nav a:active {
   }
   .navbar {
     position: absolute;
-    right: 5%;
+    right: 10%;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -115,7 +115,7 @@ nav a:active {
   }
   .navbar {
     position: absolute;
-    right: 5%;
+    right: 10%;
     top: 50%;
     transform: translateY(-50%);
   }

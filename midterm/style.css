@@ -66,40 +66,56 @@ body {
 }
 
 /* -------------------Menu page------------------- */
+
 .menu-container {
   /* border: 2px solid yellow; */
   position: relative;
   min-height: 100px;
+  overflow: auto;
 }
 .menu-content {
   min-width: 300px;
-  max-height: 550px;
   color: white;
-  overflow: auto;
+  background-color: black;
+
   margin: auto;
   position: relative;
   font-size: 1.25em;
+  padding: 0 10px;
 }
 .ingredients {
   font-size: 0.75em;
   color: #c69c6d;
   font-style: italic;
   font-weight: lighter;
+  padding-right: 10px;
 }
 th {
   text-transform: uppercase;
-  border-bottom: 3px solid #c69c6d;
-  padding: 10px 0px;
+  border-bottom: 2px solid #c69c6d;
+  padding: 5px 0px;
+}
+tbody tr td {
+  padding-top: 5px;
+}
+thead {
+  margin: 0;
+  padding: 0;
 }
 .menu-content table {
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
 }
-.menu-content p {
-  margin-left: auto;
-  margin-right: auto;
+.extra-charges {
+  margin: 10px;
+  font-size: 0.75rem;
+}
+.extra-charges p {
   text-align: center;
+  margin: 0 auto;
+  padding: 2px;
+  color: white;
 }
 
 /* -------------------Contact page--------------- */
