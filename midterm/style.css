@@ -40,20 +40,20 @@ body {
 }
 .logoLG-container img {
   text-shadow: 2px black;
+  width: 100%;
 }
 .home-img-container {
+  background: url("images/inside.jpg") no-repeat center;
+  background-size: cover;
 }
 .home-img-container img {
   width: 100%; /*keeps width same width as container*/
-}
-.img-container2 img {
-  max-width: 100%;
 }
 
 .text-container {
   font-family: Domine, Martel, Prata, Georgia, "Times New Roman", Times, serif;
   color: white;
-  size: 1em;
+  font-size: 0.6em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -205,9 +205,16 @@ button:focus {
 
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
+  .text-container p {
+    font-size: 0.6em;
+  }
 }
+
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
+  .text-container p {
+    font-size: 0.8em;
+  }
   .contact-container {
     max-width: 768px;
     padding-top: 100px;
@@ -241,6 +248,9 @@ button:focus {
 }
 /*****************LARGE SCREEN*******************/
 @media (min-width: 992px) {
+  .text-container p {
+    font-size: 1em;
+  }
   .contact-container {
     max-width: 900px;
     padding-top: 100px;
