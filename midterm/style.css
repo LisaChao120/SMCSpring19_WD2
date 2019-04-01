@@ -130,7 +130,19 @@ thead {
   text-align: center;
   color: white;
   margin: 0px auto;
+  position: relative;
 }
+form .message-content{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+form .subscribe-content{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
 .message-content h2 {
   color: white;
   margin: 0;
