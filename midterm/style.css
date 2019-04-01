@@ -18,7 +18,7 @@ body {
 }
 .floater-section {
   float: left;
-  width: 100%;
+  /* width: 100%; */
 }
 .content-relative-pos {
   position: relative;
@@ -119,27 +119,46 @@ thead {
 }
 
 /* -------------------Contact page--------------- */
+.contact-container {
+  padding: 50px 0;
+  background-color: black;
+  width: 100%;
+  margin:0 auto;
+}
 .subscribe-content,
 .message-content {
   text-align: center;
   color: white;
-  margin: 40px 0px auto;
+  margin: 0px auto;
 }
-.message-content,
+.message-content h2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+}
 .subscribe-content h2 {
   color: white;
   margin: 0;
   padding: 0;
+  font-size: 2.5em;
 }
 .subscribe-content p,
 .message-content p {
-  max-width: 200px;
+  max-width: 300px;
   color: #c69c6d;
   text-align: center;
   margin: 10px auto;
 }
 input[type="text"] {
-  width: 192px;
+  width: 50%;
+  max-width: 300px;
+  min-width: 200px;
+}
+textarea[name="message"] {
+  width: 50%;
+  max-width: 300px;
+  min-width: 200px;
 }
 button {
   color: white;
@@ -175,25 +194,16 @@ button:focus {
 
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
-  .img-container1 {
-    width: 440px;
-    /* margin: 0px auto; */
-    /* background-color: black; */
-  }
+  
 }
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
-  .img-container1 {
-    width: 760px;
-    /* margin: 0px auto; */
-    /* background-color: black; */
-  }
+  
 }
 /*****************LARGE SCREEN*******************/
 @media (min-width: 992px) {
-  .img-container1 {
-    width: 960px;
-    /* margin: 0px auto; */
-    /* background-color: black; */
+  .contact-container{
+    max-width:900px;
+  }
   }
 }
