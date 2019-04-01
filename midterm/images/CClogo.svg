@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="58px" height="78px" viewBox="0 0 58 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
-    <title>Group</title>
+    <title>CClogo</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="PortagoITCTT, PortagoITC TT" font-size="103.95" font-style="condensed" font-weight="700">
-        <g id="Tablet" transform="translate(-48.000000, -28.000000)" fill="#8C6239">
-            <g id="Asset-5" transform="translate(29.000000, 2.000000)">
-                <g id="Group">
-                    <text id="C">
-                        <tspan x="36" y="102">C</tspan>
-                    </text>
-                    <text id="C" transform="translate(30.000000, 63.500000) scale(-1, 1) translate(-30.000000, -63.500000) ">
-                        <tspan x="0" y="102">C</tspan>
-                    </text>
-                </g>
+        <g id="CClogo" transform="translate(-2.000000, -26.000000)" fill="#8C6239">
+            <text id="C">
+                <tspan x="19" y="102">C</tspan>
+            </text>
+            <g id="C" transform="translate(21.500000, 63.500000) scale(-1, 1) translate(-21.500000, -63.500000) ">
+                <text>
+                    <tspan x="0" y="102">C</tspan>
+                </text>
             </g>
         </g>
     </g>

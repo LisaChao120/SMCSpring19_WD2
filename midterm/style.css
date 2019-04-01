@@ -18,7 +18,7 @@ body {
 }
 .floater-section {
   float: left;
-  /* width: 100%; */
+  width: 100%;
 }
 .content-relative-pos {
   position: relative;
@@ -53,14 +53,13 @@ body {
 .text-container {
   font-family: Domine, Martel, Prata, Georgia, "Times New Roman", Times, serif;
   color: white;
-  size: 20px;
+  size: 1em;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
   text-align: center;
-  /* text-shadow: 1px 0px 4px #c69c6d; */
   background-color: black;
   width: 100%;
 }
@@ -123,7 +122,7 @@ thead {
   padding: 50px 0;
   background-color: black;
   width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .subscribe-content,
 .message-content {
@@ -131,15 +130,21 @@ thead {
   color: white;
   margin: 0px auto;
   position: relative;
+  min-height: 250px;
 }
-form .message-content{
-  position: absolute;
-  top:50%;
-  transform: translateY(-50%);
+.clear-right {
+  clear: right;
 }
-form .subscribe-content{
+.clear-left {
+  clear: left;
+}
+
+.form-container {
+  position: relative;
+}
+form .subscribe-content {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -155,13 +160,7 @@ form .subscribe-content{
   padding: 0;
   font-size: 2.5em;
 }
-.subscribe-content p,
-.message-content p {
-  max-width: 300px;
-  color: #c69c6d;
-  text-align: center;
-  margin: 10px auto;
-}
+
 input[type="text"] {
   width: 50%;
   max-width: 300px;
@@ -206,16 +205,60 @@ button:focus {
 
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
-  
 }
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
-  
+  .contact-container {
+    max-width: 768px;
+    padding-top: 100px;
+  }
+  .message-content {
+    color: white;
+    height: 100px;
+    /* line-height: 100px; */
+    padding: 0;
+    white-space: nowrap;
+  }
+  .subscribe-content {
+    color: white;
+    height: 100px;
+    /* line-height: 100px; */
+    padding: 0;
+    white-space: nowrap;
+  }
+  .message-content h2 {
+    color: white;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 1.5em;
+  }
+  .subscribe-content h2 {
+    color: white;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 1.5em;
+  }
 }
 /*****************LARGE SCREEN*******************/
 @media (min-width: 992px) {
-  .contact-container{
-    max-width:900px;
+  .contact-container {
+    max-width: 900px;
+    padding-top: 100px;
   }
+  .message-content {
+    background: black;
+    color: white;
+    height: 100px;
+    /* line-height: 100px; */
+    padding: 0;
+    width: 50%;
+    white-space: nowrap;
+  }
+  .subscribe-content {
+    color: white;
+    height: 100px;
+    /* line-height: 100px; */
+    padding: 0;
+    white-space: nowrap;
   }
 }
