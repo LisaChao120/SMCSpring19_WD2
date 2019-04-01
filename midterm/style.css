@@ -78,9 +78,10 @@ body {
   overflow: auto;
   margin: auto;
   position: relative;
+  font-size: 1.25em;
 }
 .ingredients {
-  size: 0.5em;
+  font-size: 0.75em;
   color: #c69c6d;
   font-style: italic;
   font-weight: lighter;

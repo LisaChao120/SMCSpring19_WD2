@@ -12,7 +12,7 @@
   display: none;
 }
 nav {
-  font-family: Prata, Georgia, serif;
+  font-family: Domine, Martel, Prata, Georgia, "Times New Roman", Times, serif;
   background-color: white;
   width: 100%;
   padding: 10px 0px;
@@ -50,24 +50,27 @@ nav a:visited {
 } /*visited links*/
 
 nav a:hover {
+  text-decoration: none;
   color: #c69c6d;
 }
 nav a:active {
+  text-decoration: none;
   color: #c69c6d;
   font-weight: bold;
 } /*pressed links*/
 
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
-  .sm-index-logo {
+  /* .sm-index-logo {
     display: none;
-  }
+  } */
 }
 
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
   .sm-index-logo {
     display: inline-block;
+    margin: 20px;
   }
   .clearfix {
     clear: both;
@@ -83,9 +86,7 @@ nav a:active {
     top: 50%;
     transform: translateY(-50%);
   }
-  .sm-index-logo {
-    margin: 20px;
-  }
+
   nav li {
     display: inline-block;
     padding: 0px 50px;
