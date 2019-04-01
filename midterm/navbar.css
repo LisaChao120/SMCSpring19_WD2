@@ -1,6 +1,14 @@
 /************************************
  DEFAULT ***************************/
-.SMlogo {
+/* .nav-fix {
+  height: 55px;
+  width: 100%;
+} */
+
+/* .sm-index-logo {
+  width: 200px;
+} */
+.sm-index-logo {
   display: none;
 }
 nav {
@@ -51,14 +59,14 @@ nav a:active {
 
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
-  .SMlogo {
+  .sm-index-logo {
     display: none;
   }
 }
 
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
-  .SMlogo {
+  .sm-index-logo {
     display: inline-block;
   }
   .clearfix {
@@ -75,7 +83,7 @@ nav a:active {
     top: 50%;
     transform: translateY(-50%);
   }
-  .SMlogo {
+  .sm-index-logo {
     margin: 20px;
   }
   nav li {
