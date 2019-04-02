@@ -93,15 +93,20 @@ body {
 }
 th {
   text-transform: uppercase;
-  border-bottom: 2px solid #c69c6d;
-  padding: 5px 0px;
+  font-weight: bold;
+
+  padding: 20px 10px 20px 0px;
 }
 tbody tr td {
   padding-top: 5px;
 }
-thead {
+thead tr {
   margin: 0;
   padding: 0;
+  border-bottom: 2px solid #c69c6d;
+}
+thead tr {
+  text-align: left;
 }
 .SUBmenu-content table {
   margin-left: auto;
@@ -109,7 +114,7 @@ thead {
   margin-top: 60px;
 }
 .extra-charges {
-  margin: 10px;
+  margin: 20px 10px;
   font-size: 0.75rem;
 }
 .extra-charges p {
