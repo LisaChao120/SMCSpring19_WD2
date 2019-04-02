@@ -189,7 +189,7 @@ textarea[name="message"] {
 }
 button {
   color: white;
-  text-shadow: 3px black;
+  text-shadow: 2px 2px black;
   background-color: #c69c6d;
   border: 2px solid #c69c6d;
   border-radius: 5px;
@@ -208,13 +208,13 @@ button:hover {
 }
 button:focus {
   color: black;
-  font-size: bold;
+  font-weight: bold;
 }
 
 /* -----------------About page-------------- */
 
 .name-content p {
-  color: #f79423;
+  color: #da8c33;
 }
 .hours-content {
   color: white;
@@ -268,7 +268,6 @@ button:focus {
     transform: translate(-50%, -50%);
   }
   .logoLG-container img {
-    text-shadow: 2px black;
     width: 100%;
   }
   .home-img-container {
