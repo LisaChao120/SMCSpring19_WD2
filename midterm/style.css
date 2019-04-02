@@ -3,11 +3,13 @@ GLOBAL STYLES************************/
 
 html {
   margin: 0px;
+  font-size: 16px;
 }
 body {
   margin: 0px;
 }
 .container {
+  min-width: 375px;
   width: 100%;
   margin: 0 auto;
   background-color: black;
@@ -130,7 +132,13 @@ thead {
   color: white;
   margin: 0px auto;
   position: relative;
-  min-height: 250px;
+  /* min-height: 250px; */
+}
+.message-form {
+  text-align: center;
+}
+.subscribe-form {
+  text-align: center;
 }
 .clear-right {
   clear: right;
@@ -138,7 +146,6 @@ thead {
 .clear-left {
   clear: left;
 }
-
 .form-container {
   position: relative;
 }
@@ -152,13 +159,13 @@ form .subscribe-content {
   color: white;
   margin: 0;
   padding: 0;
-  font-size: 2.5em;
+  font-size: 1.2em;
 }
 .subscribe-content h2 {
   color: white;
   margin: 0;
   padding: 0;
-  font-size: 2.5em;
+  font-size: 1.2em;
 }
 
 input[type="text"] {
@@ -208,6 +215,12 @@ button:focus {
   .text-container p {
     font-size: 0.6em;
   }
+  .message-form {
+    text-align: center;
+  }
+  .subscribe-form {
+    text-align: center;
+  }
 }
 
 /*****************MEDIUM SCREEN*******************/
@@ -215,35 +228,39 @@ button:focus {
   .text-container p {
     font-size: 0.8em;
   }
+  /* ------------desktop CONTACT page-------- */
   .contact-container {
-    max-width: 768px;
+    max-width: 900px;
     padding-top: 100px;
   }
+  .message-content h2 {
+    padding-right: 10px;
+  }
   .message-content {
+    background: black;
     color: white;
-    height: 100px;
+    min-height: 100px;
     /* line-height: 100px; */
     padding: 0;
+    /* width: 50%; */
     white-space: nowrap;
+    text-align: right;
+    font-size: 1.2em;
   }
   .subscribe-content {
     color: white;
-    height: 100px;
+    min-height: 100px;
     /* line-height: 100px; */
     padding: 0;
     white-space: nowrap;
+    text-align: right;
+    font-size: 1.2em;
   }
-  .message-content h2 {
-    color: white;
-    margin: 0;
-    padding: 0 10px;
-    font-size: 1.5em;
+  .message-form {
+    text-align: center;
   }
-  .subscribe-content h2 {
-    color: white;
-    margin: 0;
-    padding: 0 10px;
-    font-size: 1.5em;
+  .subscribe-form {
+    text-align: center;
   }
 }
 /*****************LARGE SCREEN*******************/
@@ -268,6 +285,7 @@ button:focus {
     /* width: 50%; */
     white-space: nowrap;
     text-align: right;
+    font-size: 1.2em;
   }
   .subscribe-content {
     color: white;
@@ -276,11 +294,12 @@ button:focus {
     padding: 0;
     white-space: nowrap;
     text-align: right;
+    font-size: 1.2em;
   }
   .message-form {
-    text-align: left;
+    text-align: center;
   }
   .subscribe-form {
-    text-align: left;
+    text-align: center;
   }
 }
