@@ -148,6 +148,7 @@ thead {
 }
 .form-container {
   position: relative;
+  margin-bottom: 50px;
 }
 form .subscribe-content {
   position: absolute;
