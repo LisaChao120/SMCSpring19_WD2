@@ -51,7 +51,7 @@ body {
   background-size: cover;
 }
 .home-img-container img {
-  width: 100%; keeps width same width as container
+  width: 100%; /*keeps width same width as container*/
 }
 
 .text-container {
@@ -65,7 +65,7 @@ body {
   text-align: center;
   background-color: #c69c6d;
   width: 100%;
-} 
+}
 
 /* -------------------Menu page------------------- */
 
@@ -239,7 +239,7 @@ button:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0;
+    margin: 0px;
     text-align: center;
     background-color: #c69c6d;
     width: 100%;
@@ -252,6 +252,12 @@ button:focus {
   }
   .subscribe-form {
     text-align: center;
+  }
+  /* ----------------Master Menu page------------- */
+  .menu-img-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
   }
 }
 
