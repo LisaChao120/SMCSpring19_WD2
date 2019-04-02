@@ -67,7 +67,9 @@ body {
 }
 
 /* -------------------Menu page------------------- */
-
+.master-menu-container {
+  min-height: 400px;
+}
 .SUBmenu-container {
   /* border: 2px solid yellow; */
   position: relative;
