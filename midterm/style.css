@@ -67,9 +67,7 @@ body {
 }
 
 /* -------------------Menu page------------------- */
-.master-menu-container {
-  min-height: 400px;
-}
+
 .SUBmenu-container {
   /* border: 2px solid yellow; */
   position: relative;
@@ -345,6 +343,14 @@ button:focus {
 }
 /*****************LARGE SCREEN*******************/
 @media (min-width: 992px) {
+  /* menu page */
+
+  .ctr-submenu-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: black;
+  }
+
   .text-container p {
     font-size: 1em;
   }
