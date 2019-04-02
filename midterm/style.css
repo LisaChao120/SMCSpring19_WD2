@@ -270,6 +270,7 @@ button:focus {
     transform: translate(-50%, -50%);
     z-index: 20;
     text-align: center;
+    text-shadow: 2px solid black;
   }
   .coffeebeans-container {
     position: relative;
@@ -283,6 +284,7 @@ button:focus {
     transform: translate(-50%, -50%);
     z-index: 20;
     text-align: center;
+    text-shadow: 2px solid black;
   }
   .teas-container {
     position: relative;
@@ -296,6 +298,7 @@ button:focus {
     transform: translate(-50%, -50%);
     z-index: 20;
     text-align: center;
+    text-shadow: 2px solid black;
   }
 }
 
