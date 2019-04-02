@@ -18,7 +18,7 @@ body {
 }
 .floater-section {
   float: left;
-  width: 100%;
+  /* width: 100%; */
 }
 .content-relative-pos {
   position: relative;
@@ -51,16 +51,16 @@ body {
 }
 
 .text-container {
-  font-family: Domine, Martel, Prata, Georgia, "Times New Roman", Times, serif;
-  color: white;
-  font-size: 0.6em;
+  font-family: Prata, Georgia, "Times New Roman", Times, serif;
+  color: black;
+  font-size: 1em;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
   text-align: center;
-  background-color: black;
+  background-color: #c69c6d;
   width: 100%;
 }
 
@@ -251,9 +251,13 @@ button:focus {
   .text-container p {
     font-size: 1em;
   }
+  /* ------------desktop CONTACT page-------- */
   .contact-container {
     max-width: 900px;
     padding-top: 100px;
+  }
+  .message-content h2 {
+    padding-right: 10px;
   }
   .message-content {
     background: black;
@@ -261,8 +265,9 @@ button:focus {
     height: 100px;
     /* line-height: 100px; */
     padding: 0;
-    width: 50%;
+    /* width: 50%; */
     white-space: nowrap;
+    text-align: right;
   }
   .subscribe-content {
     color: white;
@@ -270,5 +275,12 @@ button:focus {
     /* line-height: 100px; */
     padding: 0;
     white-space: nowrap;
+    text-align: right;
+  }
+  .message-form {
+    text-align: left;
+  }
+  .subscribe-form {
+    text-align: left;
   }
 }
