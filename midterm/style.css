@@ -69,13 +69,13 @@ body {
 
 /* -------------------Menu page------------------- */
 
-.espresso-container {
+.SUBmenu-container {
   /* border: 2px solid yellow; */
   position: relative;
   min-height: 100px;
   overflow: auto;
 }
-.espresso-content {
+.SUBmenu-content {
   min-width: 300px;
   color: white;
   background-color: black;
@@ -104,7 +104,7 @@ thead {
   margin: 0;
   padding: 0;
 }
-.espresso-content table {
+.SUBmenu-content table {
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
