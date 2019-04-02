@@ -214,19 +214,26 @@ button:focus {
 /* -----------------About page-------------- */
 
 .name-content p {
-  color: #c69c6d;
+  color: #f79423;
+}
+.hours-content {
+  color: white;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 100px;
+}
+.address {
+  margin: 0 auto;
+  padding: 100px;
 }
 .hours {
-  color: white;
-  font-size: 1.2rem;
-}
-table .hours {
   color: #c69c6d;
 }
 .address h2 {
   color: white;
   font-size: 1.2rem;
 }
+
 .address p {
   color: #c69c6d;
   font-size: 1rem;
@@ -243,6 +250,16 @@ table .hours {
 }
 /*****************SMALL SCREEN*******************/
 @media (min-width: 375px) {
+  .hours-content {
+    color: white;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 30px 10px 0px 50px;
+  }
+  .address {
+    margin: 0 auto;
+    padding: 30px 10px 0px 50px;
+  }
   .logoLG-container {
     /* min-height: 237px; */
     position: absolute;
