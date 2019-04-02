@@ -1,15 +1,17 @@
 /* ***********************************
 GLOBAL STYLES************************/
-
+/* Brown #c69c6d */
+/* text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
 html {
   margin: 0px;
-  font-size: 16px;
 }
 body {
   margin: 0px;
+  font-size: 16px;
+  font-family: Prata, Georgia, "Times New Roman", Times, serif;
 }
 .container {
-  min-width: 375px;
+  min-width: 450px;
   width: 100%;
   margin: 0 auto;
   background-color: black;
@@ -26,12 +28,12 @@ body {
   position: relative;
 }
 .content {
+  position: static;
 }
 
 /* CONTENT SPECIFIC STYLING**************************
 **************************************************** */
-/* Brown #c69c6d */
-/* text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
+
 /* -------------------Home page----------------------------- */
 .logoLG-container {
   /* min-height: 237px; */
@@ -49,11 +51,10 @@ body {
   background-size: cover;
 }
 .home-img-container img {
-  width: 100%; /*keeps width same width as container*/
+  width: 100%; keeps width same width as container
 }
 
 .text-container {
-  font-family: Prata, Georgia, "Times New Roman", Times, serif;
   color: black;
   font-size: 1em;
   position: absolute;
@@ -64,7 +65,7 @@ body {
   text-align: center;
   background-color: #c69c6d;
   width: 100%;
-}
+} 
 
 /* -------------------Menu page------------------- */
 
@@ -211,7 +212,38 @@ button:focus {
 }
 
 /*****************SMALL SCREEN*******************/
-@media (min-width: 450px) {
+@media (min-width: 375px) {
+  .logoLG-container {
+    /* min-height: 237px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logoLG-container img {
+    text-shadow: 2px black;
+    width: 100%;
+  }
+  .home-img-container {
+    background: url("images/inside.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .home-img-container img {
+    width: 100%; /*keeps width same width as container*/
+  }
+
+  .text-container {
+    color: black;
+    font-size: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    background-color: #c69c6d;
+    width: 100%;
+  }
   .text-container p {
     font-size: 0.6em;
   }

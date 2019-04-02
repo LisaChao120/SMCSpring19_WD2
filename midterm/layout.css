@@ -3,7 +3,7 @@
 /* DEFAULT */
 
 /*****************SMALL SCREEN*******************/
-@media (min-width: 450px) {
+@media (min-width: 375px) {
   .sm-width-25 {
     width: 25%;
   }
@@ -54,7 +54,6 @@
   }
   .lg-width-50 {
     width: 50%;
-    
   }
   .lg-width-75 {
     width: 75%;
