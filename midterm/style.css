@@ -212,13 +212,35 @@ button:focus {
 }
 
 /* -----------------About page-------------- */
-.about-content p {
+
+.name-content p {
   color: #c69c6d;
 }
 .hours {
   color: white;
+  font-size: 1.2rem;
 }
-
+table .hours {
+  color: #c69c6d;
+}
+.address h2 {
+  color: white;
+  font-size: 1.2rem;
+}
+.address p {
+  color: #c69c6d;
+  font-size: 1rem;
+}
+.about-content {
+  position: relative;
+}
+.about-text-container {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  background-color: #c69c6d;
+}
 /*****************SMALL SCREEN*******************/
 @media (min-width: 375px) {
   .logoLG-container {
