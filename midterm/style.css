@@ -255,9 +255,47 @@ button:focus {
   }
   /* ----------------Master Menu page------------- */
   .menu-img-container {
+    text-align: center;
+    padding: 40px 10px 10px 20px;
+  }
+  .espresso-container {
     position: relative;
-    margin: 0 auto;
-    padding: 20px;
+  }
+  .espresso-container h2 {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    text-align: center;
+  }
+  .coffeebeans-container {
+    position: relative;
+  }
+  .coffeebeans-container h2 {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    text-align: center;
+  }
+  .teas-container {
+    position: relative;
+  }
+  .teas-container h2 {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    text-align: center;
   }
 }
 
