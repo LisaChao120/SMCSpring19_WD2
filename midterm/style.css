@@ -101,9 +101,6 @@ tr {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-/* .coffeebeans-table {
-  margin-bottom: 50px;
-} */
 
 tbody tr td {
   padding-top: 5px;
@@ -446,7 +443,7 @@ button:focus {
     text-align: center;
   }
   /* desktop ABOUT page  */
-  
+
   .fixed-container-width {
     max-width: 1020px;
     margin: 0 auto;
