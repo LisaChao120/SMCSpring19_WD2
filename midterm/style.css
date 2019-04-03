@@ -326,7 +326,7 @@ button:focus {
     transform: translate(-50%, -50%);
     z-index: 20;
     text-align: center;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
   }
   .coffeebeans-container {
     position: relative;
@@ -340,7 +340,7 @@ button:focus {
     transform: translate(-50%, -50%);
     z-index: 20;
     text-align: center;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
   }
   .teas-container {
     position: relative;
@@ -354,7 +354,7 @@ button:focus {
     transform: translate(-50%, -50%);
     z-index: 20;
     text-align: center;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
   }
 }
 
