@@ -52,10 +52,14 @@ body {
 .home-img-container {
   background: url("images/inside.jpg") no-repeat center;
   background-size: cover;
+  min-height:500px;
+  /* max-width:1000px; */
+
 }
-.home-img-container img {
+/* .home-img-container img {
   width: 100%; /*keeps width same width as container*/
-}
+  /* min-height: 500px; */
+} */
 
 .text-container {
   color: black;
