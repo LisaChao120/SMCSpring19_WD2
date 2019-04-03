@@ -94,8 +94,12 @@ body {
 th {
   text-transform: uppercase;
   font-weight: bold;
-
   padding: 20px 10px 20px 0px;
+}
+th,
+tr {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 /* .coffeebeans-table {
   margin-bottom: 50px;
@@ -260,11 +264,11 @@ button:focus {
     color: white;
     font-size: 1rem;
     margin: 0 auto;
-    padding: 30px 10px 0px 50px;
+    /* padding: 30px 10px 0px 50px; */
   }
   .address {
     margin: 0 auto;
-    padding: 30px 10px 0px 50px;
+    /* padding: 30px 10px 0px 50px; */
   }
   .logoLG-container {
     /* min-height: 237px; */
