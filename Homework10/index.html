@@ -52,7 +52,22 @@
     <button id="resumeButton">
       <a href="resume.html">View resume</a>
     </button>
-    <button id="triggerButton">new image</button>
-    <script></script>
+    <button id="imageButton">new image</button>
+    <button id="toggleButton">Toggle</button>
+    <script>
+      const CTA = document.querySelector("toggleButton");
+      const ALERT = document.querySelector("#toggle");
+
+      CTA.classList.remove("hide");
+      ALERT.classList.add("hide");
+
+      function reveal(e) {
+        e.preventDefault();
+        CTA.classList.toggle("hide");
+        ALERT.classList.toggle("hide");
+      }
+      CTA.onclick = reveal;
+      CTA.onclick = console.log("The button was clicked!");
+    </script>
   </body>
 </html>

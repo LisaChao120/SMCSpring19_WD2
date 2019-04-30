@@ -8,6 +8,10 @@ body {
   height: 0;
   overflow: hidden;
 }
+#toggle {
+  color: red;
+  font-size: 22px;
+}
 .container {
   position: relative;
   margin: 0;
