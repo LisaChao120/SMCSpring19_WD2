@@ -55,19 +55,35 @@
     <button id="imageButton">new image</button>
     <button id="toggleButton">Toggle</button>
     <script>
-      const CTA = document.querySelector("toggleButton");
-      const ALERT = document.querySelector("#toggle");
+      // const toggleButton = document.querySelector("toggleButton");
+      // const ALERT = document.querySelector("#toggle");
 
-      CTA.classList.remove("hide");
-      ALERT.classList.add("hide");
+      // toggleButton.classList.remove("hide");
+      // ALERT.classList.add("hide");
 
-      function reveal(e) {
-        e.preventDefault();
-        CTA.classList.toggle("hide");
-        ALERT.classList.toggle("hide");
-      }
-      CTA.onclick = reveal;
-      CTA.onclick = console.log("The button was clicked!");
+      // function reveal(e) {
+      //   e.preventDefault();
+      //   toggleButton.classList.toggle("hide");
+      //   ALERT.classList.toggle("hide");
+      // }
+      // toggleButton.addEventListener("click", reveal, false);
+
+      // var myButton = document.getElementById("triggerButton");
+      var numberSpan = document.getElementById("numberBox");
+      console.log(numberSpan);
+      var randomNumber = Math.random();
+      numberSpan.innerText = randomNumber;
+
+      var changeOpacity = function() {
+        var opacity = Math.random();
+
+        var body = document.getElementById("mainBody");
+        body.style.imageOpacity = opacity;
+      };
+
+      var myButton = document.getElementById("opacityButton");
+      myButton.addEventListener("click", changeOpacity);
+      changeOpacity();
     </script>
   </body>
 </html>
