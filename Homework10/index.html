@@ -40,6 +40,7 @@
           </div>
           <div class="hero-img-container">
             <img
+              id="img-opacity"
               src="images/homepage.jpg"
               alt="portfolio hero image"
               class="abs-pos"
@@ -53,7 +54,7 @@
       <a href="resume.html">View resume</a>
     </button>
     <button id="imageButton">new image</button>
-    <button id="toggleButton">Toggle</button>
+    <button id="opacityButton">Change Opacity</button>
     <script>
       // const toggleButton = document.querySelector("toggleButton");
       // const ALERT = document.querySelector("#toggle");
@@ -69,21 +70,18 @@
       // toggleButton.addEventListener("click", reveal, false);
 
       // var myButton = document.getElementById("triggerButton");
-      var numberSpan = document.getElementById("numberBox");
-      console.log(numberSpan);
-      var randomNumber = Math.random();
-      numberSpan.innerText = randomNumber;
 
+      var randomNumber = Math.random();
+      console.log(randomNumber);
       var changeOpacity = function() {
         var opacity = Math.random();
-
-        var body = document.getElementById("mainBody");
-        body.style.imageOpacity = opacity;
+        console.log(opacity);
+        var bunghole = document.getElementById("img-opacity");
+        bunghole.style.opacity = opacity;
       };
 
-      var myButton = document.getElementById("opacityButton");
-      myButton.addEventListener("click", changeOpacity);
-      changeOpacity();
+      var opacityButton = document.getElementById("opacityButton");
+      opacityButton.addEventListener("click", changeOpacity);
     </script>
   </body>
 </html>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body id="mainBody">
+  <body id="bodyBackground">
     <h1>Hello world</h1>
 
     <button id="triggerButton">Change Background</button>
@@ -15,6 +15,7 @@
     <script>
       var numberSpan = document.getElementById("numberBox");
       console.log(numberSpan);
+      
       var randomNumber = Math.random();
       numberSpan.innerText = randomNumber;
 
@@ -24,14 +25,14 @@
         var blueColor = Math.random() * 255;
         var textColor =
           "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
-        var subHeader = numberSpan.parentElement;
-        var body = document.getElementById("mainBody");
+        // var subHeader = numberSpan.parentElement;
+        var body = document.getElementById("bodyBackground");
         body.style.backgroundColor = textColor;
       };
 
       var myButton = document.getElementById("triggerButton");
       myButton.addEventListener("click", changeBackground);
-      changeBackground();
+      // changeBackground();
     </script>
   </body>
 </html>
