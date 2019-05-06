@@ -1,0 +1,143 @@
+/************************************
+ DEFAULT ***************************/
+/* .nav-fix {
+  height: 55px;
+  width: 100%;
+} */
+
+/* .sm-index-logo {
+  width: 200px;
+} */
+/* .sm-index-logo {
+  display: none;
+} */
+nav {
+  font-family: Prata, Georgia, "Times New Roman", Times, serif;
+  background-color: white;
+  width: 100%;
+  padding: 10px 0px;
+  /* position: fixed; */
+  z-index: 10;
+}
+nav a {
+  width: 100%;
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  line-height: 36px;
+}
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+nav li {
+  display: block;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+nav li:last-child {
+  border-bottom: none;
+}
+nav a:link {
+  text-decoration: none;
+  color: black;
+}
+nav a:visited {
+  text-decoration: none;
+  color: black;
+} /*visited links*/
+
+nav a:hover {
+  text-decoration: none;
+  color: #c69c6d;
+}
+nav a:active {
+  text-decoration: none;
+  color: #c69c6d;
+  font-weight: bold;
+} /*pressed links*/
+
+/*****************SMALL SCREEN*******************/
+@media (min-width: 450px) {
+  .sm-index-logo {
+    display: inline-block;
+    margin: 20px;
+  }
+  .toggle {
+    display: inline-block;
+    float: right;
+  }
+}
+/*****************MEDIUM SCREEN*******************/
+@media (min-width: 768px) {
+  .sm-index-logo {
+    display: inline-block;
+    margin: 20px;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+  nav {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px 50px;
+    margin: 0 auto;
+  }
+  nav li:last-child {
+    border-bottom: none;
+  }
+  nav a {
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5rem;
+  }
+}
+/*****************LARGE SCREEN*******************/
+@media (min-width: 992px) {
+  .clearfix {
+    clear: both;
+  }
+  nav {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px 50px;
+    margin: 0 auto;
+  }
+  nav li:last-child {
+    border-bottom: none;
+  }
+  nav a {
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5rem;
+  }
+}
