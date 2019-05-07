@@ -201,16 +201,17 @@ textarea[name="message"] {
   min-width: 200px;
 }
 button {
+  padding-top: 40px;
   color: white;
-  text-shadow: 1px 1px black;
-  background-color: #c69c6d;
-  border: 2px solid #c69c6d;
-  border-radius: 5px;
+  /* text-shadow: 1px 1px black;
+  background-color: #c69c6d; */
+  border: none;
+  /* border-radius: 5px; */
   width: 100px;
-  margin: 10px;
-  font-size: 1em;
+  margin: 20px;
+  /* font-size: 1em; */
 }
-button:active {
+/* button:active {
   background-color: #c69c6d;
   color: white;
 }
@@ -222,7 +223,7 @@ button:hover {
 button:focus {
   color: black;
   font-weight: bold;
-}
+} */
 
 /* -----------------About page-------------- */
 
