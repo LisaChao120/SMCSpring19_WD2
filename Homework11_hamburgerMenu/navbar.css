@@ -72,6 +72,10 @@ nav a:active {
 }
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
+  .toggle {
+    display: none;
+  }
+
   .sm-index-logo {
     display: inline-block;
     margin: 20px;
@@ -110,6 +114,9 @@ nav a:active {
 }
 /*****************LARGE SCREEN*******************/
 @media (min-width: 992px) {
+  .toggle {
+    display: none;
+  }
   .clearfix {
     clear: both;
   }
