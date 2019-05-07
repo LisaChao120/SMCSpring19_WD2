@@ -1,7 +1,5 @@
-/* ***********************************
+/************************************
 GLOBAL STYLES************************/
-/* Brown #c69c6d */
-/* text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
 html {
   margin: 0px;
 }
@@ -14,13 +12,11 @@ body {
   min-width: 375px;
   width: 100%;
   margin: 0 auto;
-  background-color:#2d0d04;
+  background-color: #2d0d04;
 }
-.blk-fill {
-  background-color: black;
-  min-height: 600px;
-}
-/* use clear fix to keep parent container from collapsing down since everything inside was floated */
+
+/* use clear fix to keep parent container from 
+collapsing down since everything inside was floated */
 .clearfix {
   clear: both;
 }
@@ -40,229 +36,13 @@ body {
 
 /* -------------------Home page----------------------------- */
 
-
-
-
-
-
-
-/* button {
-  padding-top: 40px;
-  color:#2d0d04; */
-  /* text-shadow: 1px 1px black;
-  background-color: #c69c6d; */
-  /* border: none; */
-  /* border-radius: 5px; */
-  /* width: 100px;
-  margin: 20px; */
-  /* font-size: 1em; */
-/* } */
-/* button:active {
-  background-color: #c69c6d;
-  color: white;
-}
-button:hover {
-  color: #c69c6d;
-  background-color: white;
-  border: 2px solid white;
-}
-button:focus {
-  color: black;
-  font-weight: bold;
-} */
-
-
 /*****************SMALL SCREEN*******************/
 @media (min-width: 375px) {
-  .hours-content {
-    color: white;
-    font-size: 1rem;
-    margin: 0 auto;
-    /* padding: 30px 10px 0px 50px; */
-  }
-  .address {
-    margin: 0 auto;
-    /* padding: 30px 10px 0px 50px; */
-  }
-  .logoLG-container {
-    /* min-height: 237px; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .logoLG-container img {
-    width: 100%;
-  }
-  .home-img-container {
-    background: url("images/inside.jpg") no-repeat center;
-    background-size: cover;
-  }
-  .home-img-container img {
-    width: 100%; /*keeps width same width as container*/
-  }
-
-  .text-container {
-    color: black;
-    font-size: 1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0px;
-    text-align: center;
-    background-color: #c69c6d;
-    width: 100%;
-  }
-  .text-container p {
-    font-size: 0.6em;
-  }
-  .message-form {
-    text-align: center;
-  }
-  .subscribe-form {
-    text-align: center;
-  }
-  /* ----------------Master Menu page------------- */
-  .menu-img-container {
-    text-align: center;
-    padding: 40px 10px 10px 20px;
-  }
-  .espresso-container {
-    position: relative;
-  }
-  .espresso-container h2 {
-    color: white;
-    font-size: 2em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 20;
-    text-align: center;
-    text-shadow: 2px 2px black;
-  }
-  .coffeebeans-container {
-    position: relative;
-  }
-  .coffeebeans-container h2 {
-    color: white;
-    font-size: 2em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 20;
-    text-align: center;
-    text-shadow: 2px 2px black;
-  }
-  .teas-container {
-    position: relative;
-  }
-  .teas-container h2 {
-    color: white;
-    font-size: 2em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 20;
-    text-align: center;
-    text-shadow: 2px 2px black;
-  }
 }
 
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
-  .text-container p {
-    font-size: 0.8em;
-  }
-  /* ------------desktop CONTACT page-------- */
-  .contact-container {
-    max-width: 900px;
-    padding-top: 100px;
-  }
-  .message-content h2 {
-    padding-right: 10px;
-  }
-  .message-content {
-    background: black;
-    color: white;
-    min-height: 100px;
-    /* line-height: 100px; */
-    padding: 0;
-    /* width: 50%; */
-    white-space: nowrap;
-    text-align: right;
-    font-size: 1.2em;
-  }
-  .subscribe-content {
-    color: white;
-    min-height: 100px;
-    /* line-height: 100px; */
-    padding: 0;
-    white-space: nowrap;
-    text-align: right;
-    font-size: 1.2em;
-  }
-  .message-form {
-    text-align: center;
-  }
-  .subscribe-form {
-    text-align: center;
-  }
 }
 /*****************LARGE SCREEN*******************/
 @media (min-width: 992px) {
-  /* menu page */
-
-  .ctr-submenu-container {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    background-color: black;
-  }
-
-  .text-container p {
-    font-size: 1em;
-  }
-  /* ------------desktop CONTACT page-------- */
-  .contact-container {
-    max-width: 900px;
-    padding-top: 100px;
-  }
-  .message-content h2 {
-    padding-right: 10px;
-  }
-  .message-content {
-    background: black;
-    color: white;
-    height: 100px;
-    /* line-height: 100px; */
-    padding: 0;
-    /* width: 50%; */
-    white-space: nowrap;
-    text-align: right;
-    font-size: 1.2em;
-  }
-  .subscribe-content {
-    color: white;
-    height: 100px;
-    /* line-height: 100px; */
-    padding: 0;
-    white-space: nowrap;
-    text-align: right;
-    font-size: 1.2em;
-  }
-  .message-form {
-    text-align: center;
-  }
-  .subscribe-form {
-    text-align: center;
-  }
-  /* desktop ABOUT page  */
-
-  .fixed-container-width {
-    max-width: 1020px;
-    margin: 0 auto;
-  }
 }
