@@ -14,7 +14,7 @@ body {
   min-width: 375px;
   width: 100%;
   margin: 0 auto;
-  background-color: black;
+  background-color:#2d0d04;
 }
 .blk-fill {
   background-color: black;
@@ -39,178 +39,24 @@ body {
 **************************************************** */
 
 /* -------------------Home page----------------------------- */
-.logoLG-container {
-  /* min-height: 237px; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.logoLG-container img {
-  width: 100%;
-}
-.home-img-container {
-  background: url("images/inside.jpg") no-repeat center;
-  background-size: cover;
-  min-height:500px;
-  /* max-width:1000px; */
 
-}
-/* .home-img-container img {
-  width: 100%; /*keeps width same width as container*/
-  /* min-height: 500px; */
-} */
 
-.text-container {
-  color: black;
-  font-size: 1em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  text-align: center;
-  background-color: #c69c6d;
-  width: 100%;
-}
 
-/* -------------------Menu page------------------- */
 
-.SUBmenu-container {
-  /* border: 2px solid yellow; */
-  position: relative;
-  min-height: 100px;
-  overflow: auto;
-}
-.SUBmenu-content {
-  min-width: 300px;
-  color: white;
-  background-color: black;
 
-  margin: 60px auto;
-  position: relative;
-  font-size: 1.25em;
-  padding: 0 10px;
-}
-.ingredients {
-  font-size: 0.75em;
-  color: #c69c6d;
-  font-style: italic;
-  font-weight: lighter;
-  padding-right: 10px;
-}
-th {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 20px 10px 20px 0px;
-}
-th,
-tr {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
 
-tbody tr td {
-  padding-top: 5px;
-}
-thead tr {
-  margin: 0;
-  padding: 0;
-  border-bottom: 2px solid #c69c6d;
-}
-thead tr {
-  text-align: left;
-}
-.price {
-  font-size: 1rem;
-}
-.SUBmenu-content table {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
-}
-.extra-charges {
-  margin: 20px 10px;
-  font-size: 0.75rem;
-}
-.extra-charges p {
-  text-align: center;
-  margin: 0 auto;
-  padding: 2px;
-  color: white;
-}
 
-/* -------------------Contact page--------------- */
-.contact-container {
-  padding: 50px 0;
-  background-color: black;
-  width: 100%;
-  margin: 0 auto;
-}
-.subscribe-content,
-.message-content {
-  text-align: center;
-  color: white;
-  margin: 0px auto;
-  position: relative;
-  /* min-height: 250px; */
-}
-.message-form {
-  text-align: center;
-}
-.subscribe-form {
-  text-align: center;
-}
-.clear-right {
-  clear: right;
-}
-.clear-left {
-  clear: left;
-}
-.form-container {
-  position: relative;
-  margin-bottom: 50px;
-}
-form .subscribe-content {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.message-content h2 {
-  color: white;
-  margin: 0;
-  padding: 0;
-  font-size: 1.2em;
-}
-.subscribe-content h2 {
-  color: white;
-  margin: 0;
-  padding: 0;
-  font-size: 1.2em;
-}
-
-input[type="text"] {
-  width: 50%;
-  max-width: 300px;
-  min-width: 200px;
-}
-textarea[name="message"] {
-  width: 50%;
-  max-width: 300px;
-  min-width: 200px;
-}
-button {
+/* button {
   padding-top: 40px;
-  color: white;
+  color:#2d0d04; */
   /* text-shadow: 1px 1px black;
   background-color: #c69c6d; */
-  border: none;
+  /* border: none; */
   /* border-radius: 5px; */
-  width: 100px;
-  margin: 20px;
+  /* width: 100px;
+  margin: 20px; */
   /* font-size: 1em; */
-}
+/* } */
 /* button:active {
   background-color: #c69c6d;
   color: white;
@@ -225,45 +71,7 @@ button:focus {
   font-weight: bold;
 } */
 
-/* -----------------About page-------------- */
 
-.name-content p {
-  color: #da8c33;
-}
-.hours-content {
-  color: white;
-  font-size: 1rem;
-  margin: 0 auto;
-  padding: 100px;
-}
-.address {
-  margin: 0 auto;
-  padding: 100px;
-}
-.hours {
-  color: #c69c6d;
-  text-shadow: 0.5px 0 0 grey;
-}
-.address h2 {
-  color: white;
-  font-size: 1.2rem;
-}
-
-.address p {
-  color: #c69c6d;
-  font-size: 1rem;
-  text-shadow: 0.5px 0 0 grey;
-}
-.about-content {
-  position: relative;
-}
-.about-text-container {
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  top: 60%;
-  background-color: #c69c6d;
-}
 /*****************SMALL SCREEN*******************/
 @media (min-width: 375px) {
   .hours-content {

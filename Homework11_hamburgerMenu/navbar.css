@@ -51,13 +51,19 @@ nav a:visited {
 
 nav a:hover {
   text-decoration: underline;
-  color: #eecc7d;
+  color: hsl(42, 77%, 71%);
 }
 nav a:active {
   color: #eecc7d;
   font-weight: bold;
 } /*pressed links*/
-
+button {
+  padding-top: 40px;
+  background-color: #2d0d04;
+  border: none;
+  width: 100px;
+  margin: 20px;
+}
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
   .sm-index-logo {
