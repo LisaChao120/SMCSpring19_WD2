@@ -13,7 +13,7 @@
 } */
 nav {
   font-family: "Rye", cursive;
-  background-color: white;
+  background-color: #2d0d04;
   width: 100%;
   padding: 10px 0px;
   /* position: fixed; */
@@ -23,7 +23,7 @@ nav a {
   width: 100%;
   font-size: 22px;
   text-decoration: none;
-  color: white;
+  color: #f4b624;
   line-height: 36px;
 }
 nav ul {
@@ -42,20 +42,19 @@ nav li:last-child {
 }
 nav a:link {
   text-decoration: none;
-  color: black;
+  color: #eecc7d;
 }
 nav a:visited {
   text-decoration: none;
-  color: black;
+  color: #eecc7d;
 } /*visited links*/
 
 nav a:hover {
-  text-decoration: none;
-  color: #c69c6d;
+  text-decoration: underline;
+  color: #eecc7d;
 }
 nav a:active {
-  text-decoration: none;
-  color: #c69c6d;
+  color: #eecc7d;
   font-weight: bold;
 } /*pressed links*/
 
