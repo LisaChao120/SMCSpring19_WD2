@@ -7,6 +7,7 @@ body {
   margin: 0px;
   font-size: 16px;
   font-family: Prata, Georgia, "Times New Roman", Times, serif;
+  height: 100%;
 }
 .container {
   min-width: 375px;
@@ -14,7 +15,13 @@ body {
   margin: 0 auto;
   background-color: #2d0d04;
 }
-
+#goldrush {
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* use clear fix to keep parent container from 
 collapsing down since everything inside was floated */
 .clearfix {

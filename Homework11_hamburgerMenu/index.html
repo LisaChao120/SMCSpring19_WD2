@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
 
     <!-- SCRIPTS -->
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
   </head>
   <body>
     <header>
@@ -53,6 +53,26 @@
       </nav>
       <div class="nav-fix"></div>
     </header>
-    <div class="container"></div>
+    <div class="container">
+      <img id="goldrush" src="images/goldrush.jpeg" alt="gold rush image" />
+    </div>
+    <script>
+      var switchHamburger = function() {
+        var navbar = document.getElementById("hamburgerNavbar");
+        var src1 = "images/hamburger.png";
+        var src2 = "images/x.png";
+        if (navbar.style.display === "block") {
+          navbar.style.display = "none";
+          document.getElementById("hamburger").src = src1;
+        } else {
+          navbar.style.display = "block";
+          document.getElementById("hamburger").src = src2;
+        }
+      };
+
+      document
+        .getElementById("toggleSwitch")
+        .addEventListener("click", switchHamburger);
+    </script>
   </body>
 </html>
