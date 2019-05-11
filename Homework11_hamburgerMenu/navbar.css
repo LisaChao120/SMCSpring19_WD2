@@ -64,6 +64,9 @@ button {
 }
 /*****************SMALL SCREEN*******************/
 @media (min-width: 450px) {
+  #hamburgerNavbar {
+    display: none;
+  }
   .sm-index-logo {
     display: inline-block;
     margin: 20px;
