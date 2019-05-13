@@ -22,9 +22,7 @@
       </form>
     </main>
     <script>
-      var characterDropdown = document.getElementById("friendsCharacters");
-      characterDropdown.addEventListener("change", ross);
-      function rachel() {
+        function rachel() {
         alert(
           "Rachel Karen Green (Jennifer Aniston) is the spoiled but warm-hearted and likable daughter of a rich vascular surgeon and his wife."
         );
@@ -54,6 +52,37 @@
           "Dr. Ross Eustace Geller, Ph.D. (David Schwimmer) is most intelligent of the six main characters, but at the same time a clumsy, quirky man, Ross is known for being a smart, know-it-all who prides himself on his rationality, despite his clear hopeless romanticism."
         );
       }
+      /* OPTION #2: PUT EACH CHARACTER DESCRIPTION INTO AN ARRAY AS STRINGS
+      if (this.value === "rachel") {alert (array2 [0]);} 
+      else if (this.value === "monica") {alert (array2 [1]);}
+
+      *****BELOW IS THE ARRAY FOR OPTION #2****************
+      var array2 = [
+      'Rachel Karen Green (Jennifer Aniston) is the spoiled but warm-hearted and likable daughter of a rich vascular surgeon and his wife.', 
+      "Monica E. Geller-Bing (Courteney Cox) is described as the mother hen of the group,[18] and is known for her obsessive-compulsive and competitive nature.",
+      "Phoebe Buffay-Hannigan (Lisa Kudrow) is an odd, ditzy albeit sweet-natured masseuse who grew up homeless, sometimes telling her friends outlandish tales of life on the street. ",
+      "Joseph Francis 'Joey' Tribbiani Jr. (Matt LeBlanc) is a good-natured but not-so-bright struggling actor and food lover.",
+      "Chandler Muriel Bing (Matthew Perry)is known for his sarcastic sense of humor and is often depicted as being somewhat of a hapless individual, suffering a lot of bad luck while struggling through life and occasionally struggling with an on-and-off smoking addiction.",
+      "Dr. Ross Eustace Geller, Ph.D. (David Schwimmer) is most intelligent of the six main characters, but at the same time a clumsy, quirky man, Ross is known for being a smart, know-it-all who prides himself on his rationality, despite his clear hopeless romanticism."
+      ];
+
+      OPTION #3: DOES NOT USE AN ARRAY AND ONLY CALLS ON A FUNCTION
+      if (this.value === "rachel") {rachel ()} else if (this.value === "monica") {monica ()}
+      */
+      var descArray = [rachel, monica, phoebe, joey, chandler, ross];
+
+      var characterDropdown = document.getElementById("friendsCharacters");
+      characterDropdown.addEventListener("change", function() {
+        console.log(this.value);
+        if (this.value === "rachel") descArray [0]();
+        else if (this.value === "monica") descArray [1]();
+        else if (this.value === "phoebe") descArray [2]();
+        else if (this.value === "joey") descArray [3]();
+        else if (this.value === "chandler") descArray [4]();
+        else if (this.value === "ross") descArray [5]();
+      });
+
+    
     </script>
   </body>
 </html>
