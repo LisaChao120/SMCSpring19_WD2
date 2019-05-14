@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <title>Which Friends Character Are You?</title>
   </head>
   <body>
+    <h1>Which Friends character are you?</h1>
     <main>
-      <h1>Which Friends character are you?</h1>
       <form action="" method="POST">
-        <label for="friendsCharacters">Friends Characters</label>
+        <label for="friendsCharacters">Select</label>
         <select name="characters" id="friendsCharacters">
           <option value="rachel">Rachel Green</option>
           <option value="monica">Monica Geller</option>
@@ -21,8 +22,9 @@
         </select>
       </form>
     </main>
+
     <script>
-        function rachel() {
+      function rachel() {
         alert(
           "Rachel Karen Green (Jennifer Aniston) is the spoiled but warm-hearted and likable daughter of a rich vascular surgeon and his wife."
         );
@@ -74,15 +76,16 @@
       var characterDropdown = document.getElementById("friendsCharacters");
       characterDropdown.addEventListener("change", function() {
         console.log(this.value);
-        if (this.value === "rachel") descArray [0]();
-        else if (this.value === "monica") descArray [1]();
-        else if (this.value === "phoebe") descArray [2]();
-        else if (this.value === "joey") descArray [3]();
-        else if (this.value === "chandler") descArray [4]();
-        else if (this.value === "ross") descArray [5]();
+        if (this.value === "rachel") descArray[0]();
+        else if (this.value === "monica") descArray[1]();
+        else if (this.value === "phoebe") descArray[2]();
+        else if (this.value === "joey") descArray[3]();
+        else if (this.value === "chandler") descArray[4]();
+        else if (this.value === "ross") descArray[5]();
       });
-
-    
     </script>
+    <div class="container">
+      <img id="img-opacity" src="images/friends.jpg" alt="friends" />
+    </div>
   </body>
 </html>
