@@ -36,7 +36,7 @@
       .addonTacos {
         display: inline-block;
       }
-      .addon {
+      .addonBeer {
         display: inline-block;
       }
     </style>
@@ -54,7 +54,7 @@
         <li><button id="btnAddTylenol">Add Tylenol</button></li>
         <li><button id="btnAddTacos">Add Tacos</button></li>
         <li><button id="btnAddBeer">Add Beer</button></li>
-        <li><button id="remove">Remove item</button></li>
+        <li><button id="byePuppy">bye puppy</button></li>
       </ul>
     </div>
 
@@ -129,12 +129,12 @@
           var test = 1;
           console.log(test);
           $(".container").prepend(
-            '<div class="addon"><img src="images/beer.jpg"/></div>'
+            '<div class="addonBeer"><img src="images/beer.jpg"/></div>'
           );
         });
 
-        $("#remove").click(function() {
-          $(".addon:last-child").remove();
+        $("#byePuppy").click(function() {
+          $(".addonPuppy:last-child").remove();
         });
       });
     </script>
