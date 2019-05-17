@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <title>class13</title>
+
     <style>
       .container {
         width: 500px;
         height: 400px;
         background-color: azure;
       }
+
       .blue-container {
         background-color: lightskyblue;
+      }
 
-        .box {
-          width: 150px;
-          height: 150px;
-          background-color: ;
-        }
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: chartreuse;
+        display: none;
       }
     </style>
   </head>
@@ -29,10 +31,12 @@
     ready and document needs to be loaded before running jquery
     keep it separate,and you'll need to create your own script below it -->
     <button id="button1">Append Things</button>
-    <button id="button2">prepend Things</button>
-    <button id="button3">remove addons</button>
-    <button id="colorToggle">switch color</button>
-    <button id="button4">empty container</button>
+    <button id="button2">Prepend Things</button>
+
+    <button id="button3">Remove Addons</button>
+    <button id="button4">Empty Container</button>
+
+    <button id="colorToggle">Switch color</button>
     <div class="container">
       I am child 1
 
@@ -42,88 +46,111 @@
     <form action="" method="POST">
       <input type="text" name="name" id="myName" />
       <input type="email" name="email" id="myEmail" />
-      <input type="submit" value="Submit" />
 
       <select name="effects" id="FX">
-        <option value="">default</option>
-        <option value="show">show an element</option>
-        <option value="hide">hide an element</option>
+        <option value="" default></option>
+        <option value="show">Show an element</option>
+        <option value="hide">Hide an element</option>
         <option value="fadein">fade it in</option>
-        <option value="fadeout">fade it out</option>
-        <option value="slidedown">slide it down</option>
-        <option value="slideup">slide it up</option>
+        <option value="fadeout">Fade it out</option>
+        <option value="slidedown">Slide it down</option>
+        <option value="slideup">Slide it up</option>
       </select>
+      <input type="submit" value="Submit" />
     </form>
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
-                    // below tells jq to run only after doc is prepared
-                    // and ready to go, $ is shorthand for jquery
-                    $(document).ready(function() {
-                    // your function goes in here
-                    // $(.'header') replaces document.getElementByClassName('header')[0]
-                    // var topinjQuery = $('#Top);
-                    // abovr is same as: var topinjQuery = document.getElementById('Top');
+      // below tells jq to run only after doc is prepared
+      // and ready to go, $ is shorthand for jquery
+      $(document).ready(function() {
+        // your function goes in here
+        // $(.'header') replaces document.getElementByClassName('header')[0]
+        // var topinjQuery = $('#Top);
+        // abovr is same as: var topinjQuery = document.getElementById('Top');
 
-                    $("body").css("background-color", "red");
-                    $(".header").css("color", "#fefefe");
-      $('#FX').change(function(){
+        $("body").css("background-color", "red");
+        $(".header").css("color", "#fefefe");
+        console.log($("body").css("background-color"));
+        $("#FX").change(function() {
           var selection = $(this).val();
           // this refers to the element '#FX'
-          if(selection === "show"){
-              $('.box').show();
-              }else if(selection ==='hide'){
-                  $('.box').hide();
-              }
 
+          if (selection === "show") {
+            $(".box").show();
+          } else if (selection === "hide") {
+            $(".box").hide();
+          } else if (selection === "fadein") {
+            $(".box").fadeIn(2000);
+          } else if (selection === "fadeout") {
+            $(".box").fadeOut(3000);
+          } else if (selection === "slidedown") {
+            $(".box").slideDown(12000);
+          } else if (selection === "slideup") {
+            $(".box").slideUp(3000);
           }
-      })
+        });
 
-                    $('#colorToggle').click(function(){
-                    $('.container').toggleClass('blue-container');})
-                    // above: container, add blue-container if doesnt have,
-                    // or remove if it does, tramples bc written after in css heirarchy
+        $("#colorToggle").click(function() {
+          $(".container").toggleClass("blue-container");
+        });
+        // above: container, add blue-container if doesnt have,
+        // or remove if it does, tramples bc written after in css heirarchy
 
-                  // below is the oppsite of focus of an input
-                  $('#myName').blur(function(){
-                  console.log($('#myName').val());
-                  if ('#myEmail').val() === "Lisa")
-            {
+        // below is the oppsite of focus of an input
+        $("#myName").blur(function() {
+          console.log($("#myName").val());
 
-            }      ('lisachao@me.com');
-                  });
-                          /*
-                          $(".container").append(
-                        '<div class="container-child">I am child 2</div>');
-                        //   adds a conatner child inside the original container
-                          $(".container").prepend(
-                          '<div class="container-child">I am child 3</div>');
-                          // prepend adds something in the beginning of the original container
-                          $(".container").after('<div class="addon">I am AFTER!!</div>');
-                          //   .after comes after the container, does not show up inside container
-                          $(".container").before('<div class="addon">I am BEFORE!!</div>');
+          if ($("#myEmail").val() === "Lisa") {
+            $("#myEmail").val("chao_lisa_jinhee@student.smc.edu");
+          }
+        });
+        /*
+        $(".container").append(
+        '<div class="container-child">I am child 2</div>');
+        //   adds a conatner child inside the original container
+        $(".container").prepend(
+        '<div class="container-child">I am child 3</div>');
+        // prepend adds something in the beginning of the original container
+        $(".container").after('<div class="addon">I am AFTER!!</div>');
+        //   .after comes after the container, does not show up inside container
+        $(".container").before('<div class="addon">I am BEFORE!!</div>');
 
-                          $('<div class="container-child">I am child 4 appended </div>').appendTo(
-                          ".container");
-                          $('<div class="container-child">I am child 5 prepended </div>'
-                          ).prependTo(".container");*/
+        $('<div class="container-child">I am child 4 appended </div>').appendTo(
+        ".container");
+        $('<div class="container-child">I am child 5 prepended </div>'
+        ).prependTo(".container");*/
 
-                          // button stuff
-                          $('#button1').click(function(){
-                          $(".container").append('<div class="container-child">I am child 2</div>');
-                          $('<div class="container-child">I am child 4 appended </div>').appendTo(".container");
-                          $(".container").after('<div class="addon">I am AFTER!!</div>');
-                          });
-                          $('#button2').click(function(){
+        // button stuff
+        $("#button1").click(function() {
+          $(".container").append(
+            '<div class="container-child">I am child 2</div>'
+          );
+          $(
+            '<div class="container-child">I am child 4 appended </div>'
+          ).appendTo(".container");
+          $(".container").after('<div class="addon">I am AFTER!!</div>');
+        });
 
-                          });
-                          $('#button3').click(function(){
+        $("#button2").click(function() {
+          $(".container").prepend(
+            '<div class="container-child">I am child 3</div>'
+          );
+          $(".container").before('<div class="addon">I am BEFORE!!!</div>');
+          $('<div class="container-child">I am child 5</div>').prependTo(
+            ".container"
+          );
+        });
 
-                          });
-                          // removes the elements that were added on
-                          $('#button4').click(function(){
-                          //   empty clears everything
-                          $('.container').empty();
-                          );
+        $("#button3").click(function() {
+          $(".addon").remove();
+        });
+        // removes the elements that were added on
+        $("#button4").click(function() {
+          //   empty clears everything
+          $(".container").empty();
+        });
+      });
     </script>
     <!-- all script should go immediately before ending body tag -->
   </body>

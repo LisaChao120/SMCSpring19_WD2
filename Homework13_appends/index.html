@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Append Homework</title>
+
+    <style>
+      .btn-group-add {
+      }
+      .puppy-container {
+        width: 500px;
+        height: 400px;
+        background-color: azure;
+      }
+      .puppy-img {
+        width: 150px;
+        height: 150px;
+        background-color: chartreuse;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Select items to be delivered</h1>
+    <div class="btn-Addgroup">
+      <ul>
+        <li><button id="btnAddPuppy">Add Puppy</button></li>
+        <li><button id="btnAddPizza">Add Pizza</button></li>
+        <li><button id="byePuppy">bye puppy</button></li>
+      </ul>
+    </div>
+
+    <div class="container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#btnAddPuppy").click(function() {
+          $(".container").prepend(
+            '<div class="addonPuppy"><img src="images/puppy.jpeg"/></div>'
+          );
+        });
+
+        $("#byePuppy").click(function() {
+          $(".addonPuppy:last-child").remove();
+        });
+
+        $("#btnAddPizza").click(function() {
+          var test = 1;
+          console.log(test);
+          $(".container").prepend(
+            '<div class="addonPizza"><img src="images/puppy.jpeg"/></div>'
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
