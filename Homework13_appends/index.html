@@ -9,16 +9,17 @@
     <style>
       .btn-group-add {
       }
-      .puppy-container {
-        width: 500px;
-        height: 400px;
+      .container {
         background-color: azure;
       }
-      .puppy-img {
-        width: 150px;
-        height: 150px;
-        background-color: chartreuse;
-        display: none;
+      .addonPuppy {
+        display: inline-block;
+      }
+      .addonPizza {
+        display: inline-block;
+      }
+      .addonTp {
+        display: inline-block;
       }
     </style>
   </head>
@@ -28,6 +29,7 @@
       <ul>
         <li><button id="btnAddPuppy">Add Puppy</button></li>
         <li><button id="btnAddPizza">Add Pizza</button></li>
+        <li><button id="btnAddTp">Add Toilet Paper</button></li>
         <li><button id="byePuppy">bye puppy</button></li>
       </ul>
     </div>
@@ -43,16 +45,24 @@
           );
         });
 
-        $("#byePuppy").click(function() {
-          $(".addonPuppy:last-child").remove();
-        });
-
         $("#btnAddPizza").click(function() {
           var test = 1;
           console.log(test);
           $(".container").prepend(
-            '<div class="addonPizza"><img src="images/puppy.jpeg"/></div>'
+            '<div class="addonPizza"><img src="images/pizza.jpg"/></div>'
           );
+        });
+
+        $("#btnAddTp").click(function() {
+          var test = 1;
+          console.log(test);
+          $(".container").prepend(
+            '<div class="addonTp"><img src="images/tp.jpg"/></div>'
+          );
+        });
+
+        $("#byePuppy").click(function() {
+          $(".addonPuppy:last-child").remove();
         });
       });
     </script>
