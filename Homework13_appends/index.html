@@ -33,6 +33,9 @@
       .addonTylenol {
         display: inline-block;
       }
+      .addonTacos {
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
@@ -46,6 +49,7 @@
         <li><button id="btnAddFlowers">Add Flowers</button></li>
         <li><button id="btnAddBatteries">Add Batteries</button></li>
         <li><button id="btnAddTylenol">Add Tylenol</button></li>
+        <li><button id="btnAddTacos">Add Tacos</button></li>
         <li><button id="byePuppy">bye puppy</button></li>
       </ul>
     </div>
@@ -109,6 +113,13 @@
           );
         });
 
+        $("#btnAddTacos").click(function() {
+          var test = 1;
+          console.log(test);
+          $(".container").prepend(
+            '<div class="addonTacos"><img src="images/tacos.jpg"/></div>'
+          );
+        });
         $("#byePuppy").click(function() {
           $(".addonPuppy:last-child").remove();
         });
