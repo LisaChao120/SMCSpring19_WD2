@@ -30,6 +30,9 @@
       .addonBatteries {
         display: inline-block;
       }
+      .addonTylenol {
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
@@ -42,6 +45,7 @@
         <li><button id="btnAddSushi">Add Sushi</button></li>
         <li><button id="btnAddFlowers">Add Flowers</button></li>
         <li><button id="btnAddBatteries">Add Batteries</button></li>
+        <li><button id="btnAddTylenol">Add Tylenol</button></li>
         <li><button id="byePuppy">bye puppy</button></li>
       </ul>
     </div>
@@ -94,6 +98,14 @@
           console.log(test);
           $(".container").prepend(
             '<div class="addonBatteries"><img src="images/batteries.jpg"/></div>'
+          );
+        });
+
+        $("#btnAddTylenol").click(function() {
+          var test = 1;
+          console.log(test);
+          $(".container").prepend(
+            '<div class="addonTylenol"><img src="images/tylenol.jpg"/></div>'
           );
         });
 
