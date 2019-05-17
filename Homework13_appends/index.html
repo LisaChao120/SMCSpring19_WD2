@@ -21,6 +21,12 @@
       .addonTp {
         display: inline-block;
       }
+      .addonSushi {
+        display: inline-block;
+      }
+      .addonFlowers {
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
@@ -30,6 +36,8 @@
         <li><button id="btnAddPuppy">Add Puppy</button></li>
         <li><button id="btnAddPizza">Add Pizza</button></li>
         <li><button id="btnAddTp">Add Toilet Paper</button></li>
+        <li><button id="btnAddSushi">Add Sushi</button></li>
+        <li><button id="btnAddFlowers">Add Flowers</button></li>
         <li><button id="byePuppy">bye puppy</button></li>
       </ul>
     </div>
@@ -58,6 +66,22 @@
           console.log(test);
           $(".container").prepend(
             '<div class="addonTp"><img src="images/tp.jpg"/></div>'
+          );
+        });
+
+        $("#btnAddSushi").click(function() {
+          var test = 1;
+          console.log(test);
+          $(".container").prepend(
+            '<div class="addonSushi"><img src="images/sushi.jpg"/></div>'
+          );
+        });
+
+        $("#btnAddFlowers").click(function() {
+          var test = 1;
+          console.log(test);
+          $(".container").prepend(
+            '<div class="addonFlowers"><img src="images/flowers.jpg"/></div>'
           );
         });
 
