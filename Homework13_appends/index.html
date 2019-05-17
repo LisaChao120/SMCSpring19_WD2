@@ -7,35 +7,60 @@
     <title>Append Homework</title>
 
     <style>
-      .btn-group-add {
+      #remove {
+        background: red;
       }
+
+      button {
+        background-color: #4caf50; /* Green */
+        border: none;
+        color: white;
+        margin: 3px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 150px;
+        height: 70px;
+      }
+
+      .btnAddGrp li {
+        list-style: none;
+        display: inline-block;
+      }
+
       .container {
         background-color: azure;
       }
+
       .addon {
         display: inline-block;
       }
     </style>
   </head>
+
   <body>
-    <h1>Select items to be delivered</h1>
-    <div class="btn-Addgroup">
-      <ul>
-        <li><button id="btnAddPuppy">Add Puppy</button></li>
-        <li><button id="btnAddPizza">Add Pizza</button></li>
-        <li><button id="btnAddTp">Add Toilet Paper</button></li>
-        <li><button id="btnAddSushi">Add Sushi</button></li>
-        <li><button id="btnAddFlowers">Add Flowers</button></li>
-        <li><button id="btnAddBatteries">Add Batteries</button></li>
-        <li><button id="btnAddTylenol">Add Tylenol</button></li>
-        <li><button id="btnAddTacos">Add Tacos</button></li>
-        <li><button id="btnAddBeer">Add Beer</button></li>
-        <li><button id="remove">Remove item</button></li>
-      </ul>
+    <div class="button-container">
+      <h1>Select items to be delivered</h1>
+      <div class="btnAddGrp">
+        <ul>
+          <li><button id="btnAddPuppy">Puppy</button></li>
+          <li><button id="btnAddPizza">Pizza</button></li>
+          <li><button id="btnAddTp">Toilet Paper</button></li>
+          <li><button id="btnAddSushi">Sushi</button></li>
+          <li><button id="btnAddFlowers">Flowers</button></li>
+          <li><button id="btnAddBatteries">Batteries</button></li>
+          <li><button id="btnAddTylenol">Tylenol</button></li>
+          <li><button id="btnAddTacos">Tacos</button></li>
+          <li><button id="btnAddBeer">Beer</button></li>
+          <li><button id="remove">Remove last</button></li>
+        </ul>
+      </div>
     </div>
-
-    <div class="container"></div>
-
+    <div class="cart-container">
+      <h1 id="cart">Your cart</h1>
+      <div class="container"></div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
       $(document).ready(function() {
