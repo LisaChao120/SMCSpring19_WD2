@@ -24,6 +24,13 @@
         height: 70px;
       }
 
+      button.remove-this {
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+        background-color: red;
+      }
+
       .btnAddGrp li {
         list-style: none;
         display: inline-block;
@@ -35,6 +42,7 @@
 
       .addon {
         display: inline-block;
+        max-width: 280px;
       }
     </style>
   </head>
@@ -64,9 +72,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
       $(document).ready(function() {
+        
         $("#btnAddPuppy").click(function() {
           $(".container").prepend(
-            '<div class="addon"><img src="images/puppy.jpeg"/></div>'
+            '<div class="addon">\
+              <img src="images/puppy.jpeg"/>\
+              <button class="remove-this">Remove this image</button>\
+            </div>'
           );
         });
 
@@ -74,7 +86,7 @@
           var test = 1;
           console.log(test);
           $(".container").prepend(
-            '<div class="addon"><img src="images/pizza.jpg"/></div>'
+            '<div class="addon"><img src="images/pizza.jpg"/><button class="remove-this">Remove this image</button></div>'
           );
         });
 
@@ -82,7 +94,7 @@
           var test = 1;
           console.log(test);
           $(".container").prepend(
-            '<div class="addon"><img src="images/tp.jpg"/></div>'
+            '<div class="addon"><img src="images/tp.jpg"/><button class="remove-this">Remove this image</button></div>'
           );
         });
 
@@ -90,7 +102,7 @@
           var test = 1;
           console.log(test);
           $(".container").prepend(
-            '<div class="addon"><img src="images/sushi.jpg"/></div>'
+            '<div class="addon"><img src="images/sushi.jpg"/><button class="remove-this">Remove this image</button></div>'
           );
         });
 
@@ -98,7 +110,7 @@
           var test = 1;
           console.log(test);
           $(".container").prepend(
-            '<div class="addon"><img src="images/flowers.jpg"/></div>'
+            '<div class="addon"><img src="images/flowers.jpg"/><button class="remove-this">Remove this image</button></div>'
           );
         });
 
@@ -106,7 +118,7 @@
           var test = 1;
           console.log(test);
           $(".container").prepend(
-            '<div class="addon"><img src="images/batteries.jpg"/></div>'
+            '<div class="addon"><img src="images/batteries.jpg"/><button class="remove-this">Remove this image</button></div>'
           );
         });
 
@@ -114,7 +126,7 @@
           var test = 1;
           console.log(test);
           $(".container").prepend(
-            '<div class="addon"><img src="images/tylenol.jpg"/></div>'
+            '<div class="addon"><img src="images/tylenol.jpg"/><button class="remove-this">Remove this image</button></div>'
           );
         });
 
@@ -122,7 +134,7 @@
           var test = 1;
           console.log(test);
           $(".container").prepend(
-            '<div class="addon"><img src="images/tacos.jpg"/></div>'
+            '<div class="addon"><img src="images/tacos.jpg"/><button class="remove-this">Remove this image</button></div>'
           );
         });
 
@@ -130,13 +142,19 @@
           var test = 1;
           console.log(test);
           $(".container").prepend(
-            '<div class="addon"><img src="images/beer.jpg"/></div>'
+            '<div class="addon"><img src="images/beer.jpg"/><button class="remove-this">Remove this image</button></div>'
           );
         });
 
         $("#remove").click(function() {
           $(".addon:first-child").remove();
         });
+
+        // make sure you attach the event listener to something that exists
+        // when the HTML document is ready
+        $('body').on('click', '.remove-this', function(){
+          $(this).parent('.addon').remove();
+        })
       });
     </script>
   </body>
