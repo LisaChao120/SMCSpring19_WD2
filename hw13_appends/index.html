@@ -72,7 +72,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
       $(document).ready(function() {
-        
         $("#btnAddPuppy").click(function() {
           $(".container").prepend(
             '<div class="addon">\
@@ -152,9 +151,11 @@
 
         // make sure you attach the event listener to something that exists
         // when the HTML document is ready
-        $('body').on('click', '.remove-this', function(){
-          $(this).parent('.addon').remove();
-        })
+        $("body").on("click", ".remove-this", function() {
+          $(this)
+            .parent(".addon")
+            .remove();
+        });
       });
     </script>
   </body>
