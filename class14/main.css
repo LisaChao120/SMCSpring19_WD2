@@ -1,0 +1,42 @@
+body {
+  margin: 0px;
+}
+nav {
+  background-color: lightsteelblue;
+  color: black;
+}
+ul {
+  /*this is the parent container*/
+  padding-left: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* flex direction tells you which direction the main axis is going */
+  justify-content: space-evenly;
+  height: 700px; /*need to set height if using flex column */
+  /* align-content:doesnt work if you dont allow items to wrap */
+  /* order: used most commonly */
+}
+li {
+  margin: 5px 10px;
+  background-color: mistyrose;
+}
+li#home {
+  order: 0;
+  /*flex-grow: 2; will occupy 2x as much space as the others along main axis*/
+}
+
+@media (min-width: 768px) {
+  ul {
+    flex-direction: row;
+  }
+  li#home {
+    order: 1;
+  }
+  li:nth-child(2) {
+    order: 2;
+  }
+  li:nth-child(1) {
+    order: 3;
+  }
+}
