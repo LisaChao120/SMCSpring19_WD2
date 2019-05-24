@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rover Rescue</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+      @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap");
+    </style>
+    <!-- STYLES -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+  </head>
+
+  <section class="donate">
+    <p class="donate">
+      Your donation is completely tax deductible. It will help buy out a dog on
+      death row, help pay for boarding, medication or surgery. Remember, we
+      rescue dogs, even if they are sick or injured.
+    </p>
+    <div class="form-container">
+      <div id="contact-area">
+        Name (as appears on credit card)<br />
+        <input type="text" name="Name" id="name" /><br /><br />
+        Billing address<br />
+        <input type="text" name="Address" id="address" /><br /><br />
+        Credit Card Number<br />
+        <input type="text" name="CC" id="cc" /><br /><br />
+        Expiration date<br />
+        <input type="text" name="Exp" id="exp" /><br /><br />
+        SSV<br />
+        <input type="text" name="SSV" id="ssv" /><br /><br />
+        Email<br />
+        <input type="text" name="Email" id="email" /><br /><br />
+        Telephone<br />
+        <input type="text" name="Telephone" id="telephone" /><br /><br />
+
+        Donation amount<br />
+        <input type="amount" name="Amount" id="amount" /><br /><br />
+        <br /><br />
+
+        <input
+          type="submit"
+          name="submit"
+          value="Donate"
+          class="donate-button"
+        />
+      </div>
+    </div>
+    <p class="mail-donation">
+      Or you may send your tax deductible donation to: Rover Rescue P.O. Box 424
+      Redondo Beach, CA 90277
+    </p>
+  </section>
+  <body>
+    <footer id="footer" class="clearfix">
+      <div class="footer-text-container">
+        <p>
+          Rover Rescue is a non-profit 501(c)(3) organization<br />P.O. Box 424,
+          Redondo Beach, CA 90277<br />Adoption Hotline 310.379.0154<br />© 2019
+          roverrescue.com
+        </p>
+      </div>
+    </footer>
+    <script>
+      function donate() {
+        alert("Woof! Woof! Thank you for your donation!");
+      }
+    </script>
+  </body>
+</html>

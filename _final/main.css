@@ -1,108 +1,161 @@
-/************************************
-GLOBAL STYLES************************/
 /* 
 #BB9457 light brown (deer)
 #A27035 med brown (metallic sunburst)
 #443627 dark brown (cafe noir)
 #23395B navy (Japanese indigo) 
-#EFF0D1 ivory (eggshell)
+#efeeea ivory 
 
 Header font: font-family: "Amatic SC", cursive;
-Body font: font-family: "Josefin Sans", sans-serif;
+font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
 text-shadow: 1px 0px 4px black; this adds a border around the text and makes it pop out a little*/
 
+/*------------GLOBAL STYLES----------------*/
 html {
   margin: 0px;
 }
 body {
   margin: 0px;
-  font-size: 16px;
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 1.5;
   min-width: 375px;
-}
-.container {
-  min-width: 375px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #eff0d1;
-}
-header {
-  width: 100%;
-}
-/************************************
- NAVBAR ***************************/
-
-.sm-index-logo {
-  display: block;
-  margin: 0 auto;
-  width: 10%;
-}
-nav {
-  font-family: "Amatic SC", cursive;
-  /* background-color: #a27035; */
-  font-size: 24px;
-  background-color: #bb9457;
-  width: 100%;
-  padding: 10px 0px;
-  /* position: fixed; */
-  z-index: 10;
-}
-nav a {
-  width: 100%;
-  font-size: 22px;
-  font-weight: 900;
-  text-decoration: none;
+  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+  font-size: 20px;
   color: #443627;
-  line-height: 36px;
 }
-nav ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
+img {
+  max-width: 100%;
+  height: auto;
 }
-nav li {
-  display: block;
-  padding: 0px 30px;
-  margin: 0 auto;
-}
-nav li:last-child {
-  border-bottom: none;
-}
-nav a:link {
-  text-decoration: none;
-  color: #23395b;
-}
-nav a:visited /*visited links*/ {
-  text-decoration: none;
-  color: #23395b;
+#wrapper {
+  margin: 0 auto; /*this sets the width of the comp in the mobile that allows 
+  for some margin left and right. */
+  width: 100%; /*It's also common to set the wrapper to 100% 
+  so you can use all the space.*/
+  max-width: 992px; /*important so your wrapper starts at 100% (default) and 
+  expands to 992px or the width of your comp but doesn't 
+  overstretch*/
+  background-color: #efeeea;
 }
 
-nav a:hover {
-  text-decoration: none;
-  color: #23395b;
-}
-nav a:active /*pressed links*/ {
-  text-decoration: none;
-  color: #443627;
-  font-weight: bold;
-}
-p {
-  margin: 0;
-  padding: 30px;
-}
-.bgColorFill {
-  background-color: #eff0d1;
-  min-height: 600px;
-}
-.imageWrapper {
-  /* use this to put a frame around pics */
-  border-color: #e2e2e2;
-}
-/*****************SMALL SCREEN*******************/
-@media (min-width: 450px) {
-  /* .sm-index-logo {
-      display: none;
-    } */
+/*--------------SMALL SCREEN------------------*/
+@media (min-width: 375px) {
+  header {
+    margin: 0px;
+    min-width: 375px;
+  }
+  .container {
+    margin: 0px;
+    min-width: 375px;
+    background-color: #efeeea;
+  }
+  .navfix {
+    /* margin: 0px; */
+    background-color: #efeeea;
+  }
+  .container h1 {
+    color: #23395b;
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 1.5;
+    color: #443627;
+  }
+  .container ul {
+    color: #443627;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .footer-text-container {
+    display: flex;
+    justify-content: center;
+    background-color: #23395b;
+  }
+  .footer-text-container p {
+    font-size: 12px;
+    text-align: center;
+    color: #efeeea;
+  }
+
+  /*--------------NAVBAR LOGO--------------------*/
+  .roverRescue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #bb9457;
+    font-family: "Amatic SC", cursive;
+    font-size: 24px;
+  }
+  .rover {
+  }
+  .rescue {
+  }
+  .logo {
+    padding: 30px 0 15px 0;
+  }
+
+  /*--------------NAVBAR LINKS--------------------*/
+  nav {
+    background-color: #23395b;
+    width: 100%;
+    padding: 10px 0px;
+    /* position: fixed; */
+    z-index: 10;
+  }
+  nav a {
+    width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  nav li {
+    display: flex;
+    margin: 5px 30px 5px 30px;
+  }
+  nav li:last-child {
+    border-bottom: none;
+  }
+  nav a:link {
+    color: #efeeea;
+  }
+  nav a:visited /*visited links- make same color as link color*/ {
+    text-decoration: none;
+    color: #efeeea;
+  }
+  nav a:hover {
+    text-decoration: none;
+    color: #bb9457;
+  }
+  nav a:active /*the color when link is being pressed*/ {
+    text-decoration: none;
+    color: #a27035;
+  }
+  /* --------------HOME -----------------*/
+  .img-container {
+    display: flex;
+    width: 375px;
+  }
+  #puppyEyes {
+    width: 100%;
+  }
+
+  /* --------------BLOG -----------------*/
+  p {
+    margin: 0;
+    padding: 30px;
+  }
+  .bgColorFill {
+    background-color: #efeeea;
+    /* min-height: 600px; */
+  }
+  .imageWrapper {
+    /* use this to put a frame around pics */
+    border-color: #e2e2e2;
+  }
 }
