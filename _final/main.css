@@ -173,14 +173,22 @@ img {
   }
 
   .adopt-ad {
+    display: flex;
+    flex-direction: row;
   }
-  .image-wrapper {
+  .dog-img {
     /* use this to put a frame around pics */
     border-color: #443627;
+    border-width: 2px;
+    padding: 10px 30px;
   }
-  .dog-name h3 {
+  .dog-info {
     color: #443627;
   }
+  .dog-name h3 {
+    padding: 10px;
+  }
   .dog-stats p {
+    padding: 10px;
   }
 }
