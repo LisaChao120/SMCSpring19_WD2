@@ -25,7 +25,7 @@ img {
   height: auto;
 }
 #wrapper {
-  margin: 0 auto; /*this sets the width of the comp in the mobile that allows 
+  margin: 0; /*this sets the width of the comp in the mobile that allows 
   for some margin left and right. */
   width: 100%; /*It's also common to set the wrapper to 100% 
   so you can use all the space.*/
@@ -85,6 +85,7 @@ img {
     background-color: #bb9457;
     font-family: "Amatic SC", cursive;
     font-size: 24px;
+    color: #23395b;
   }
   .rover {
   }
@@ -138,24 +139,48 @@ img {
   }
   /* --------------HOME -----------------*/
   .img-container {
+    /* width: 375px; */
     display: flex;
-    width: 375px;
+    justify-content: center;
+    align-items: center;
   }
   #puppyEyes {
     width: 100%;
+    margin: 0 auto;
   }
-
-  /* --------------BLOG -----------------*/
-  p {
+  .text-container p {
     margin: 0;
     padding: 30px;
   }
-  .bgColorFill {
-    background-color: #efeeea;
-    /* min-height: 600px; */
+
+  /* --------------BLOG -----------------*/
+
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .imageWrapper {
+  .blog h1 {
+    color: #23395b;
+    padding: 30px;
+    text-align: center;
+    margin: 0;
+  }
+  .blog p {
+    margin: 0;
+    padding: 30px;
+    color: #443627;
+  }
+
+  .adopt-ad {
+  }
+  .image-wrapper {
     /* use this to put a frame around pics */
-    border-color: #e2e2e2;
+    border-color: #443627;
+  }
+  .dog-name h3 {
+    color: #443627;
+  }
+  .dog-stats p {
   }
 }
