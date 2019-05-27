@@ -206,7 +206,34 @@ img {
   .dog-stats p {
     padding: 10px;
   }
+  .btnMoreInfo {
+  }
 }
 /* -----------------DONATE----------------- */
-.tax-deduct p {
+.donateButton {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #bb9457;
+  color: #23395b;
+  padding: 10px;
+  font-size: 24px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.tax-deduct {
+  padding: 10px;
+  color: #23395b;
+}
+#woof {
+  margin: 0;
+  padding-top: 30px;
+  color: red;
+  text-align: center;
+}
+#ty {
+  margin: 0;
+  padding-top: 10px;
+  color: red;
+  text-align: center;
 }
