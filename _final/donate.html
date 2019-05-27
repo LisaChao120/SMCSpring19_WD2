@@ -53,12 +53,16 @@
         <div class="nav-fix"></div>
       </header>
       <section class="donate">
-        <p class="mail-donation">
-          You may send your tax deductible donation to: Rover Rescue P.O. Box
-          424 Redondo Beach, CA 90277
-          <br />Or by credit/debit card by filling out the form below:
-        </p>
+       <div>
+          <h5>You may send your tax deductible donation to:</h5>
+          <p class="mail-donation">Rover Rescue<br>
+            P.O. Box 424<br/>
+            Redondo Beach, CA 90277</p>
+          <h5>Or fill out the form below:</h5>
+       
+      </div>
         <div class="form-container">
+          <form action="" method="POST">
           <div id="contact-area">
             Name (as appears on credit card)<br />
             <input type="text" name="Name" id="name" /><br /><br />
@@ -76,44 +80,44 @@
             <input type="text" name="Telephone" id="telephone" /><br /><br />
 
             Donation amount<br />
-            <input type="amount" name="Amount" id="amount" /><br /><br />
+            <input type="text" name="Amount" id="amount" /><br /><br />
             <br /><br />
-
-            <input
+            <!-- <input
               type="submit"
               name="submit"
               value="Donate"
               class="donate-button"
-            />
-          </div>
-        </div>
-      </section>
-      <div class="tax-deduct">
-        <p>
-          Your donation is completely tax deductible. It will help buy out a dog
-          on death row, help pay for boarding, medication or surgery. Remember,
-          we rescue dogs, even if they are sick or injured.
-        </p>
-      </div>
-      <footer id="footer" class="clearfix">
-        <div class="footer-text-container">
-          <p>
-            Rover Rescue is a non-profit 501(c)(3) organization<br />P.O. Box
-            424, Redondo Beach, CA 90277<br />Adoption Hotline 310.379.0154<br />©
-            2019 roverrescue.com
-          </p>
-        </div>
-      </footer>
+            /> -->
+           </div> <!--closes contact-area div-->
+           <button class="donateButton">Donate</button>
+        </div> <!-- closes form-container div-->
+      </form>
+    </section>
+    
+    <div class="tax-deduct">
+      <p>Your donation is completely tax deductible. It will help buy out a dog
+        on death row, help pay for boarding, medication or surgery. Remember,
+        we rescue dogs, even if they are sick or injured.</p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script>
-      $(".donate-button").click(function() {
-        // alert("Woof! Thank you for your donation");
-        // $("#contact-area").submit();
-        $(".donate").replaceWith(
-          "<h2>Woof! Thank you for your donation</h2>"
-        );
-      });
-    </script>
-  </body>
+  
+    <footer id="footer" class="clearfix">
+      <div class="footer-text-container">
+        <p> Rover Rescue is a non-profit 501(c)(3) organization<br />P.O. Box
+            424, Redondo Beach, CA 90277<br />Adoption Hotline 310.379.0154<br />©
+            2019 roverrescue.com</p>
+      </div>
+    </footer>
+
+  </div> <!--closes wrapper div-->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(".donateButton").click(function() {
+    // alert("Woof! Thank you for your donation");
+    // $("#contact-area").submit();
+    $(".donate").replaceWith("<h1 id='woof'>Woof!</h1><h2 id='ty'>Thank you for your donation</h2>");
+    });
+  </script>
+  
+</body>
 </html>
