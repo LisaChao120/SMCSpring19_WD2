@@ -53,10 +53,10 @@
         <div class="nav-fix"></div>
       </header>
       <section class="donate">
-        <p class="donate">
-          Your donation is completely tax deductible. It will help buy out a dog
-          on death row, help pay for boarding, medication or surgery. Remember,
-          we rescue dogs, even if they are sick or injured.
+        <p class="mail-donation">
+          You may send your tax deductible donation to: Rover Rescue P.O. Box
+          424 Redondo Beach, CA 90277
+          <br />Or by credit/debit card by filling out the form below:
         </p>
         <div class="form-container">
           <div id="contact-area">
@@ -87,12 +87,14 @@
             />
           </div>
         </div>
-        <p class="mail-donation">
-          Or you may send your tax deductible donation to: Rover Rescue P.O. Box
-          424 Redondo Beach, CA 90277
-        </p>
       </section>
-
+      <div class="tax-deduct">
+        <p>
+          Your donation is completely tax deductible. It will help buy out a dog
+          on death row, help pay for boarding, medication or surgery. Remember,
+          we rescue dogs, even if they are sick or injured.
+        </p>
+      </div>
       <footer id="footer" class="clearfix">
         <div class="footer-text-container">
           <p>
@@ -105,9 +107,13 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
-      function donate() {
-        alert("Woof! Woof! Thank you for your donation!");
-      }
+      $(".donate-button").click(function() {
+        // alert("Woof! Thank you for your donation");
+        // $("#contact-area").submit();
+        $(".donate").replaceWith(
+          "<h2>Woof! Thank you for your donation</h2>"
+        );
+      });
     </script>
   </body>
 </html>
