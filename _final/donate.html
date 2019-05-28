@@ -9,22 +9,21 @@
       @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
       @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap");
     </style>
+    
     <!-- STYLES -->
-
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
-
+  
     <!-- SCRIPTS -->
-    <script src="main.js"></script>
+  <script src="main.js"></script> 
   </head>
+
   <body>
-    <div id="wrapper">
-      <!-----wrapper is for the entire page----->
+    <div id="wrapper"> <!-----wrapper is for the entire page----->
       <header>
         <div class="roverRescue">
           <div class="rover"><h1>Rover</h1></div>
-
           <div class="logo">
             <a href="index.html">
               <img src="images/rover-logo-sm.png" alt="logo" />
@@ -32,6 +31,7 @@
           </div>
           <div class="rescue"><h1>Rescue</h1></div>
         </div>
+
         <nav>
           <div class="navbar">
             <ul>
@@ -50,8 +50,9 @@
             </ul>
           </div>
         </nav>
-        <div class="nav-fix"></div>
+      <div class="nav-fix"></div>
       </header>
+
       <section class="donate">
        <div>
           <h5>You may send your tax deductible donation to:</h5>
@@ -59,10 +60,10 @@
             P.O. Box 424<br/>
             Redondo Beach, CA 90277</p>
           <h5>Or fill out the form below:</h5>
-       
-      </div>
-        <div class="form-container">
-          <form action="" method="POST">
+       </div>
+
+      <div class="form-container">
+        <form action="" method="POST">
           <div id="contact-area">
             Name (as appears on credit card)<br />
             <input type="text" name="Name" id="name" /><br /><br />
@@ -73,23 +74,18 @@
             Expiration date<br />
             <input type="text" name="Exp" id="exp" /><br /><br />
             SSV<br />
-            <input type="text" name="SSV" id="ssv" /><br /><br />
+            <input type="text" name="CVV" id="cvv" /><br /><br />
             Email<br />
             <input type="text" name="Email" id="email" /><br /><br />
             Telephone<br />
             <input type="text" name="Telephone" id="telephone" /><br /><br />
-
             Donation amount<br />
             <input type="text" name="Amount" id="amount" /><br /><br />
             <br /><br />
-            <!-- <input
-              type="submit"
-              name="submit"
-              value="Donate"
-              class="donate-button"
-            /> -->
-           </div> <!--closes contact-area div-->
-           <button class="donateButton">Donate</button>
+          </div> <!--closes contact-area div-->
+           
+          <button class="donateButton">Donate</button>
+
         </div> <!-- closes form-container div-->
       </form>
     </section>
@@ -109,7 +105,7 @@
     </footer>
 
   </div> <!--closes wrapper div-->
-
+  
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script>
     $(".donateButton").click(function() {
@@ -118,6 +114,6 @@
     $(".donate").replaceWith("<h1 id='woof'>Woof!</h1><h2 id='ty'>Thank you for your donation</h2>");
     });
   </script>
-  
+
 </body>
 </html>
