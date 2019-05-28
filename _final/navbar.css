@@ -1,0 +1,82 @@
+.clearfix {
+  clear: both;
+}
+.hamburger-container {
+  cursor: pointer;
+  float: right;
+  background-color: #bb9457;
+  padding: 15px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #efeeea;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*--------------NAVBAR LINKS--------------------*/
+
+nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  background-color: #23395b;
+  width: 100%;
+  padding: 10px 0px;
+}
+.navbar {
+  display: none;
+}
+nav a {
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+}
+nav ul {
+  justify-content: right;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+nav li {
+  display: flex;
+  margin: 5px 30px 5px 30px;
+}
+nav li:last-child {
+  border-bottom: none;
+}
+nav a:link {
+  color: #efeeea;
+}
+nav a:visited /*visited links- make same color as link color*/ {
+  text-decoration: none;
+  color: #efeeea;
+}
+nav a:hover {
+  text-decoration: none;
+  color: #bb9457;
+}
+nav a:active /*the color when link is being pressed*/ {
+  text-decoration: none;
+  color: #a27035;
+}
