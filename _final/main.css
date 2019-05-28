@@ -10,6 +10,9 @@ font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
 text-shadow: 1px 0px 4px black; this adds a border around the text and makes it pop out a little*/
 
 /*------------GLOBAL STYLES----------------*/
+.clearfix {
+  clear: both;
+}
 html {
   margin: 0px;
 }
@@ -24,7 +27,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-#wrapper {
+#home-wrapper {
   margin: 0; /*this sets the width of the comp in the mobile that allows 
   for some margin left and right. */
   width: 100%; /*It's also common to set the wrapper to 100% 
@@ -32,18 +35,18 @@ img {
   max-width: 992px; /*important so your wrapper starts at 100% (default) and 
   expands to 992px or the width of your comp but doesn't 
   overstretch*/
-  background-color: #efeeea;
+  background-color: #bb9457;
 }
 .header-blurb {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #bb9457;
+  background-color: #23395b;
   margin: 0px;
   padding: 10px;
 }
 .header-blurb p {
-  color: #23395b;
+  color: #efeeea;
   margin: 0 auto;
 
   padding-top: 0px;
@@ -101,57 +104,16 @@ img {
     font-family: "Amatic SC", cursive;
     font-size: 24px;
     color: #23395b;
+    padding-bottom: 10px;
   }
   .rover {
   }
   .rescue {
   }
   .logo {
-    padding: 30px 0 0 0;
   }
 
-  /*--------------NAVBAR LINKS--------------------*/
-  nav {
-    background-color: #23395b;
-    width: 100%;
-    padding: 10px 0px;
-    /* position: fixed; */
-    z-index: 10;
-  }
-  nav a {
-    width: 100%;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 22px;
-    text-decoration: none;
-  }
-  nav ul {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-  }
-  nav li {
-    display: flex;
-    margin: 5px 30px 5px 30px;
-  }
-  nav li:last-child {
-    border-bottom: none;
-  }
-  nav a:link {
-    color: #efeeea;
-  }
-  nav a:visited /*visited links- make same color as link color*/ {
-    text-decoration: none;
-    color: #efeeea;
-  }
-  nav a:hover {
-    text-decoration: none;
-    color: #bb9457;
-  }
-  nav a:active /*the color when link is being pressed*/ {
-    text-decoration: none;
-    color: #a27035;
-  }
+  
   /* --------------HOME -----------------*/
   .img-container {
     /* width: 375px; */
@@ -200,13 +162,17 @@ img {
   .dog-info {
     color: #443627;
   }
-  .dog-name h3 {
-    padding: 10px;
+  .dog-name {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .dog-stats {
+    padding-left: 0px;
   }
   .dog-stats p {
     padding: 10px;
   }
-  .btnMoreInfo {
+  .MoreInfoButton {
   }
 }
 /* -----------------DONATE----------------- */
