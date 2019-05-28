@@ -8,20 +8,30 @@
     <style>
       @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
       @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap");
+    
+    
     </style>
     <!-- STYLES -->
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
-
+   
     <!-- SCRIPTS -->
     <script src="main.js"></script>
   </head>
   <body>
-    <div id="wrapper"> <!-----wrapper is for the entire page----->
+    <div id="home-wrapper"> <!-----wrapper is for the entire page----->
+      <div class="hamburger-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="clearfix"></div>
     <header>
+        
       <div class="roverRescue">
+         
         <div class="rover"><h1>Rover</h1></div>
 
         <div class="logo">
@@ -32,6 +42,24 @@
         <div class="rescue"><h1>Rescue</h1></div>
         
       </div>
+      <nav>
+          <div class="navbar">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="donate.html">Donate</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
       <div class="header-blurb">
         <p>
           A non-profit organization dedicated to the rescue & placement of
@@ -39,25 +67,7 @@
         </p>
       </div>
       
-      <nav>
-        <div class="navbar">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="donate.html">Donate</a>
-            </li>
-            <li>
-              <a href="blog.html">Blog</a>
-            </li>
-          </ul>
-        </div>
-        
-      </nav>
+      
       <!-- <div class="nav-fix"></div> -->
     </header>
     <div class="container">
@@ -93,6 +103,19 @@
       </div>
     </footer>
   </div>
-    <script></script>
+  <script> 
+    function myFunction(x) {
+      x.classList.toggle("change");
+      }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".hamburger-container").click(function(){
+          $(".navbar").toggle();
+        })
+      });
+
+    </script>
   </body>
 </html>
