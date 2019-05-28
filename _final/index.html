@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Rover Rescue</title>
+    <!-- GOOGLE FONTS -->
+    
     <style>
       @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
       @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap");
-    
-    
     </style>
-    <!-- STYLES -->
+    <!-- STYLESHEETS -->
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
@@ -21,76 +21,72 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <div id="home-wrapper"> <!-----wrapper is for the entire page----->
+    <div class="wrapper"> <!-----wrapper is for the entire page----->
       <div class="hamburger-container" onclick="myFunction(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
         <div class="clearfix"></div>
+        <nav>
+            <div class="navbar">
+                <ul>
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="donate.html">Donate</a>
+                  </li>
+                  <li>
+                    <a href="blog.html">Blog</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
     <header>
-        
-      <div class="roverRescue">
-         
-        <div class="rover"><h1>Rover</h1></div>
-
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/rover-logo-sm.png" alt="logo" />
-          </a>
-        </div>
-        <div class="rescue"><h1>Rescue</h1></div>
-        
-      </div>
-      <nav>
-          <div class="navbar">
-              <ul>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="donate.html">Donate</a>
-                </li>
-                <li>
-                  <a href="blog.html">Blog</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-      <div class="header-blurb">
+    <div class="roverRescue">
+    <div class="rover">
+      <h1>Rover</h1>
+    </div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/rover-logo-sm.png" alt="logo" />
+      </a>
+    </div> <!--closes logo div-->
+    <div class="rescue">
+      <h1>Rescue</h1>
+    </div>
+    </div> <!--closes rescue rover div-->
+      <div class="text-container">
+      <div id="header-blurb">
         <p>
           A non-profit organization dedicated to the rescue & placement of
           homeless dogs from Los Angeles animal shelters.
         </p>
+      </div><!-- closes header-blurb div-->
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="floater-section sm-width-100 med-width-100 lg-width-100">
+      <div class="img-container">
+        <img id="puppyEyes" src="images/home1-375.jpg" alt="homeimage" />
       </div>
-      
-      
-      <!-- <div class="nav-fix"></div> -->
-    </header>
-    <div class="container">
-      <!-- <div class="bgColorFill"> -->
-        <div class="floater-section sm-width-100 med-width-100 lg-width-100">
-            <div class="text-container">
-                
-              </div>
-            <div class="img-container">
-              <img id="puppyEyes" src="images/home1-375.jpg" alt="homeimage" />
-            </div>
            
-            <div class="text-container">
-              <p>
-                Over 100 dogs are put to sleep in overcrowded Los Angeles area
-                animal shelters every day. Many of these homeless dogs have been
-                abandoned, abused or neglected, without ever knowing the love of
-                a caring human being.
-              </p>
-            </div>
-            </div>
-        <div class="clearfix"></div>
-      </div>
+    <div class="text-container">
+      <p>
+      Over 100 dogs are put to sleep in overcrowded Los Angeles area
+      animal shelters every day. Many of these homeless dogs have been
+      abandoned, abused or neglected, without ever knowing the love of
+      a caring human being.
+      </p>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+      </div><!--closes container div-->
       <div class="clearfix"></div>
     </div>
     <footer id="footer" class="clearfix">
@@ -103,6 +99,7 @@
       </div>
     </footer>
   </div>
+  <!--closes wrapper div-->
   <script> 
     function myFunction(x) {
       x.classList.toggle("change");

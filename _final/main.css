@@ -20,42 +20,48 @@ body {
   margin: 0px;
   min-width: 375px;
   font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #443627;
 }
 img {
   max-width: 100%;
   height: auto;
 }
-#home-wrapper {
+.wrapper {
+  background-color: #bb9457;
   margin: 0; /*this sets the width of the comp in the mobile that allows 
   for some margin left and right. */
   width: 100%; /*It's also common to set the wrapper to 100% 
   so you can use all the space.*/
-  max-width: 992px; /*important so your wrapper starts at 100% (default) and 
+  /* max-width: 992px;important so your wrapper starts at 100% (default) and
   expands to 992px or the width of your comp but doesn't 
   overstretch*/
-  background-color: #bb9457;
 }
 .header-blurb {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #23395b;
-  margin: 0px;
-  padding: 10px;
+  /* margin: 0px;
+  padding: 0px; */
 }
 .header-blurb p {
   color: #efeeea;
   margin: 0 auto;
-
   padding-top: 0px;
   padding-bottom: 0px;
 }
 /*--------------SMALL SCREEN------------------*/
 @media (min-width: 375px) {
+  .text-container {
+    background-color: #efeeea;
+  }
+  .text-container p {
+    margin: 0;
+    padding: 30px;
+  }
   header {
-    margin: 0px;
+    margin: -10px;
     min-width: 375px;
   }
   .container {
@@ -113,7 +119,6 @@ img {
   .logo {
   }
 
-  
   /* --------------HOME -----------------*/
   .img-container {
     /* width: 375px; */
@@ -124,10 +129,6 @@ img {
   #puppyEyes {
     width: 100%;
     margin: 0 auto;
-  }
-  .text-container p {
-    margin: 0;
-    padding: 30px;
   }
 
   /* --------------BLOG -----------------*/
@@ -172,7 +173,16 @@ img {
   .dog-stats p {
     padding: 10px;
   }
-  .MoreInfoButton {
+  button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #bb9457;
+    color: #23395b;
+    padding: 10px;
+    font-size: 24px;
+    margin: 0 auto;
+    border-radius: 8px;
   }
 }
 /* -----------------DONATE----------------- */
@@ -202,4 +212,21 @@ img {
   padding-top: 10px;
   color: red;
   text-align: center;
+}
+/* -----------------ABOUT----------------- */
+#about-welcome {
+  padding: 30px 30px 0 30px;
+  background-color: #efeeea;
+}
+#about-welcome h1 {
+  margin: 0;
+  padding: 0;
+}
+#about li {
+  line-height: 1.5;
+}
+ul {
+  padding: 0 50px 0 50px;
+  margin: 0;
+  line-height: 1.5;
 }

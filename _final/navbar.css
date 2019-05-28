@@ -3,9 +3,9 @@
 }
 .hamburger-container {
   cursor: pointer;
-  float: right;
+  float: left;
   background-color: #bb9457;
-  padding: 15px;
+  padding: 20px 20px;
 }
 
 .bar1,
@@ -37,13 +37,14 @@
 nav {
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
-  background-color: #23395b;
+  /* justify-content: space-around; */
+  background-color: #bb9457;
   width: 100%;
   padding: 10px 0px;
 }
 .navbar {
   display: none;
+  justify-content: left;
 }
 nav a {
   width: 100%;

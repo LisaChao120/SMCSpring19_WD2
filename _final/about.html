@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Rover Rescue</title>
+    <!-- GOOGLE FONTS -->
+
     <style>
       @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
       @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap");
     </style>
-    <!-- STYLES -->
+    <!-- STYLESHEETS -->
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
@@ -19,18 +21,14 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <div id="wrapper"> <!-----wrapper is for the entire page----->
-    <header>
-      <div class="roverRescue">
-        <div class="rover"><h1>Rover</h1></div>
-
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/rover-logo-sm.png" alt="logo" />
-          </a>
-        </div>
-        <div class="rescue"><h1>Rescue</h1></div>
+    <div class="wrapper">
+      <!-----wrapper is for the entire page----->
+      <div class="hamburger-container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
+      <div class="clearfix"></div>
       <nav>
         <div class="navbar">
           <ul>
@@ -49,66 +47,103 @@
           </ul>
         </div>
       </nav>
-      <div class="nav-fix"></div>
-    </header>
-    
-      <div class="container">
-        <div>
-          <h1>Welcome to Rover Rescue</h1>
+      <header>
+        <div class="roverRescue">
+          <div class="rover">
+            <h1>Rover</h1>
+          </div>
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/rover-logo-sm.png" alt="logo" />
+            </a>
+          </div>
+          <!--closes logo div-->
+          <div class="rescue">
+            <h1>Rescue</h1>
+          </div>
+        </div>
+        <!--closes rescue rover div-->
+        <div class="text-container">
+          <div class="header-blurb">
+            <p>
+              A non-profit organization dedicated to the rescue & placement of
+              homeless dogs from Los Angeles animal shelters.
+            </p>
+          </div>
+          <!-- closes header-blurb div-->
+        </div>
+      </header>
+
+      <div id="about-welcome">
+        <h1>Welcome to Rover Rescue</h1>
+      </div>
+      <div class="text-container">
+        <p>
+          Rover Rescue is a non-profit organization founded in 2001 to save as
+          many homeless dogs as we can and place them in permanent and loving
+          homes. We know that somewhere nearby a person or family yearns for one
+          of these special dogs.
+          <br />
+          From the moment we rescue a dog we start changing its life for the
+          better:
+        </p>
+        <ul>
+          <li>
+            Each dog is placed in a caring foster home or boarded until the
+            right owner is found.
+          </li>
+          <li>
+            During their stay with Rover Rescue, volunteers walk, socialize and
+            give these dogs the loving care they need.
+          </li>
+          <li>Injured or sick dogs are given proper medical attention.</li>
+          <li>
+            Dogs are vaccinated, spayed or neutered, and even given “beauty
+            makeovers”.
+          </li>
+          <li>
+            We make a special effort to match prospective owners with the right
+            dog during the adoption process to make sure each of our dogs will
+            never become homeless again. And we help educate new owners on the
+            proper care of their new best friends.
+          </li>
+        </ul>
+        <p>
+          In addition, Rover Rescue works hard in our community to reduce animal
+          overpopulation and increase vital awareness about responsible pet
+          ownership. We actively support spaying and neutering of all companion
+          dogs and offer spay/neuter financial assistance to low-income
+          families.
+          <br />
+          There are many ways you can pitch in to transform the lives of dogs
+          and humans, and make happy tails come true – 100% of our support comes
+          from donations and volunteers. Help us keep going...
+          <br /><em>until every dog has a home.</em>
+        </p>
+      </div>
+      <footer id="footer" class="clearfix">
+        <div class="footer-text-container">
           <p>
-            Rover Rescue is a non-profit organization founded in 2001 to save as
-            many homeless dogs as we can and place them in permanent and loving
-            homes. We know that somewhere nearby a person or family yearns for
-            one of these special dogs.
-            <br />
-            From the moment we rescue a dog we start changing its life for the
-            better:
-          </p>
-          <ul>
-            <li>
-              Each dog is placed in a caring foster home or boarded until the
-              right owner is found.
-            </li>
-            <li>
-              During their stay with Rover Rescue, volunteers walk, socialize
-              and give these dogs the loving care they need.
-            </li>
-            <li>Injured or sick dogs are given proper medical attention.</li>
-            <li>
-              Dogs are vaccinated, spayed or neutered, and even given “beauty
-              makeovers”.
-            </li>
-            <li>
-              We make a special effort to match prospective owners with the
-              right dog during the adoption process to make sure each of our
-              dogs will never become homeless again. And we help educate new
-              owners on the proper care of their new best friends.
-            </li>
-          </ul>
-          <p>
-            In addition, Rover Rescue works hard in our community to reduce
-            animal overpopulation and increase vital awareness about responsible
-            pet ownership. We actively support spaying and neutering of all
-            companion dogs and offer spay/neuter financial assistance to
-            low-income families.
-            <br />
-            There are many ways you can pitch in to transform the lives of dogs
-            and humans, and make happy tails come true – 100% of our support
-            comes from donations and volunteers. Help us keep going...
-            <br /><em>until every dog has a home.</em>
+            Rover Rescue is a non-profit 501(c)(3) organization<br />P.O. Box
+            424, Redondo Beach, CA 90277<br />Adoption Hotline 310.379.0154<br />©
+            2019 roverrescue.com
           </p>
         </div>
-        <footer id="footer" class="clearfix">
-            <div class="footer-text-container">
-              <p>
-                Rover Rescue is a non-profit 501(c)(3) organization<br>P.O. Box 424,
-                Redondo Beach, CA 90277<br>Adoption Hotline 310.379.0154<br>© 2019
-                roverrescue.com
-              </p>
-            </div>
-          </footer>
-          </div>
-          <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script></script>
+      </footer>
+    </div>
+    <!--closes wrapper div-->
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".hamburger-container").click(function() {
+          $(".navbar").toggle();
+        });
+      });
+    </script>
   </body>
 </html>

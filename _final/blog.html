@@ -19,40 +19,58 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <div id="wrapper">
+    <div class="wrapper">
       <!-----wrapper is for the entire page----->
+      <div class="hamburger-container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="clearfix"></div>
+      <nav>
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="donate.html">Donate</a>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <header>
         <div class="roverRescue">
-          <div class="rover"><h1>Rover</h1></div>
-
+          <div class="rover">
+            <h1>Rover</h1>
+          </div>
           <div class="logo">
             <a href="index.html">
               <img src="images/rover-logo-sm.png" alt="logo" />
             </a>
           </div>
-          <div class="rescue"><h1>Rescue</h1></div>
-        </div>
-        <nav>
-          <div class="navbar">
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="donate.html">Donate</a>
-              </li>
-              <li>
-                <a href="blog.html">Blog</a>
-              </li>
-            </ul>
+          <!--closes logo div-->
+          <div class="rescue">
+            <h1>Rescue</h1>
           </div>
-        </nav>
-        <div class="nav-fix"></div>
+        </div>
+        <!--closes rescue rover div-->
+        <div class="text-container">
+          <div class="header-blurb">
+            <p>
+              A non-profit organization dedicated to the rescue & placement of
+              homeless dogs from Los Angeles animal shelters.
+            </p>
+          </div>
+          <!-- closes header-blurb div-->
+        </div>
       </header>
-
       <section class="blog">
         <h1>Dogs available for adoption</h1>
         <p>
@@ -239,7 +257,20 @@
         </div>
       </footer>
     </div>
+    <!--closes wrapper div-->
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".hamburger-container").click(function() {
+          $(".navbar").toggle();
+        });
+      });
+    </script>
     <script>
       $(document).ready(function() {
         $("#toggleChapo").click(function() {
