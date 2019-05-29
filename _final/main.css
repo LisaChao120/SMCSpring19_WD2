@@ -152,19 +152,25 @@ img {
   }
   .blog p {
     margin: 0;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     color: #443627;
   }
 
   .adopt-ad {
     display: flex;
     flex-direction: row;
+    margin: 10px;
   }
   .dog-img {
     /* use this to put a frame around pics */
     border-color: #443627;
     border-width: 2px;
-    padding: 10px 30px;
+    padding: 10px 30px 0 30px;
+  }
+  .dog-img img {
+    width: 150px;
+    /* padding: 10px;
+    border: 3px dotted #23395b; */
   }
   .dog-info {
     color: #443627;
@@ -180,15 +186,14 @@ img {
     padding: 10px;
   }
   button {
-    display: flex;
-    align-content: center;
-    justify-content: center;
     background-color: #bb9457;
     color: #23395b;
     padding: 10px;
     font-size: 18px;
     /* margin: 0 auto; */
     border-radius: 8px;
+    margin-top: 5px;
+    margin-left: -5px;
   }
 }
 /* -----------------DONATE----------------- */
@@ -253,8 +258,9 @@ h3 {
 #about li {
   line-height: 1.5;
 }
-ul {
+#about-list ul {
   padding: 0 50px 0 50px;
   margin: 0;
   line-height: 1.5;
+  list-style-image: url("images/sm-paw.png");
 }
