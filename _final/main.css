@@ -256,6 +256,7 @@ h3 {
 #about-welcome h1 {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 #about li {
   line-height: 1.5;
