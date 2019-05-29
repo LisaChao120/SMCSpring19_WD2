@@ -159,7 +159,7 @@ img {
   .adopt-ad {
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 10px 10px 50px 10px;
     padding-left: 20px;
     /* text-align: center; */
   }
