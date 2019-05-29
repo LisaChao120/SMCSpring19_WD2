@@ -145,6 +145,9 @@
     // $("#contact-area").submit();
     $(".donate").replaceWith("<h1 id='woof'>Woof!</h1><h2 id='ty'>Thank you for your donation</h2>");
     });
+    $('form').submit(function(event){
+      event.preventDefault();
+    });
   </script>
 
 </body>
