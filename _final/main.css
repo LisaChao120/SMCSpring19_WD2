@@ -271,12 +271,35 @@ h3 {
   padding: 0;
   text-align: center;
 }
-#about li {
+#about-list {
+  /*paw bullets*/
+  padding-left: 10px;
+  list-style: none;
+}
+#about-list li {
+  position: relative;
+  padding-left: 20px;
   line-height: 1.5;
 }
-#about-list ul {
-  padding: 0 50px 0 50px;
-  margin: 0;
-  line-height: 1.5;
-  list-style-image: url("images/sm-paw.png");
+/*text after paw bullets*/
+#about-list li:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-image: url("images/sm-paw.png");
+  background-size: cover;
+  background-position: center;
+  left: 0;
+
+  /* top: 50%; */
+  transform: translateY(45%);
+}
+
+#about-list li {
+  margin: 15px 0;
+}
+em {
+  color: #23395b;
+  font-size: 1.5rem;
 }
