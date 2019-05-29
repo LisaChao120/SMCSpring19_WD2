@@ -53,6 +53,14 @@ img {
 }
 /*--------------SMALL SCREEN------------------*/
 @media (min-width: 375px) {
+  .header-text-container {
+    background-color: #23395b;
+  }
+  .header-text-container p {
+    margin: 0;
+    padding: 30px;
+    color: #efeeea;
+  }
   .text-container {
     background-color: #efeeea;
   }
@@ -115,8 +123,6 @@ img {
   .rover {
   }
   .rescue {
-  }
-  .logo {
   }
 
   /* --------------HOME -----------------*/
@@ -212,6 +218,13 @@ img {
   padding-top: 10px;
   color: red;
   text-align: center;
+}
+.form-container {
+  margin: 0;
+  padding: 30px;
+}
+h3 {
+  padding: 10px 30px 10px 30px;
 }
 /* -----------------ABOUT----------------- */
 #about-welcome {
