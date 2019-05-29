@@ -160,6 +160,7 @@ img {
     display: flex;
     flex-direction: row;
     margin: 10px;
+    /* text-align: center; */
   }
   .dog-img {
     /* use this to put a frame around pics */
@@ -169,6 +170,7 @@ img {
   }
   .dog-img img {
     width: 150px;
+    border-radius: 8px;
     /* padding: 10px;
     border: 3px dotted #23395b; */
   }
