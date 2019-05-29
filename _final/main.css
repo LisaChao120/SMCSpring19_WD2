@@ -58,7 +58,7 @@ img {
   }
   .header-text-container p {
     margin: 0;
-    padding: 30px;
+    padding: 40px;
     color: #efeeea;
   }
   .text-container {
@@ -186,8 +186,8 @@ img {
     background-color: #bb9457;
     color: #23395b;
     padding: 10px;
-    font-size: 24px;
-    margin: 0 auto;
+    font-size: 18px;
+    /* margin: 0 auto; */
     border-radius: 8px;
   }
 }
