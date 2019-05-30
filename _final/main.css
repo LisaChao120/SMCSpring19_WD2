@@ -10,7 +10,6 @@ font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
 text-shadow: 1px 0px 4px black; this adds a border around the text and makes it pop out a little*/
 
 /*------------GLOBAL STYLES----------------*/
-
 html {
   margin: 0px;
   height: 100%;
@@ -40,10 +39,276 @@ img {
 .clearfix {
   clear: both;
 }
+.text-container {
+  background-color: #efeeea;
+  padding-bottom:20px;
+}
+.text-container p {
+  margin: 0;
+  padding: 30px;
+}
+
+.container {
+  margin: 0px;
+  min-width: 375px;
+  background-color: #efeeea;
+}
+.navfix {
+  /* margin: 0px; */
+  background-color: #efeeea;
+}
+.container h1 {
+  color: #23395b;
+  display: flex;
+  justify-content: center;
+}
+p {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.5;
+  color: #443627;
+}
+.container ul {
+  color: #443627;
+  font-family: "Josefin Sans", sans-serif;
+}
+.footer-text-container {
+  display: flex;
+  justify-content: center;
+  background-color: #23395b;
+}
+.footer-text-container p {
+  font-size: 12px;
+  text-align: center;
+  color: #efeeea;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* --------------HOME -----------------*/
+.img-container {
+  /* width: 375px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#puppyEyes {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* --------------BLOG -----------------*/
+.header-blurb p{
+  text-align: center;
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blog h1 {
+  color: #23395b;
+  padding: 30px;
+  text-align: center;
+  margin: 0;
+}
+.blog p {
+  margin: 0;
+  padding: 0 30px 30px 30px;
+  color: #443627;
+}
+
+.adopt-ad {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px 50px 10px;
+  padding-left: 20px;
+  /* text-align: center; */
+}
+.dog-img-box {
+  /* margin: 0px 30px 0 30px; */
+  min-width: 180px;
+  height: 240px;
+}
+.dog-img-box img {
+  border-radius: 8px;
+  /* padding: 10px;
+  border: 3px dotted #23395b; */
+}
+.dog-info-box {
+  color: #443627;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 240px;
+  margin-left: 30px;
+}
+.dog-name h2 {
+  color: #23395b;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+.dog-stats {
+  padding-left: 10px;
+  line-height: 1.5;
+}
+.dog-stats ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.dog-stats p {
+  padding: 10px;
+}
+.blog-btn button {
+  background-color: #bb9457;
+  color: #23395b;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0 auto;
+  border-radius: 8px;
+  /* margin-top: 5px;
+  margin-left: -5px; */
+}
+#blog-meet p{
+  padding-left: 30px;
+  padding-right: 20px;
+}
+}
+/* -----------------DONATE----------------- */
+.mail-donation {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.mail-donation p {
+margin: 0;
+padding-left: 50px;
+padding-top: 0;
+padding-bottom: 0;
+}
+.donateButton {
+display: flex;
+align-content: center;
+justify-content: center;
+background-color: #bb9457;
+color: #23395b;
+padding: 10px;
+font-size: 24px;
+margin: 0 auto;
+border-radius: 8px;
+}
+.tax-deduct {
+/* padding: 10px; */
+color: #23395b;
+}
+#woof {
+margin: 0;
+padding-top: 30px;
+color: red;
+text-align: center;
+font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+}
+#ty {
+margin: 0;
+padding-top: 10px;
+color: red;
+text-align: center;
+font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+}
+.form-container {
+margin: 0;
+padding: 10px 30px 10px 30px;
+}
+form {
+padding: 20px;
+border: 3px dotted #23395b;
+}
+h3 {
+padding: 30px 30px 10px 30px;
+margin: 0;
+}
+/* -----------------ABOUT----------------- */
+.about-content {
+background-color: #efeeea;
+}
+#about-welcome {
+padding: 30px 30px 0 30px;
+background-color: #efeeea;
+}
+#about-welcome h1 {
+margin: 0;
+padding: 0;
+text-align: center;
+}
+#about-list {
+/*paw bullets*/
+padding: 0 30px;
+list-style: none;
+}
+#about-list li {
+position: relative;
+padding-left: 20px;
+line-height: 1.5;
+}
+/*text after paw bullets*/
+#about-list li:before {
+content: "";
+width: 10px;
+height: 10px;
+position: absolute;
+background-image: url("images/sm-paw.png");
+background-size: cover;
+background-position: center;
+left: 0;
+
+/* top: 50%; */
+transform: translateY(45%);
+}
+
+#about-list li {
+margin: 15px 0;
+}
+em {
+color: #23395b;
+font-size: 1.5rem;
+}
+
 /*--------------SMALL SCREEN------------------*/
 @media (min-width: 375px) {
+  html {
+    margin: 0px;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0px;
+    min-width: 375px;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    font-size: 16px;
+    color: #443627;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .wrapper {
+    background-color: #bb9457;
+    margin: 0; /*this sets the width of the comp in the mobile that allows 
+    for some margin left and right. */
+    width: 100%; /*It's also common to set the wrapper to 100% 
+    so you can use all the space.*/
+    /* max-width: 992px;important so your wrapper starts at 100% (default) and
+    expands to 992px or the width of your comp but doesn't 
+    overstretch*/
+  }
+  .clearfix {
+    clear: both;
+  }
   .text-container {
     background-color: #efeeea;
+    padding-bottom:20px;
   }
   .text-container p {
     margin: 0;
@@ -100,7 +365,9 @@ img {
   }
 
   /* --------------BLOG -----------------*/
-
+.header-blurb p{
+  text-align: center;
+}
   .blog {
     display: flex;
     flex-direction: column;
@@ -171,6 +438,10 @@ img {
     border-radius: 8px;
     /* margin-top: 5px;
     margin-left: -5px; */
+  }
+  #blog-meet p{
+    padding-left: 30px;
+    padding-right: 20px;
   }
 }
 /* -----------------DONATE----------------- */
