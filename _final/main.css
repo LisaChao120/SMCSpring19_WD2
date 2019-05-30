@@ -37,30 +37,9 @@ img {
   expands to 992px or the width of your comp but doesn't 
   overstretch*/
 }
-.header-blurb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #23395b;
-  /* margin: 0px;
-  padding: 0px; */
-}
-.header-blurb p {
-  color: #efeeea;
-  margin: 0 auto;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
+
 /*--------------SMALL SCREEN------------------*/
 @media (min-width: 375px) {
-  .header-text-container {
-    background-color: #23395b;
-  }
-  .header-text-container p {
-    margin: 0;
-    padding: 40px;
-    color: #efeeea;
-  }
   .text-container {
     background-color: #efeeea;
   }
@@ -68,10 +47,7 @@ img {
     margin: 0;
     padding: 30px;
   }
-  header {
-    /* margin: -10px;
-    min-width: 375px; */
-  }
+
   .container {
     margin: 0px;
     min-width: 375px;
@@ -105,24 +81,6 @@ img {
     font-size: 12px;
     text-align: center;
     color: #efeeea;
-  }
-
-  /*--------------NAVBAR LOGO--------------------*/
-
-  .roverRescue {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #bb9457;
-    font-family: "Amatic SC", cursive;
-    font-size: 24px;
-    color: #23395b;
-    padding-bottom: 0px;
-  }
-  .rover {
-  }
-  .rescue {
   }
 
   /* --------------HOME -----------------*/
@@ -273,7 +231,7 @@ h3 {
 }
 #about-list {
   /*paw bullets*/
-  padding-left: 10px;
+  padding-left: 30px;
   list-style: none;
 }
 #about-list li {

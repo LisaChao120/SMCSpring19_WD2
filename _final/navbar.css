@@ -38,47 +38,94 @@ nav {
   display: flex;
   flex-flow: row;
   /* justify-content: space-around; */
+}
+.navbar {
+  display: none;
   background-color: #bb9457;
   width: 100%;
   padding: 10px 0px;
 }
-.navbar {
-  display: none;
-  justify-content: left;
-}
-nav a {
+.navbar a {
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
   font-size: 22px;
   text-decoration: none;
 }
-nav ul {
+.navbar ul {
   justify-content: right;
   list-style: none;
   margin: 0 auto;
   padding: 0;
   text-align: left;
 }
-nav li {
+.navbar li {
   display: flex;
   margin-left: 20px;
   line-height: 1.5;
 }
-nav li:last-child {
+.navbar li:last-child {
   border-bottom: none;
 }
-nav a:link {
+.navbar a:link {
   color: #efeeea;
+  text-decoration: none;
 }
-nav a:visited /*visited links- make same color as link color*/ {
+.navbar a:visited /*visited links- make same color as link color*/ {
   text-decoration: none;
   color: #efeeea;
 }
-nav a:hover {
+.navbar a:hover {
   text-decoration: none;
   color: #bb9457;
 }
-nav a:active /*the color when link is being pressed*/ {
+.navbar a:active /*the color when link is being pressed*/ {
   text-decoration: none;
   color: #a27035;
+}
+
+/*--------------NAVBAR LOGO--------------------*/
+
+.roverRescue {
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+}
+.roverRescue h1 {
+  margin: 0;
+}
+.roverRescue h1 a {
+  text-decoration: none;
+  color: #23395b;
+  background-color: #bb9457;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+}
+#nav-logo-img {
+  width: 50px;
+  display: inline-block;
+}
+/* -----------Blue Blurb-------  */
+.header-text-container {
+  background-color: #23395b;
+}
+.header-text-container p {
+  margin: 0;
+  padding: 40px;
+  color: #efeeea;
+}
+.header-blurb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23395b;
+}
+.header-blurb p {
+  color: #efeeea;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
