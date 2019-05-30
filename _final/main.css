@@ -10,11 +10,11 @@ font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
 text-shadow: 1px 0px 4px black; this adds a border around the text and makes it pop out a little*/
 
 /*------------GLOBAL STYLES----------------*/
-.clearfix {
-  clear: both;
-}
+
 html {
   margin: 0px;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0px;
@@ -37,7 +37,9 @@ img {
   expands to 992px or the width of your comp but doesn't 
   overstretch*/
 }
-
+.clearfix {
+  clear: both;
+}
 /*--------------SMALL SCREEN------------------*/
 @media (min-width: 375px) {
   .text-container {
@@ -81,6 +83,8 @@ img {
     font-size: 12px;
     text-align: center;
     color: #efeeea;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   /* --------------HOME -----------------*/
@@ -200,12 +204,14 @@ img {
   padding-top: 30px;
   color: red;
   text-align: center;
+  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
 }
 #ty {
   margin: 0;
   padding-top: 10px;
   color: red;
   text-align: center;
+  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
 }
 .form-container {
   margin: 0;
@@ -220,6 +226,9 @@ h3 {
   margin: 0;
 }
 /* -----------------ABOUT----------------- */
+.about-content {
+  background-color: #efeeea;
+}
 #about-welcome {
   padding: 30px 30px 0 30px;
   background-color: #efeeea;
@@ -231,7 +240,7 @@ h3 {
 }
 #about-list {
   /*paw bullets*/
-  padding-left: 30px;
+  padding: 0 30px;
   list-style: none;
 }
 #about-list li {

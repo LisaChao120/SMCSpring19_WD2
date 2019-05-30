@@ -89,6 +89,7 @@ nav {
   margin: 0 auto;
   margin-top: -30px;
   margin-bottom: 10px;
+  padding: 15px 0 16px 0;
   /* display: flex;
   flex-direction: row;
   justify-content: center;
@@ -112,11 +113,7 @@ nav {
 .header-text-container {
   background-color: #23395b;
 }
-.header-text-container p {
-  margin: 0;
-  padding: 40px;
-  color: #efeeea;
-}
+
 .header-blurb {
   display: flex;
   justify-content: center;
@@ -126,6 +123,5 @@ nav {
 .header-blurb p {
   color: #efeeea;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 30px;
 }
