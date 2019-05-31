@@ -254,8 +254,12 @@ margin: 0;
 #telephone{
   width:50%;
 }
+#other {
+  margin: 10px;
+}
 #donation-amt p{
   padding: 10px;
+  
 }
 /* -----------------ABOUT----------------- */
 .about-content {
