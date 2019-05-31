@@ -125,3 +125,16 @@ nav {
   margin: 0 auto;
   padding: 20px 30px;
 }
+
+.donate-header-blurb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23395b;
+}
+.donate-header-blurb p {
+  color: #efeeea;
+  margin: 0 auto;
+  padding: 20px 30px;
+  text-align: left;
+}
