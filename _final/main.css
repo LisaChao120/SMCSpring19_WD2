@@ -229,6 +229,34 @@ h3 {
 padding: 30px 30px 10px 30px;
 margin: 0;
 }
+
+#name{
+  width:100%;
+}
+#address{
+  width:100%;
+}
+#cc{
+  width:100%;
+}
+#exp-mo{
+  width:10%;
+}
+#exp-yr{
+  width:10%;
+}
+#cvv{
+  width:10%;
+}
+#email{
+  width:100%;
+}
+#telephone{
+  width:50%;
+}
+#donation-amt p{
+  padding: 10px;
+}
 /* -----------------ABOUT----------------- */
 .about-content {
 background-color: #efeeea;
