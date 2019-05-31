@@ -265,6 +265,9 @@ margin: 0;
 .about-content {
 background-color: #efeeea;
 }
+.about-content p{
+  padding-bottom: 0;
+}
 #about-welcome {
 padding: 30px 30px 0 30px;
 background-color: #efeeea;
@@ -480,14 +483,14 @@ font-size: 1.5rem;
 .mail-donation {
   padding-top: 10px;
   padding-bottom: 10px;
-}
-.mail-donation p {
+  }
+  .mail-donation p {
   margin: 0;
   padding-left: 50px;
   padding-top: 0;
   padding-bottom: 0;
-}
-.donateButton {
+  }
+  .donateButton {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -497,40 +500,75 @@ font-size: 1.5rem;
   font-size: 24px;
   margin: 0 auto;
   border-radius: 8px;
-}
-.tax-deduct {
+  }
+  .tax-deduct {
   /* padding: 10px; */
   color: #23395b;
-}
-#woof {
+  }
+  #woof {
   margin: 0;
   padding-top: 30px;
   color: red;
   text-align: center;
   font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
-}
-#ty {
+  }
+  #ty {
   margin: 0;
   padding-top: 10px;
   color: red;
   text-align: center;
   font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
-}
-.form-container {
+  }
+  .form-container {
   margin: 0;
   padding: 10px 30px 10px 30px;
-}
-form {
+  }
+  form {
   padding: 20px;
   border: 3px double #23395b;
-}
-h3 {
+  }
+  h3 {
   padding: 30px 30px 10px 30px;
   margin: 0;
-}
-/* -----------------ABOUT----------------- */
+  }
+  
+  #name{
+    width:100%;
+  }
+  #address{
+    width:100%;
+  }
+  #cc{
+    width:100%;
+  }
+  #exp-mo{
+    width:10%;
+  }
+  #exp-yr{
+    width:10%;
+  }
+  #cvv{
+    width:10%;
+  }
+  #email{
+    width:100%;
+  }
+  #telephone{
+    width:50%;
+  }
+  #other {
+    margin: 10px;
+  }
+  #donation-amt p{
+    padding: 10px;
+    
+  }
+  /* -----------------ABOUT----------------- */
 .about-content {
   background-color: #efeeea;
+}
+.about-content p{
+  padding-bottom: 0;
 }
 #about-welcome {
   padding: 30px 30px 0 30px;
