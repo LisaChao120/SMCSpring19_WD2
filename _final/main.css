@@ -398,12 +398,27 @@ em {
   }
 
   /* --------------ADOPT SMALL SCREEN-----------------*/
-
+  #adopt-dog {
+    /* display: block;
+    margin: 0 auto; */
+  }
   .adopt-img-container {
-    /* width: 375px; */
-    display: flex;
+    height: 200px;
+    background-image: url("images/eric-ward-610868-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: contain;
+    background-color: #bb9457;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+  }
+  .adopt-img-container p {
+    margin: 0;
+    color: #efeeea;
+    font-size: 2em;
+    text-align: center;
   }
   .header-blurb p {
     text-align: center;
