@@ -41,7 +41,7 @@ img {
 }
 .text-container {
   background-color: #efeeea;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
 .text-container p {
   margin: 0;
@@ -85,7 +85,7 @@ p {
   padding-bottom: 10px;
 }
 
-/* --------------HOME -----------------*/
+/* --------------HOME GLOBAL STYLES-----------------*/
 .img-container {
   /* width: 375px; */
   display: flex;
@@ -97,8 +97,8 @@ p {
   margin: 0 auto;
 }
 
-/* --------------BLOG -----------------*/
-.header-blurb p{
+/* --------------BLOG GLOBAL STYLES-----------------*/
+.header-blurb p {
   text-align: center;
 }
 .blog {
@@ -172,144 +172,141 @@ p {
   /* margin-top: 5px;
   margin-left: -5px; */
 }
-#blog-meet p{
+#blog-meet p {
   padding-left: 30px;
   padding-right: 20px;
 }
-}
-/* -----------------DONATE----------------- */
+
+/* -----------------DONATE GLOBAL STYLES----------------- */
 .mail-donation {
-padding-top: 10px;
-padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .mail-donation p {
-margin: 0;
-padding-left: 50px;
-padding-top: 0;
-padding-bottom: 0;
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .donateButton {
-display: flex;
-align-content: center;
-justify-content: center;
-background-color: #bb9457;
-color: #23395b;
-padding: 10px;
-font-size: 24px;
-margin: 0 auto;
-border-radius: 8px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #bb9457;
+  color: #23395b;
+  padding: 10px;
+  font-size: 24px;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 .tax-deduct {
-/* padding: 10px; */
-color: #23395b;
+  /* padding: 10px; */
+  color: #23395b;
 }
 #woof {
-margin: 0;
-padding-top: 30px;
-color: red;
-text-align: center;
-font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+  margin: 0;
+  padding-top: 30px;
+  color: red;
+  text-align: center;
+  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
 }
 #ty {
-margin: 0;
-padding-top: 10px;
-color: red;
-text-align: center;
-font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+  margin: 0;
+  padding-top: 10px;
+  color: red;
+  text-align: center;
+  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
 }
 .form-container {
-margin: 0;
-padding: 10px 30px 10px 30px;
+  margin: 0;
+  padding: 10px 30px 10px 30px;
 }
 form {
-padding: 20px;
-border: 3px double #23395b;
+  padding: 20px;
+  border: 3px double #23395b;
 }
 h3 {
-padding: 30px 30px 10px 30px;
-margin: 0;
+  padding: 30px 30px 10px 30px;
+  margin: 0;
 }
 
-#name{
-  width:100%;
+#name {
+  width: 100%;
 }
-#address{
-  width:100%;
+#address {
+  width: 100%;
 }
-#cc{
-  width:100%;
+#cc {
+  width: 100%;
 }
-#exp-mo{
-  width:10%;
+#exp-mo {
+  width: 10%;
 }
-#exp-yr{
-  width:10%;
+#exp-yr {
+  width: 10%;
 }
-#cvv{
-  width:10%;
+#cvv {
+  width: 10%;
 }
-#email{
-  width:100%;
+#email {
+  width: 100%;
 }
-#telephone{
-  width:50%;
+#telephone {
+  width: 50%;
 }
 #other {
   margin: 10px;
 }
-#donation-amt p{
+#donation-amt p {
   padding: 10px;
-  
 }
-/* -----------------ABOUT----------------- */
+/* -----------------ABOUT GLOBAL STYLES----------------- */
 .about-content {
-background-color: #efeeea;
+  background-color: #efeeea;
 }
-.about-content p{
+.about-content p {
   padding-bottom: 0;
 }
-#about-welcome {
-padding: 30px 30px 0 30px;
-background-color: #efeeea;
-}
-#about-welcome h1 {
-margin: 0;
-padding: 0;
-text-align: center;
-}
 #about-list {
-/*paw bullets*/
-padding: 0 30px;
-list-style: none;
+  /*paw bullets*/
+  padding: 0 30px;
+  list-style: none;
 }
 #about-list li {
-position: relative;
-padding-left: 20px;
-line-height: 1.5;
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.5;
+  margin: 15px 0;
 }
 /*text after paw bullets*/
 #about-list li:before {
-content: "";
-width: 10px;
-height: 10px;
-position: absolute;
-background-image: url("images/sm-paw.png");
-background-size: cover;
-background-position: center;
-left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-image: url("images/sm-paw.png");
+  background-size: cover;
+  background-position: center;
+  left: 0;
 
-/* top: 50%; */
-transform: translateY(45%);
-}
-
-#about-list li {
-margin: 15px 0;
+  /* top: 50%; */
+  transform: translateY(45%);
 }
 em {
-color: #23395b;
-font-size: 1.5rem;
+  color: #23395b;
+  font-size: 1.5rem;
 }
-
+.about-blurb {
+  text-align: center;
+  color: #efeeea;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #23395b;
+}
+.about-blurb h1 {
+  margin: 0 auto;
+  width: 200px;
+}
 /*--------------SMALL SCREEN------------------*/
 @media (min-width: 375px) {
   html {
@@ -331,19 +328,19 @@ font-size: 1.5rem;
   .wrapper {
     background-color: #bb9457;
     margin: 0; /*this sets the width of the comp in the mobile that allows 
-    for some margin left and right. */
+        for some margin left and right. */
     width: 100%; /*It's also common to set the wrapper to 100% 
-    so you can use all the space.*/
+        so you can use all the space.*/
     /* max-width: 992px;important so your wrapper starts at 100% (default) and
-    expands to 992px or the width of your comp but doesn't 
-    overstretch*/
+        expands to 992px or the width of your comp but doesn't 
+        overstretch*/
   }
   .clearfix {
     clear: both;
   }
   .text-container {
     background-color: #efeeea;
-    padding-bottom:20px;
+    padding-bottom: 20px;
   }
   .text-container p {
     margin: 0;
@@ -387,7 +384,7 @@ font-size: 1.5rem;
     padding-bottom: 10px;
   }
 
-  /* --------------HOME -----------------*/
+  /* --------------HOME SMALL SCREEN-----------------*/
   .img-container {
     /* width: 375px; */
     display: flex;
@@ -399,10 +396,10 @@ font-size: 1.5rem;
     margin: 0 auto;
   }
 
-  /* --------------BLOG -----------------*/
-.header-blurb p{
-  text-align: center;
-}
+  /* --------------ADOPT SMALL SCREEN-----------------*/
+  .header-blurb p {
+    text-align: center;
+  }
   .blog {
     display: flex;
     flex-direction: column;
@@ -425,6 +422,7 @@ font-size: 1.5rem;
     flex-direction: row;
     margin: 10px 10px 50px 10px;
     padding-left: 20px;
+    width: 340px;
     /* text-align: center; */
   }
   .dog-img-box {
@@ -435,7 +433,7 @@ font-size: 1.5rem;
   .dog-img-box img {
     border-radius: 8px;
     /* padding: 10px;
-    border: 3px dotted #23395b; */
+        border: 3px dotted #23395b; */
   }
   .dog-info-box {
     color: #443627;
@@ -472,142 +470,238 @@ font-size: 1.5rem;
     margin: 0 auto;
     border-radius: 8px;
     /* margin-top: 5px;
-    margin-left: -5px; */
+        margin-left: -5px; */
   }
-  #blog-meet p{
+  #blog-meet p {
     padding-left: 30px;
     padding-right: 20px;
+    color: #efeeea;
+    text-align: center;
   }
-}
-/* -----------------DONATE----------------- */
-.mail-donation {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* -----------------DONATE SMALL SCREEN----------------- */
+  .mail-donation {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .mail-donation p {
-  margin: 0;
-  padding-left: 50px;
-  padding-top: 0;
-  padding-bottom: 0;
+    margin: 0;
+    padding-left: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .donateButton {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  background-color: #bb9457;
-  color: #23395b;
-  padding: 10px;
-  font-size: 24px;
-  margin: 0 auto;
-  border-radius: 8px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #bb9457;
+    color: #23395b;
+    padding: 10px;
+    font-size: 24px;
+    margin: 0 auto;
+    border-radius: 8px;
   }
   .tax-deduct {
-  /* padding: 10px; */
-  color: #23395b;
+    /* padding: 10px; */
+    color: #23395b;
   }
   #woof {
-  margin: 0;
-  padding-top: 30px;
-  color: red;
-  text-align: center;
-  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    margin: 0;
+    padding-top: 30px;
+    color: red;
+    text-align: center;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
   }
   #ty {
-  margin: 0;
-  padding-top: 10px;
-  color: red;
-  text-align: center;
-  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    margin: 0;
+    padding-top: 10px;
+    color: red;
+    text-align: center;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
   }
   .form-container {
-  margin: 0;
-  padding: 10px 30px 10px 30px;
+    margin: 0;
+    padding: 10px 30px 10px 30px;
   }
   form {
-  padding: 20px;
-  border: 3px double #23395b;
+    padding: 20px;
+    border: 3px double #23395b;
   }
   h3 {
-  padding: 30px 30px 10px 30px;
-  margin: 0;
+    padding: 30px 30px 10px 30px;
+    margin: 0;
   }
-  
-  #name{
-    width:100%;
+
+  #name {
+    width: 100%;
   }
-  #address{
-    width:100%;
+  #address {
+    width: 100%;
   }
-  #cc{
-    width:100%;
+  #cc {
+    width: 100%;
   }
-  #exp-mo{
-    width:10%;
+  #exp-mo {
+    width: 10%;
   }
-  #exp-yr{
-    width:10%;
+  #exp-yr {
+    width: 10%;
   }
-  #cvv{
-    width:10%;
+  #cvv {
+    width: 10%;
   }
-  #email{
-    width:100%;
+  #email {
+    width: 100%;
   }
-  #telephone{
-    width:50%;
+  #telephone {
+    width: 50%;
   }
   #other {
     margin: 10px;
   }
-  #donation-amt p{
+  #donation-amt p {
     padding: 10px;
-    
   }
-  /* -----------------ABOUT----------------- */
-.about-content {
-  background-color: #efeeea;
-}
-.about-content p{
-  padding-bottom: 0;
-}
-#about-welcome {
-  padding: 30px 30px 0 30px;
-  background-color: #efeeea;
-}
-#about-welcome h1 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-#about-list {
-  /*paw bullets*/
-  padding: 0 30px;
-  list-style: none;
-}
-#about-list li {
-  position: relative;
-  padding-left: 20px;
-  line-height: 1.5;
-}
-/*text after paw bullets*/
-#about-list li:before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  background-image: url("images/sm-paw.png");
-  background-size: cover;
-  background-position: center;
-  left: 0;
+  /* -----------------ABOUT SMALL SCREEN----------------- */
 
-  /* top: 50%; */
-  transform: translateY(45%);
-}
+  .about-content {
+    background-color: #efeeea;
+  }
+  .about-content p {
+    padding-bottom: 0;
+  }
+  #about-list {
+    /*paw bullets*/
+    padding: 0 30px;
+    list-style: none;
+  }
+  #about-list li {
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5;
+    margin: 15px 0;
+  }
+  /*text after paw bullets*/
+  #about-list li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-image: url("images/sm-paw.png");
+    background-size: cover;
+    background-position: center;
+    left: 0;
 
-#about-list li {
-  margin: 15px 0;
+    /* top: 50%; */
+    transform: translateY(45%);
+  }
+  em {
+    color: #23395b;
+    font-size: 1.5rem;
+  }
+  .about-blurb {
+    text-align: center;
+    color: #efeeea;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #23395b;
+  }
+  .about-blurb h1 {
+    margin: 0 auto;
+    width: 200px;
+  }
 }
-em {
-  color: #23395b;
-  font-size: 1.5rem;
+/*****************MEDIUM SCREEN*******************/
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  /* -------------------HOME --------------*/
+  .header-blurb p {
+    text-align: center;
+    width: 452px;
+  }
+
+  /* -----------------ABOUT MEDIUM SCREEN----------------- */
+  .about-blurb {
+    text-align: center;
+    color: #efeeea;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* margin: 0; */
+    background-color: #23395b;
+  }
+  .about-blurb h1 {
+    margin: 0 auto;
+    width: 400px;
+  }
+  #until-every p {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  /*---------------DONATE MEDIUM SCREEN----------------*/
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #name {
+    width: 300px;
+  }
+  #address {
+    width: 300px;
+  }
+  #cc {
+    width: 300px;
+  }
+  #exp-mo {
+    width: 30px;
+  }
+  #exp-yr {
+    width: 30px;
+  }
+  #cvv {
+    width: 30px;
+  }
+  #email {
+    width: 150px;
+  }
+  #telephone {
+    width: 150px;
+  }
+  #other {
+    margin: 10px;
+  }
+  #donation-amt p {
+    padding: 10px;
+  }
+  /*---------------ADOPT MEDIUM SCREEN----------------*/
+  .flex-container-ads {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; /*equal vert space bt*/
+    align-items: center;
+    align-content: space-between; /*equal horz space bt*/
+  }
+  #blog-meet p {
+    padding-left: 30px;
+    padding-right: 20px;
+    color: #efeeea;
+    text-align: center;
+  }
+} /*closes MED-screen  media query*/
+/*****************LARGE SCREEN*******************/
+@media (min-width: 992px) {
+  .wrapper {
+    background-color: #bb9457;
+    margin: 0 auto; /*this sets the width of the comp in the mobile that allows 
+        for some margin left and right. */
+    max-width: 992px; /*It's also common to set the wrapper to 100% 
+        so you can use all the space.*/
+    /* max-width: 992px;important so your wrapper starts at 100% (default) and
+        expands to 992px or the width of your comp but doesn't 
+        overstretch*/
+  }
 }

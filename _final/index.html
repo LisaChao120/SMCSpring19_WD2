@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Rover Rescue</title>
     <!-- GOOGLE FONTS -->
-    
+
     <style>
       @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
       @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap");
@@ -16,103 +16,112 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
-   
+
     <!-- SCRIPTS -->
     <script src="main.js"></script>
   </head>
   <body>
-    <div class="wrapper"> <!-----wrapper is for the entire page----->
-    <nav>
-      <div class="hamburger-container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-   
-      <div class="flexbox-rr-logo"> 
-      <div class="rr-logo">
-        <h1>
-          <a href="index.html">
-          Rover <img id="nav-logo-img" src="images/rover-logo-sm.png" alt="logo" /> Rescue
-          </a>
-        </h1>
-      </div> <!--closes RescueRover div-->
-    </div>    
-        
-      <div class="navbar">
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="donate.html">Donate</a>
-          </li>
-          <li>
-            <a href="adopt.html">Adopt</a>
-          </li>
-        </ul>
+    <div class="wrapper">
+      <!-----wrapper is for the entire page----->
+      <nav>
+        <div class="hamburger-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-     
-    </nav>
 
-    <header>
-      <div class="header-text-container">
-      <div class="header-blurb">
-        <p>
-          A non-profit organization dedicated to the rescue & placement of
-          homeless dogs from Los Angeles animal shelters.
-        </p>
-      </div><!-- closes header-blurb div-->
-    </div>
-  </header>
+        <div class="flexbox-rr-logo">
+          <div class="rr-logo">
+            <h1>
+              <a href="index.html">
+                Rover
+                <img
+                  id="nav-logo-img"
+                  src="images/rover-logo-sm.png"
+                  alt="logo"
+                />
+                Rescue
+              </a>
+            </h1>
+          </div>
+          <!--closes RescueRover div-->
+        </div>
 
-  <div class="container">
-    <div class="floater-section sm-width-100 med-width-100 lg-width-100"></div>
-      <div class="img-container">
-        <img id="puppyEyes" src="images/home1-375.jpg" alt="homeimage" />
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="donate.html">Donate</a>
+            </li>
+            <li>
+              <a href="adopt.html">Adopt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <div class="header-text-container">
+          <div class="header-blurb">
+            <p>
+              A non-profit organization dedicated to the rescue & placement of
+              homeless dogs from Los Angeles animal shelters.
+            </p>
+          </div>
+          <!-- closes header-blurb div-->
+        </div>
+      </header>
+
+      <div class="container">
+        <!-- <div class="floater-section sm-width-100 med-width-100 lg-width-100"></div> -->
+        <div class="img-container">
+          <img id="puppyEyes" src="images/home1-375.jpg" alt="homeimage" />
+        </div>
+
+        <div class="text-container">
+          <p>
+            Over 100 dogs are put to sleep in overcrowded Los Angeles area
+            animal shelters every day. Many of these homeless dogs have been
+            abandoned, abused or neglected, without ever knowing the love of a
+            caring human being.
+          </p>
+        </div>
+        <!--closes text-container-->
       </div>
-           
-    <div class="text-container">
-      <p>
-      Over 100 dogs are put to sleep in overcrowded Los Angeles area
-      animal shelters every day. Many of these homeless dogs have been
-      abandoned, abused or neglected, without ever knowing the love of
-      a caring human being.
-      </p>
-    </div>
-    </div>
-    <div class="clearfix"></div>
-      </div><!--closes container div-->
+      <!--closes container div-->
       <div class="clearfix"></div>
+
+      <div class="clearfix"></div>
+
+      <footer id="footer" class="clearfix">
+        <div class="footer-text-container">
+          <p>
+            Rover Rescue is a non-profit 501(c)(3) organization<br />P.O. Box
+            424, Redondo Beach, CA 90277<br />Adoption Hotline 310.379.0154<br />©
+            2019 roverrescue.com
+          </p>
+        </div>
+      </footer>
     </div>
-    <footer id="footer" class="clearfix">
-      <div class="footer-text-container">
-        <p>
-          Rover Rescue is a non-profit 501(c)(3) organization<br>P.O. Box 424,
-          Redondo Beach, CA 90277<br>Adoption Hotline 310.379.0154<br>© 2019
-          roverrescue.com
-        </p>
-      </div>
-    </footer>
-  </div>
-  <!--closes wrapper div-->
-  <script> 
-    function myFunction(x) {
-      x.classList.toggle("change");
+    <!--closes wrapper div-->
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
       }
-  </script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="../main.js"></script>
     <script>
       $(document).ready(function() {
-        $(".hamburger-container").click(function(){
+        $(".hamburger-container").click(function() {
           $(".navbar").toggle();
-        })
+        });
       });
-
     </script>
   </body>
 </html>
