@@ -86,7 +86,7 @@ p {
 }
 
 /* --------------HOME GLOBAL STYLES-----------------*/
-.img-container {
+.home-img-container {
   /* width: 375px; */
   display: flex;
   justify-content: center;
@@ -329,6 +329,7 @@ em {
     background-color: #bb9457;
     margin: 0; /*this sets the width of the comp in the mobile that allows 
         for some margin left and right. */
+    min-width: 375px;
     width: 100%; /*It's also common to set the wrapper to 100% 
         so you can use all the space.*/
     /* max-width: 992px;important so your wrapper starts at 100% (default) and
@@ -385,7 +386,7 @@ em {
   }
 
   /* --------------HOME SMALL SCREEN-----------------*/
-  .img-container {
+  .home-img-container {
     /* width: 375px; */
     display: flex;
     justify-content: center;
@@ -397,6 +398,13 @@ em {
   }
 
   /* --------------ADOPT SMALL SCREEN-----------------*/
+
+  .adopt-img-container {
+    /* width: 375px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .header-blurb p {
     text-align: center;
   }
