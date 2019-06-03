@@ -1,6 +1,6 @@
-.clearfix {
+/* .clearfix {
   clear: both;
-}
+} */
 .hamburger-container {
   cursor: pointer;
   padding: 20px 20px 0 20px;
@@ -34,10 +34,11 @@
 
 nav {
   display: flex;
+  flex-direction: column;
 }
 .navbar {
   display: none;
-  padding: 10px 0px;
+  padding: 0px 0px 10px 10px;
 }
 .navbar a {
   width: 100%;
@@ -50,7 +51,7 @@ nav {
   padding: 0;
 }
 .navbar li {
-  display: flex;
+  display: block;
   margin-left: 20px;
   line-height: 1.5;
 }
@@ -75,17 +76,18 @@ nav {
 }
 
 /*--------------NAVBAR LOGO--------------------*/
-
-.roverRescue {
-  margin: 0 auto;
-  margin-top: -30px;
-  margin-bottom: 10px;
-  padding: 15px 0 16px 0;
+.flexbox-rr-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.roverRescue h1 {
+.rr-logo {
+  margin-top: -20px;
+}
+.rr-logo h1 {
   margin: 0;
 }
-.roverRescue h1 a {
+.rr-logo h1 a {
   text-decoration: none;
   color: #23395b;
   background-color: #bb9457;
@@ -127,10 +129,63 @@ nav {
 }
 /*****************SMALL SCREEN*******************/
 @media (min-width: 375px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    display: none;
+    padding: 0px 0px 10px 10px;
+  }
+  .navbar a {
+    width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  .navbar ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .navbar li {
+    display: block;
+    margin-left: 20px;
+    line-height: 1.5;
+  }
 }
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
+  .hamburger-container {
+    visibility: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 30px 10px 30px;
+  }
+  .navbar li {
+    display: inline-block;
+    margin: 0px 30px 0px 30px;
+    line-height: 1.5;
+  }
 }
 /*****************LARGE SCREEN*******************/
 @media (min-width: 992px) {
+  .hamburger-container {
+    visibility: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 30px 10px 30px;
+  }
+  .navbar li {
+    display: inline-block;
+    margin: 0px 30px 0px 30px;
+    line-height: 1.5;
+  }
 }
