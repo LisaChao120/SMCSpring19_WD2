@@ -282,14 +282,14 @@ em {
   color: #23395b;
   font-size: 1.5rem;
 }
-.about-blurb {
+.about-header {
   text-align: center;
   color: #efeeea;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #23395b;
 }
-.about-blurb h1 {
+.about-header h1 {
   margin: 0 auto;
   width: 200px;
 } */
@@ -309,7 +309,7 @@ em {
   }
   img {
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
   }
   .wrapper {
     background-color: #bb9457;
@@ -384,6 +384,12 @@ em {
   }
 
   /* --------------ADOPT SMALL SCREEN-----------------*/
+  .adopt-event {
+    font-family: "Amatic SC", cursive;
+  }
+  #upcoming {
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+  }
   #adopt-dog {
     /* display: block;
     margin: 0 auto; */
@@ -593,25 +599,28 @@ em {
   }
   /* -----------------ABOUT SMALL SCREEN----------------- */
 
-  .about-content {
+  /* .about-content {
     background-color: #efeeea;
   }
   .about-content p {
     padding-bottom: 0;
-  }
-  #about-list {
+  } */
+  .about-list {
     /*paw bullets*/
     padding: 0 30px;
     list-style: none;
+    margin-top: -16px;
+    margin-bottom: -16px;
+    background-color: #efeeea;
   }
-  #about-list li {
+  .about-list li {
     position: relative;
     padding-left: 20px;
     line-height: 1.5;
-    margin: 15px 0;
+    margin: 0;
   }
   /*text after paw bullets*/
-  #about-list li:before {
+  .about-list li:before {
     content: "";
     width: 10px;
     height: 10px;
@@ -622,25 +631,29 @@ em {
     left: 0;
     transform: translateY(45%);
   }
-  #about-list li:first-child {
-    margin-top: -30px;
+  .about-list li:first-child {
+    margin-top: 0;
   }
   #until-every {
     color: #23395b;
     font-size: 1.5rem;
   }
-  .about-blurb {
+  .about-header {
     text-align: center;
     color: #efeeea;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #23395b;
   }
-  .about-blurb h1 {
+  .about-header h1 {
     margin: 0 auto;
     width: 200px;
   }
   .about-img-container {
+    width: 100%;
+    height: 250px;
+  }
+  .about-img-container2 {
     width: 100%;
     height: 250px;
   }
@@ -651,6 +664,26 @@ em {
   #about-dog2 {
     width: 100%;
     height: 250px;
+  }
+  .flex-container-about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-box1 {
+    background-color: #efeeea;
+    /* padding-bottom: 20px; */
+    margin: 0;
+    padding: 50px 30px;
+  }
+  /* .about-box1 p {
+    margin: 0;
+    padding: 30px;
+  } */
+  .about-box2 {
+    background-color: #efeeea;
+    margin: 0;
+    padding: 30px;
+    /* padding-bottom: 20px; */
   }
 }
 /*****************MEDIUM SCREEN*******************/
@@ -668,21 +701,56 @@ em {
   /* -----------------ABOUT MEDIUM SCREEN----------------- */
 
   .flex-container-about {
-    background-color: #efeeea;
-    margin: 0;
+    /* padding-top: 50px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between;  */
+    align-content: flex-start;
+    align-items: flex-start;
     justify-content: space-evenly;
-    align-items: center;
-    align-content: space-between; /*equal horz space bt*/
+    margin: 0;
+    background-color: #efeeea;
   }
-  .flex-box-about {
-    width: 375px;
+
+  .about-img-container2 {
+    width: 325px;
+    height: 250px;
+    order: 4;
+    align-content: flex-start;
+    padding-left: 0px;
+    margin-left: -25px;
+  }
+  .about-box1 {
+    width: 325px;
+    order: 1;
+    align-content: flex-start;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 0;
+  }
+  .about-list {
+    width: 325px;
+    order: 3;
+    align-content: flex-start;
+    margin-top: -125px;
+    margin-bottom: 30px;
+    margin-left: -30px;
+  }
+  .about-box2 {
+    width: 325px;
+    align-content: flex-start;
+    order: 2;
+    background-color: #efeeea;
+    margin: 0;
+    padding-top: 30px;
+    /* padding: 30px; */
+  }
+  .about-box2 p {
     margin: 0;
   }
-  .about-blurb {
+
+  .about-header {
     text-align: center;
     color: #efeeea;
     padding-top: 20px;
@@ -690,7 +758,7 @@ em {
     /* margin: 0; */
     background-color: #23395b;
   }
-  .about-blurb h1 {
+  .about-header h1 {
     margin: 0 auto;
     width: 400px;
   }
