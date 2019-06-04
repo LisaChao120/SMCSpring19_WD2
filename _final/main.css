@@ -437,7 +437,7 @@ p {
 }
 .adopt-img-container {
   position: relative;
-  height: 400px;
+  height: 250px;
   background-image: linear-gradient(
       rgba(141, 153, 174, 0.8),
       rgba(141, 153, 174, 0.5)
@@ -983,7 +983,23 @@ form {
   }
 
   /*---------------ADOPT MEDIUM SCREEN----------------*/
-
+  .adopt-img-container {
+    position: relative;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(141, 153, 174, 0.8),
+        rgba(141, 153, 174, 0.5)
+      ),
+      url("images/eric-ward-610868-unsplash.jpg");
+    background-repeat: no-repeat; /*don't repeat img*/
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-color: linear-gradient(
+      rgba(141, 153, 174, 0.8),
+      rgba(0, 9, 23, 0.5)
+    );
+  }
   .flex-container-ads {
     padding-top: 50px;
     display: flex;
@@ -1117,6 +1133,24 @@ form {
     padding: 20px 30px;
   }
   /*---------------ADOPT LARGE SCREEN----------------*/
+
+  .adopt-img-container {
+    position: relative;
+    height: 500px;
+    background-image: linear-gradient(
+        rgba(141, 153, 174, 0.8),
+        rgba(141, 153, 174, 0.5)
+      ),
+      url("images/eric-ward-610868-unsplash.jpg");
+    background-repeat: no-repeat; /*don't repeat img*/
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-color: linear-gradient(
+      rgba(141, 153, 174, 0.8),
+      rgba(0, 9, 23, 0.5)
+    );
+  }
   .adopt-banner {
     background-color: #23395b;
     min-width: 992px;
