@@ -321,9 +321,7 @@ body {
         expands to 992px or the width of your comp but doesn't 
         overstretch*/
 }
-.clearfix {
-  clear: both;
-}
+
 .text-container {
   background-color: #efeeea;
   padding-bottom: 20px;
@@ -369,7 +367,41 @@ p {
 }
 
 /* --------------HOME SMALL SCREEN-----------------*/
+.home-flex-container {
+  background-color: #efeeea;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column; */
+  /* width: 375px; */
+}
+#home-text-container {
+  background-color: #efeeea;
+  margin: 0;
+  padding: 30px;
+  color: #443627;
+}
 
+.next-event {
+  margin: 0 auto;
+  background-color: #efeeea;
+  padding: 30px;
+  color: #443627;
+}
+
+.you-help {
+  margin: 0 auto;
+  background-color: #efeeea;
+  padding: 30px;
+  color: #443627;
+}
+.next-event strong {
+  color: #23395b;
+  font-size: 1.25em;
+}
+.you-help strong {
+  color: #23395b;
+  font-size: 1.25em;
+}
 .home-banner {
   min-width: 375px;
   display: flex;
@@ -386,28 +418,17 @@ p {
 }
 
 .home-img-container {
-  /* width: 375px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 375px;
+  height: 200px;
+  /* position: relative; */
+  background-image: url("images/home1-375.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #puppyEyes {
   width: 100%;
   margin: 0 auto;
-}
-.home-text-container {
-  background-color: #efeeea;
-  padding-bottom: 20px;
-}
-.home-text-container p {
-  margin: 0;
-  padding: 30px;
-}
-
-.container {
-  margin: 0px;
-  min-width: 375px;
-  background-color: #efeeea;
 }
 
 /* --------------ADOPT SMALL SCREEN-----------------*/
@@ -781,7 +802,15 @@ form {
     margin: 0 auto;
   }
   /* -------------------HOME --------------*/
-
+  .home-img-container {
+    width: 768px;
+    height: 300px;
+    /* position: relative; */
+    background-image: url("images/home1-375.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   .home-banner {
     min-width: 768px;
     display: flex;
@@ -1117,21 +1146,7 @@ form {
     background-size: cover;
     background-color: #efeeea;
   }
-  /*---------------HOME LARGE SCREEN----------------*/
-  .home-banner {
-    min-width: 992px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #23395b;
-  }
-  .home-banner p {
-    text-align: center;
-    width: 850px;
-    color: #efeeea;
-    margin: 0 auto;
-    padding: 20px 30px;
-  }
+
   /*---------------ADOPT LARGE SCREEN----------------*/
 
   .adopt-img-container {
@@ -1183,5 +1198,79 @@ form {
     justify-content: space-evenly;
     align-items: center;
     align-content: space-between; /*equal horz space bt*/
+  }
+  /*---------------HOME LARGE SCREEN----------------*/
+  /* use clear fix to keep parent container from collapsing down since everything inside was floated */
+  .clearfix {
+    clear: both;
+  }
+  .floater-section {
+    float: left;
+  }
+  .home-banner {
+    min-width: 992px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23395b;
+  }
+  .home-banner p {
+    text-align: center;
+    width: 850px;
+    color: #efeeea;
+    margin: 0 auto;
+    padding: 20px 30px;
+  }
+  .home-img-container {
+    width: 500px;
+    height: 500px;
+    /* position: relative; */
+    background-image: url("images/home1-375.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .home-colorfill {
+    background-color: #efeeea;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    /* width: 375px; */
+  }
+  #home-text-container {
+    background-color: #efeeea;
+    margin: 0;
+    margin-top: 200px;
+    padding: 30px;
+    color: #443627;
+    font-size: 1.5em;
+    width: 400px;
+    float: right;
+  }
+
+  .next-event {
+    margin: 0 auto;
+    background-color: #efeeea;
+    padding: 30px;
+    color: #ca6e0b;
+    font-size: 2em;
+  }
+
+  .you-help {
+    margin: 0 auto;
+    background-color: #efeeea;
+    padding: 30px;
+    color: #443627;
+    font-size: 2em;
+  }
+  .next-event strong {
+    color: #23395b;
+    font-size: 1.25em;
+  }
+  .you-help strong {
+    color: #23395b;
+    font-size: 1.25em;
   }
 }
