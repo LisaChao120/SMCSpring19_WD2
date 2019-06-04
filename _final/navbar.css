@@ -98,35 +98,7 @@ nav {
   width: 50px;
   display: inline-block;
 }
-/* -----------Blue Blurb-------  */
-.header-text-container {
-  background-color: #23395b;
-}
 
-.header-blurb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #23395b;
-}
-.header-blurb p {
-  color: #efeeea;
-  margin: 0 auto;
-  padding: 20px 30px;
-}
-
-.donate-header-blurb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #23395b;
-}
-.donate-header-blurb p {
-  color: #efeeea;
-  margin: 0 auto;
-  padding: 20px 30px;
-  text-align: left;
-}
 /*****************SMALL SCREEN*******************/
 @media (min-width: 375px) {
   nav {

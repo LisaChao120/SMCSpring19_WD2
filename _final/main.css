@@ -305,7 +305,6 @@ em {
     min-width: 375px;
     font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
     font-size: 16px;
-    color: #443627;
   }
   img {
     max-width: 100%;
@@ -339,10 +338,7 @@ em {
     min-width: 375px;
     background-color: #efeeea;
   }
-  .navfix {
-    /* margin: 0px; */
-    background-color: #efeeea;
-  }
+
   .container h1 {
     color: #23395b;
     display: flex;
@@ -372,6 +368,22 @@ em {
   }
 
   /* --------------HOME SMALL SCREEN-----------------*/
+
+  .home-banner {
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23395b;
+  }
+  .home-banner p {
+    text-align: center;
+    width: 300px;
+    color: #efeeea;
+    margin: 0 auto;
+    padding: 20px 30px;
+  }
+
   .home-img-container {
     /* width: 375px; */
     display: flex;
@@ -526,89 +538,6 @@ em {
     align-items: center;
     align-content: space-between; /*equal horz space bt*/
   }
-  /* -----------------DONATE SMALL SCREEN----------------- */
-  .mail-donation {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .mail-donation p {
-    margin: 0;
-    padding-left: 50px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .donateButton {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: #bb9457;
-    color: #23395b;
-    padding: 10px;
-    font-size: 24px;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-  .tax-deduct {
-    /* padding: 10px; */
-    color: #23395b;
-  }
-  #woof {
-    margin: 0;
-    padding-top: 30px;
-    color: red;
-    text-align: center;
-    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
-  }
-  #ty {
-    margin: 0;
-    padding-top: 10px;
-    color: red;
-    text-align: center;
-    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
-  }
-  .form-container {
-    margin: 0;
-    padding: 10px 30px 10px 30px;
-  }
-  form {
-    padding: 20px;
-    border: 3px double #23395b;
-  }
-  h3 {
-    padding: 30px 30px 10px 30px;
-    margin: 0;
-  }
-
-  #name {
-    width: 100%;
-  }
-  #address {
-    width: 100%;
-  }
-  #cc {
-    width: 100%;
-  }
-  #exp-mo {
-    width: 10%;
-  }
-  #exp-yr {
-    width: 10%;
-  }
-  #cvv {
-    width: 10%;
-  }
-  #email {
-    width: 100%;
-  }
-  #telephone {
-    width: 50%;
-  }
-  #other {
-    margin: 10px;
-  }
-  #donation-amt p {
-    padding: 10px;
-  }
   /* -----------------ABOUT SMALL SCREEN----------------- */
 
   /* .about-content {
@@ -697,6 +626,113 @@ em {
     padding: 30px;
     /* padding-bottom: 20px; */
   }
+  /* -----------------DONATE SMALL SCREEN----------------- */
+
+  .donate-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23395b;
+  }
+  .donate-banner p {
+    color: #efeeea;
+    margin: 0 auto;
+    padding: 20px 30px;
+    text-align: left;
+  }
+
+  .donate-flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .donate-img-container {
+    width: 100%;
+    height: 250px;
+  }
+  #donate-dog2 {
+  }
+  .mail-donation {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .mail-donation p {
+    margin: 0;
+    padding-left: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .donateButton {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #bb9457;
+    color: #23395b;
+    padding: 10px;
+    font-size: 24px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  .tax-deduct {
+    /* padding: 10px; */
+    color: #23395b;
+  }
+  #woof {
+    margin: 0;
+    padding-top: 30px;
+    color: red;
+    text-align: center;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+  }
+  #ty {
+    margin: 0;
+    padding-top: 10px;
+    color: red;
+    text-align: center;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+  }
+  .form-container {
+    margin: 0;
+    padding: 10px 30px 10px 30px;
+  }
+  form {
+    padding: 20px;
+    border: 3px double #23395b;
+  }
+  h3 {
+    padding: 30px 30px 10px 30px;
+    margin: 0;
+  }
+
+  #name {
+    width: 100%;
+  }
+  #address {
+    width: 100%;
+  }
+  #cc {
+    width: 100%;
+  }
+  #exp-mo {
+    width: 10%;
+  }
+  #exp-yr {
+    width: 10%;
+  }
+  #cvv {
+    width: 10%;
+  }
+  #email {
+    width: 100%;
+  }
+  #telephone {
+    width: 50%;
+  }
+  #other {
+    margin: 10px;
+  }
+  #donation-amt p {
+    padding: 10px;
+  }
 }
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
@@ -705,9 +741,20 @@ em {
     margin: 0 auto;
   }
   /* -------------------HOME --------------*/
-  .header-blurb p {
+
+  .home-banner {
+    width: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23395b;
+  }
+  .home-banner p {
     text-align: center;
     width: 452px;
+    color: #efeeea;
+    margin: 0 auto;
+    padding: 20px 30px;
   }
 
   /* -----------------ABOUT MEDIUM SCREEN----------------- */
@@ -867,6 +914,21 @@ em {
     /* max-width: 992px;important so your wrapper starts at 100% (default) and
         expands to 992px or the width of your comp but doesn't 
         overstretch*/
+  }
+  /*---------------ADOPT LARGE SCREEN----------------*/
+  .home-banner {
+    width: 992px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23395b;
+  }
+  .home-banner p {
+    text-align: center;
+    width: 850px;
+    color: #efeeea;
+    margin: 0 auto;
+    padding: 20px 30px;
   }
   /*---------------ADOPT LARGE SCREEN----------------*/
   .adopt-banner {
