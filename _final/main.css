@@ -527,7 +527,7 @@ form {
   .next-event {
     background-color: #efeeea;
     /* padding: 30px; */
-    /* padding-top: 125px; */
+    padding-top: 20px;
     color: #443627;
     font-size: 1.25em;
     float: left;
@@ -536,15 +536,12 @@ form {
     width:250px;
   }
   .you-help {
-    /* float: left; */
     background-color: #efeeea;
-    /* padding: 30px; */
-    /* padding-bottom: 175px; */
+    padding-bottom: 100px;
     color: #443627;
     font-size: 1.25em;
-    /* padding-left: 40px;
-    margin: 250px 0 0px 0; */
-    width:400px;
+    width: 400px;
+    margin-right: 0;
   }
   .you-help p {
     margin: 0;
