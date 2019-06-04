@@ -384,11 +384,25 @@ em {
   }
 
   /* --------------ADOPT SMALL SCREEN-----------------*/
-  .adopt-event {
+
+  .adopt-banner {
+    background-color: #23395b;
+    width: 375px;
+  }
+  .adopt-banner p {
+    width: 375px;
+    text-align: center;
+    color: #efeeea;
+    margin: 0 auto;
+    padding: 20px 30px;
+  }
+  #adopt-event {
     font-family: "Amatic SC", cursive;
+    width: 300px;
   }
   #upcoming {
     font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    width: 300px;
   }
   #adopt-dog {
     /* display: block;
@@ -424,9 +438,7 @@ em {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .header-blurb p {
-    text-align: center;
-  }
+
   .blog {
     display: flex;
     flex-direction: column;
@@ -499,12 +511,12 @@ em {
     /* margin-top: 5px;
         margin-left: -5px; */
   }
-  #blog-meet p {
+  /* #blog-meet p {
     padding-left: 30px;
     padding-right: 20px;
     color: #efeeea;
     text-align: center;
-  }
+  } */
   .flex-container-ads {
     padding-top: 50px;
     display: flex;
@@ -815,14 +827,25 @@ em {
     align-items: center;
     align-content: space-between; /*equal horz space bt*/
   }
-  #blog-meet p {
+  /* #blog-meet p {
     padding-left: 30px;
     padding-right: 20px;
     color: #efeeea;
     text-align: center;
+  } */
+  .adopt-banner {
+    background-color: #23395b;
+    width: 768px;
+  }
+  .adopt-banner p {
+    width: 600px;
+    text-align: center;
+    color: #efeeea;
+    margin: 0 auto;
+    padding: 20px 30px;
   }
   .adopt-header {
-    width: 600px;
+    width: 768px;
     color: #efeeea;
     text-shadow: 1px 0px 4px black;
     text-align: center;
@@ -846,6 +869,10 @@ em {
         overstretch*/
   }
   /*---------------ADOPT LARGE SCREEN----------------*/
+  .adopt-banner {
+    background-color: #23395b;
+    width: 992px;
+  }
   .adopt-header {
     width: 800px;
     color: #efeeea;
