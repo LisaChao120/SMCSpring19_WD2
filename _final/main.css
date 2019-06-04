@@ -306,10 +306,10 @@ em {
     font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
     font-size: 16px;
   }
-  img {
+  /* img {
     max-width: 100%;
     /* height: auto; */
-  }
+  } */
   .wrapper {
     background-color: #bb9457;
     margin: 0; /*this sets the width of the comp in the mobile that allows 
@@ -358,6 +358,7 @@ em {
     display: flex;
     justify-content: center;
     background-color: #23395b;
+    min-width:375px;
   }
   .footer-text-container p {
     font-size: 12px;
@@ -370,7 +371,7 @@ em {
   /* --------------HOME SMALL SCREEN-----------------*/
 
   .home-banner {
-    width: 375px;
+    min-width: 375px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -394,12 +395,26 @@ em {
     width: 100%;
     margin: 0 auto;
   }
+  .home-text-container {
+    background-color: #efeeea;
+    padding-bottom: 20px;
+  }
+  .home-text-container p {
+    margin: 0;
+    padding: 30px;
+  }
+
+  .container {
+    margin: 0px;
+    min-width: 375px;
+    background-color: #efeeea;
+  }
 
   /* --------------ADOPT SMALL SCREEN-----------------*/
 
   .adopt-banner {
     background-color: #23395b;
-    width: 375px;
+    min-width: 375px;
   }
   .adopt-banner p {
     width: 375px;
@@ -629,6 +644,7 @@ em {
   /* -----------------DONATE SMALL SCREEN----------------- */
 
   .donate-banner {
+    min-width: 375px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -640,26 +656,49 @@ em {
     padding: 20px 30px;
     text-align: left;
   }
-
-  .donate-flex-container {
-    display: flex;
-    flex-direction: column;
-  }
+ 
   .donate-img-container {
-    width: 100%;
-    height: 250px;
+ 
+    /* width:100%; */
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #efeeea;
+    width:375px;
+    height: 275px;
   }
-  #donate-dog2 {
+  #donate-dog {
+    width:100%;
+    height:275px;
   }
   .mail-donation {
-    padding-top: 10px;
-    padding-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #efeeea;
+    width:375px;
+   
   }
   .mail-donation p {
     margin: 0;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     padding-top: 0;
-    padding-bottom: 0;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  h3 {
+    padding: 0 30px 10px 30px;
+    margin: 0;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
   }
   .donateButton {
     display: flex;
@@ -672,37 +711,34 @@ em {
     margin: 0 auto;
     border-radius: 8px;
   }
-  .tax-deduct {
-    /* padding: 10px; */
-    color: #23395b;
-  }
   #woof {
     margin: 0;
     padding-top: 30px;
     color: red;
     text-align: center;
     font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    background-color: #efeeea;
   }
   #ty {
     margin: 0;
     padding-top: 10px;
+    padding-bottom: 10px;
     color: red;
     text-align: center;
     font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    background-color: #efeeea;
   }
   .form-container {
-    margin: 0;
-    padding: 10px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #efeeea;
+    padding: 30px;
+
   }
   form {
     padding: 20px;
     border: 3px double #23395b;
   }
-  h3 {
-    padding: 30px 30px 10px 30px;
-    margin: 0;
-  }
-
   #name {
     width: 100%;
   }
@@ -743,7 +779,7 @@ em {
   /* -------------------HOME --------------*/
 
   .home-banner {
-    width: 768px;
+    min-width: 768px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -827,8 +863,90 @@ em {
     text-align: center;
   }
   /*---------------DONATE MEDIUM SCREEN----------------*/
+  #woof {
+    margin: 0;
+    padding-top: 200px;
+    color: red;
+    text-align: center;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    background-color: #efeeea;
+  }
+  #ty {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 200px;
+    color: red;
+    text-align: center;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    background-color: #efeeea;
+  }
+
+  .donate-img-container {
+    /* width:100%; */
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #efeeea;
+    width:300px;
+    height: 275px;
+  }
+  .mail-donation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     padding-top: 0;
+     padding-bottom: 20px;
+     /* display: flex;
+     flex-direction: column; */
+     background-color: #efeeea;
+     /* width:300px; */
+    
+   }
+   .mail-donation p {
+     margin: 0;
+     /* padding-left: 50px; */
+     padding-top: 0;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+   h3 {
+     padding: 0 30px 10px 30px;
+     margin: 0;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+
+  /* .mail-donation {
+    margin:0;
+    padding-top: 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #efeeea;
+    width:300px;
+   height:275px;
+  } */
+  .form-container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 300px;
+  }
   form {
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 0 auto;
   }
 
@@ -862,6 +980,7 @@ em {
   #donation-amt p {
     padding: 10px;
   }
+  
   /*---------------ADOPT MEDIUM SCREEN----------------*/
 
   .flex-container-ads {
@@ -882,7 +1001,7 @@ em {
   } */
   .adopt-banner {
     background-color: #23395b;
-    width: 768px;
+    min-width: 768px;
   }
   .adopt-banner p {
     width: 600px;
@@ -917,7 +1036,7 @@ em {
   }
   /*---------------ADOPT LARGE SCREEN----------------*/
   .home-banner {
-    width: 992px;
+    min-width: 992px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -933,7 +1052,7 @@ em {
   /*---------------ADOPT LARGE SCREEN----------------*/
   .adopt-banner {
     background-color: #23395b;
-    width: 992px;
+    min-width: 992px;
   }
   .adopt-header {
     width: 800px;
@@ -964,4 +1083,4 @@ em {
     align-items: center;
     align-content: space-between; /*equal horz space bt*/
   }
-}
+}/*closes LARGE media query*/

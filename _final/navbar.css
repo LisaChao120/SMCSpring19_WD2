@@ -35,6 +35,8 @@
 nav {
   display: flex;
   flex-direction: column;
+  background-color: #bb9457;
+  min-width: 375px;
 }
 .navbar {
   display: none;
