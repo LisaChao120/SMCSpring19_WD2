@@ -424,7 +424,7 @@ p {
   padding: 20px 30px;
 }
 #adopt-event {
-  font-family: "Amatic SC", cursive;
+  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
   width: 300px;
 }
 #upcoming {
@@ -604,7 +604,12 @@ p {
 }
 .about-img-container {
   width: 100%;
-  height: 250px;
+  height: 200px;
+  position: relative;
+  background-image: url(images/devon-janse-van-rensburg-513898-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 .about-img-container2 {
   width: 100%;
@@ -805,7 +810,15 @@ form {
     margin: 0;
     background-color: #efeeea;
   }
-
+  .about-img-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-image: url(images/devon-janse-van-rensburg-513898-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
   .about-img-container2 {
     width: 325px;
     height: 250px;
