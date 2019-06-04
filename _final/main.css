@@ -418,7 +418,7 @@ p {
 }
 
 .home-img-container {
-  width: 375px;
+  width: 100%;
   height: 200px;
   /* position: relative; */
   background-image: url("images/home1-375.jpg");
@@ -1203,6 +1203,7 @@ form {
   /* use clear fix to keep parent container from collapsing down since everything inside was floated */
   .clearfix {
     clear: both;
+    
   }
   .floater-section {
     float: left;
@@ -1234,7 +1235,7 @@ form {
     background-color: #efeeea;
     margin: 0;
     height: auto;
-    width: 100%;
+    width: 992px;
     /* display: flex;
     flex-direction: column; */
     /* width: 375px; */
@@ -1251,26 +1252,35 @@ form {
   }
 
   .next-event {
-    margin: 0 auto;
-    background-color: #efeeea;
-    padding: 30px;
-    color: #ca6e0b;
-    font-size: 2em;
-  }
-
-  .you-help {
-    margin: 0 auto;
     background-color: #efeeea;
     padding: 30px;
     color: #443627;
-    font-size: 2em;
+    font-size: 1.25em;
+    width: 700px;
+    float: left;
+    padding-left: 40px;
+    margin:0;
+  }
+
+  .you-help {
+    background-color: #efeeea;
+    padding: 30px;
+    color: #443627;
+    font-size: 1.25em;
+    width: 700px;
+    float: left;
+    padding-left: 40px;
+    margin:0;
+}
   }
   .next-event strong {
     color: #23395b;
     font-size: 1.25em;
+    margin:0;
   }
   .you-help strong {
     color: #23395b;
     font-size: 1.25em;
+    margin:0;
   }
 }
