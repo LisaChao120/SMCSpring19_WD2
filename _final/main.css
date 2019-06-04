@@ -20,279 +20,8 @@ body {
   margin: 0px;
   font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
   font-size: 16px;
-  /* color: #443627; */
-}
-/* 
-.wrapper {
-  background-color: #bb9457;
-  margin: 0;
-  width: 100%;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.clearfix {
-  clear: both;
-}
-.text-container {
-  background-color: #efeeea;
-  padding-bottom: 20px;
-}
-.text-container p {
-  margin: 0;
-  padding: 30px;
 }
 
-.container {
-  margin: 0px;
-  min-width: 375px;
-  background-color: #efeeea;
-}
-
-.container h1 {
-  color: #23395b;
-  display: flex;
-  justify-content: center;
-}
-p {
-  font-size: 16px;
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 1.5;
-  color: #443627;
-}
-.container ul {
-  color: #443627;
-  font-family: "Josefin Sans", sans-serif;
-}
-.footer-text-container {
-  display: flex;
-  justify-content: center;
-  background-color: #23395b;
-}
-.footer-text-container p {
-  font-size: 12px;
-  text-align: center;
-  color: #efeeea;
-  padding-top: 10px;
-  padding-bottom: 10px;
-} */
-
-/* --------------HOME GLOBAL STYLES-----------------*/
-/* .home-img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#puppyEyes {
-  width: 100%;
-  margin: 0 auto;
-} */
-
-/* --------------BLOG GLOBAL STYLES-----------------*/
-/* .header-blurb p {
-  text-align: center;
-}
-.blog {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.blog h1 {
-  color: #23395b;
-  padding: 30px;
-  text-align: center;
-  margin: 0;
-}
-.blog p {
-  margin: 0;
-  padding: 0 30px 30px 30px;
-  color: #443627;
-}
-
-.adopt-ad {
-  display: flex;
-  flex-direction: row;
-  margin: 10px 10px 50px 10px;
-  padding-left: 20px;
- 
-}
-.dog-img-box {
- 
-  min-width: 180px;
-  height: 240px;
-}
-.dog-img-box img {
-  border-radius: 8px;
-  
-}
-.dog-info-box {
-  color: #443627;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  height: 240px;
-  margin-left: 30px;
-}
-.dog-name h2 {
-  color: #23395b;
-  padding-left: 0;
-  margin-left: 0;
-  margin-top: 0;
-}
-.dog-stats {
-  padding-left: 10px;
-  line-height: 1.5;
-}
-.dog-stats ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-.dog-stats p {
-  padding: 10px;
-}
-.blog-btn button {
-  background-color: #bb9457;
-  color: #23395b;
-  padding: 10px;
-  font-size: 18px;
-  margin: 0 auto;
-  border-radius: 8px;
- }
-#blog-meet p {
-  padding-left: 30px;
-  padding-right: 20px;
-} */
-
-/* -----------------DONATE GLOBAL STYLES----------------- */
-/* .mail-donation {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.mail-donation p {
-  margin: 0;
-  padding-left: 50px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.donateButton {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  background-color: #bb9457;
-  color: #23395b;
-  padding: 10px;
-  font-size: 24px;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-.tax-deduct {
- 
-  color: #23395b;
-}
-#woof {
-  margin: 0;
-  padding-top: 30px;
-  color: red;
-  text-align: center;
-  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
-}
-#ty {
-  margin: 0;
-  padding-top: 10px;
-  color: red;
-  text-align: center;
-  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
-}
-.form-container {
-  margin: 0;
-  padding: 10px 30px 10px 30px;
-}
-form {
-  padding: 20px;
-  border: 3px double #23395b;
-}
-h3 {
-  padding: 30px 30px 10px 30px;
-  margin: 0;
-}
-
-#name {
-  width: 100%;
-}
-#address {
-  width: 100%;
-}
-#cc {
-  width: 100%;
-}
-#exp-mo {
-  width: 10%;
-}
-#exp-yr {
-  width: 10%;
-}
-#cvv {
-  width: 10%;
-}
-#email {
-  width: 100%;
-}
-#telephone {
-  width: 50%;
-}
-#other {
-  margin: 10px;
-}
-#donation-amt p {
-  padding: 10px;
-} */
-/* -----------------ABOUT GLOBAL STYLES----------------- */
-/* .about-content {
-  background-color: #efeeea;
-}
-.about-content p {
-  padding-bottom: 0;
-}
-#about-list {
-   padding: 0 30px;
-  list-style: none;
-}
-#about-list li {
-  position: relative;
-  padding-left: 20px;
-  line-height: 1.5;
-  margin: 15px 0;
-}
-
-#about-list li:before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  background-image: url("images/sm-paw.png");
-  background-size: cover;
-  background-position: center;
-  left: 0;
-  transform: translateY(45%);
-}
-em {
-  color: #23395b;
-  font-size: 1.5rem;
-}
-.about-header {
-  text-align: center;
-  color: #efeeea;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #23395b;
-}
-.about-header h1 {
-  margin: 0 auto;
-  width: 200px;
-} */
 /*--------------SMALL SCREEN------------------*/
 /* @media (min-width: 375px) { */
 html {
@@ -306,10 +35,6 @@ body {
   font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
   font-size: 16px;
 }
-/* img {
-    max-width: 100%;
-    /* height: auto; */
-
 .wrapper {
   background-color: #bb9457;
   margin: 0; /*this sets the width of the comp in the mobile that allows 
@@ -321,7 +46,6 @@ body {
         expands to 992px or the width of your comp but doesn't 
         overstretch*/
 }
-
 .text-container {
   background-color: #efeeea;
   padding-bottom: 20px;
@@ -330,13 +54,11 @@ body {
   margin: 0;
   padding: 30px;
 }
-
 .container {
   margin: 0px;
   min-width: 375px;
   background-color: #efeeea;
 }
-
 .container h1 {
   color: #23395b;
   display: flex;
@@ -380,14 +102,12 @@ p {
   padding: 30px;
   color: #443627;
 }
-
 .next-event {
   margin: 0 auto;
   background-color: #efeeea;
   padding: 30px;
   color: #443627;
 }
-
 .you-help {
   margin: 0 auto;
   background-color: #efeeea;
@@ -416,7 +136,6 @@ p {
   margin: 0 auto;
   padding: 20px 30px;
 }
-
 .home-img-container {
   width: 100%;
   height: 200px;
@@ -430,9 +149,7 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-
 /* --------------ADOPT SMALL SCREEN-----------------*/
-
 .adopt-banner {
   background-color: #23395b;
   min-width: 375px;
@@ -483,7 +200,6 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .blog {
   display: flex;
   flex-direction: column;
@@ -500,24 +216,19 @@ p {
   padding: 0 30px 30px 30px;
   color: #443627;
 }
-
 .adopt-ad {
   display: flex;
   flex-direction: row;
   margin: 10px 10px 50px 10px;
   padding-left: 20px;
   width: 340px;
-  /* text-align: center; */
 }
 .dog-img-box {
-  /* margin: 0px 30px 0 30px; */
   min-width: 180px;
   height: 240px;
 }
 .dog-img-box img {
   border-radius: 8px;
-  /* padding: 10px;
-        border: 3px dotted #23395b; */
 }
 .dog-info-box {
   color: #443627;
@@ -553,15 +264,7 @@ p {
   font-size: 18px;
   margin: 0 auto;
   border-radius: 8px;
-  /* margin-top: 5px;
-        margin-left: -5px; */
 }
-/* #blog-meet p {
-    padding-left: 30px;
-    padding-right: 20px;
-    color: #efeeea;
-    text-align: center;
-  } */
 .flex-container-ads {
   padding-top: 50px;
   display: flex;
@@ -572,13 +275,6 @@ p {
   align-content: space-between; /*equal horz space bt*/
 }
 /* -----------------ABOUT SMALL SCREEN----------------- */
-
-/* .about-content {
-    background-color: #efeeea;
-  }
-  .about-content p {
-    padding-bottom: 0;
-  } */
 .about-list {
   /*paw bullets*/
   padding: 0 30px;
@@ -650,22 +346,15 @@ p {
 }
 .about-box1 {
   background-color: #efeeea;
-  /* padding-bottom: 20px; */
   margin: 0;
   padding: 50px 30px;
 }
-/* .about-box1 p {
-    margin: 0;
-    padding: 30px;
-  } */
 .about-box2 {
   background-color: #efeeea;
   margin: 0;
   padding: 30px;
-  /* padding-bottom: 20px; */
 }
 /* -----------------DONATE SMALL SCREEN----------------- */
-
 .donate-banner {
   min-width: 375px;
   display: flex;
@@ -679,7 +368,6 @@ p {
   padding: 20px 30px;
   text-align: left;
 }
-
 .donate-img-container {
   height: 400px;
   background-image: url("images/marliese-brandsma-1187380-unsplash.jpg");
@@ -704,10 +392,7 @@ p {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  /* display: flex;
-    flex-direction: column; */
   background-color: #efeeea;
-  /* width:375px; */
 }
 .mail-donation p {
   margin: 0;
@@ -805,7 +490,6 @@ form {
   .home-img-container {
     width: 768px;
     height: 300px;
-    /* position: relative; */
     background-image: url("images/home1-375.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -825,11 +509,8 @@ form {
     margin: 0 auto;
     padding: 20px 30px;
   }
-
   /* -----------------ABOUT MEDIUM SCREEN----------------- */
-
   .flex-container-about {
-    /* padding-top: 50px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -880,7 +561,6 @@ form {
     background-color: #efeeea;
     margin: 0;
     padding-top: 30px;
-    /* padding: 30px; */
   }
   .about-box2 p {
     margin: 0;
@@ -890,7 +570,6 @@ form {
     color: #efeeea;
     padding-top: 20px;
     padding-bottom: 20px;
-    /* margin: 0; */
     background-color: #23395b;
   }
   .about-header h1 {
@@ -906,7 +585,6 @@ form {
   .color-fill {
     background-color: #efeeea;
   }
-
   .donate-banner {
     min-width: 768px;
     display: flex;
@@ -920,7 +598,6 @@ form {
     padding: 20px 30px;
     text-align: left;
   }
-
   #woof {
     font-size: 2em;
     margin: 0;
@@ -948,7 +625,6 @@ form {
     background-size: cover;
     background-color: #efeeea;
   }
-
   .mail-donation {
     display: flex;
     flex-direction: column;
@@ -1010,7 +686,6 @@ form {
   #donation-amt p {
     padding: 10px;
   }
-
   /*---------------ADOPT MEDIUM SCREEN----------------*/
   .adopt-img-container {
     position: relative;
@@ -1039,12 +714,6 @@ form {
     align-items: center;
     align-content: space-between; /*equal horz space bt*/
   }
-  /* #blog-meet p {
-    padding-left: 30px;
-    padding-right: 20px;
-    color: #efeeea;
-    text-align: center;
-  } */
   .adopt-banner {
     background-color: #23395b;
     min-width: 768px;
@@ -1072,8 +741,7 @@ form {
 @media (min-width: 992px) {
   .wrapper {
     background-color: #bb9457;
-    margin: 0 auto; /*this sets the width of the comp in the mobile that allows 
-        for some margin left and right. */
+    margin: 0 auto;
     max-width: 992px; /*It's also common to set the wrapper to 100% 
         so you can use all the space.*/
     /* max-width: 992px;important so your wrapper starts at 100% (default) and
@@ -1081,14 +749,9 @@ form {
         overstretch*/
   }
   /*---------------DONATE LARGE SCREEN----------------*/
-
   .mail-donation {
     background-color: #efeeea;
     max-width: 992px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start; */
     padding-left: 0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1103,7 +766,6 @@ form {
     width: 500px;
     margin-left: 60px;
   }
-
   .donate-banner {
     min-width: 992px;
     display: flex;
@@ -1118,7 +780,6 @@ form {
     text-align: left;
     width: 700px;
   }
-
   #woof {
     font-size: 4em;
     margin: 0;
@@ -1146,9 +807,7 @@ form {
     background-size: cover;
     background-color: #efeeea;
   }
-
   /*---------------ADOPT LARGE SCREEN----------------*/
-
   .adopt-img-container {
     position: relative;
     height: 500px;
@@ -1187,23 +846,20 @@ form {
     margin: 10px 10px 50px 10px;
     padding-left: 20px;
     width: 400px;
-    /* text-align: center; */
   }
   .flex-container-ads {
     padding-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between;  */
     justify-content: space-evenly;
     align-items: center;
     align-content: space-between; /*equal horz space bt*/
   }
   /*---------------HOME LARGE SCREEN----------------*/
-  /* use clear fix to keep parent container from collapsing down since everything inside was floated */
+  /* use clearfix to keep parent container from collapsing down since everything inside was floated */
   .clearfix {
     clear: both;
-    
   }
   .floater-section {
     float: left;
@@ -1225,7 +881,6 @@ form {
   .home-img-container {
     width: 500px;
     height: 500px;
-    /* position: relative; */
     background-image: url("images/home1-375.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -1236,9 +891,6 @@ form {
     margin: 0;
     height: auto;
     width: 992px;
-    /* display: flex;
-    flex-direction: column; */
-    /* width: 375px; */
   }
   #home-text-container {
     background-color: #efeeea;
@@ -1259,9 +911,8 @@ form {
     width: 700px;
     float: left;
     padding-left: 40px;
-    margin:0;
+    margin: 0;
   }
-
   .you-help {
     background-color: #efeeea;
     padding: 30px;
@@ -1270,17 +921,16 @@ form {
     width: 700px;
     float: left;
     padding-left: 40px;
-    margin:0;
-}
+    margin: 0;
   }
   .next-event strong {
     color: #23395b;
     font-size: 1.25em;
-    margin:0;
+    margin: 0;
   }
   .you-help strong {
     color: #23395b;
     font-size: 1.25em;
-    margin:0;
+    margin: 0;
   }
 }
