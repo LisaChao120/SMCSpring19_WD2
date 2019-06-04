@@ -861,19 +861,23 @@ form {
     text-align: center;
   }
   /*---------------DONATE MEDIUM SCREEN----------------*/
-
+  .color-fill {
+    background-color: #efeeea;
+  }
   #woof {
+    font-size: 2em;
     margin: 0;
-    padding-top: 200px;
+    padding-top: 100px;
     color: red;
     text-align: center;
     font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
     background-color: #efeeea;
   }
   #ty {
+    font-size: 2em;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     color: red;
     text-align: center;
     font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
@@ -1033,7 +1037,35 @@ form {
         expands to 992px or the width of your comp but doesn't 
         overstretch*/
   }
-  /*---------------ADOPT LARGE SCREEN----------------*/
+  /*---------------DONATE LARGE SCREEN----------------*/
+  #woof {
+    font-size: 4em;
+    margin: 0;
+    padding-top: 200px;
+    color: red;
+    text-align: center;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    background-color: #efeeea;
+  }
+  #ty {
+    font-size: 4em;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 200px;
+    color: red;
+    text-align: center;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    background-color: #efeeea;
+  }
+  .donate-img-container {
+    height: 500px;
+    background-image: url("images/marliese-brandsma-1187380-unsplash.jpg");
+    background-repeat: no-repeat; /*don't repeat img*/
+    background-position: top; /*centers the img*/
+    background-size: cover;
+    background-color: #efeeea;
+  }
+  /*---------------HOME LARGE SCREEN----------------*/
   .home-banner {
     min-width: 992px;
     display: flex;
