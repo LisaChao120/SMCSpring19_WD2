@@ -60,6 +60,7 @@ nav {
     /* max-width: 992px;important so your wrapper starts at 100% (default) and
         expands to 992px or the width of your comp but doesn't 
         overstretch*/
+    background-color: #efeeea;
   }
 
   .footer-text-container {
@@ -503,6 +504,7 @@ nav {
     margin: 0;
     width: 100%;
     max-width: 768px;
+    background-color: #efeeea;
   }
   .footer-text-container {
     display: flex;
@@ -580,48 +582,40 @@ nav {
     font-size: 1.25rem;
     /* float: left; */
   }
-
   .next-event {
-    background-color: #efeeea;
-    /* padding: 30px; */
-    padding-top: 20px;
-    color: #443627;
-    font-size: 1.25em;
     float: left;
-    padding-left: 40px;
-    margin: 0;
-    width: 250px;
-  }
-  .you-help {
+    margin: 0 auto;
+    padding: 30px 0px 30px 30px;
     background-color: #efeeea;
-    padding-bottom: 100px;
-    color: #443627;
-    font-size: 1.25em;
-    width: 400px;
-    margin-right: 0;
   }
-  .you-help p {
+  .next-event p {
     margin: 0;
-    /* padding-left: 280px;
-    padding-top: 30px; */
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    color: #443627;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: left;
   }
   .next-event strong {
     color: #23395b;
-    font-size: 1.25em;
+    font-size: 20px;
+  }
+  .you-help {
+    padding: 30px 30px 30px 0px;
+    background-color: #efeeea;
+  }
+  .you-help p {
     margin: 0;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    color: #443627;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: left;
   }
   .you-help strong {
     color: #23395b;
-    font-size: 1.25em;
-    margin: 0;
+    font-size: 20px;
   }
-  /* 
-  .you-help h1 {
-    color: #23395b;
-    margin: 0;
-    text-align: center;
-  } 
-  */
 
   /* -----------------ABOUT MEDIUM SCREEN----------------- */
   .flex-container-about {
@@ -859,6 +853,7 @@ nav {
     /* max-width: 992px;important so your wrapper starts at 100% (default) and
         expands to 992px or the width of your comp but doesn't 
         overstretch*/
+    background-color: #efeeea;
   }
   .footer-text-container {
     display: flex;
