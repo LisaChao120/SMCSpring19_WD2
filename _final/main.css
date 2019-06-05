@@ -534,7 +534,32 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(141, 153, 174, 0.5),
+        rgba(141, 153, 174, 0.2)
+      ),
+      url("images/home1-375.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
+  .home-img-container p {
+    min-width: 575px;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    line-height: 1.75;
+    font-size: 20px;
+    text-align: center;
+    color: #efeeea;
+    text-shadow: 1px 0px 4px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .home-banner {
     min-width: 768px;
     display: flex;
@@ -993,6 +1018,30 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(141, 153, 174, 0.5),
+        rgba(141, 153, 174, 0.2)
+      ),
+      url("images/home1-375.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .home-img-container p {
+    min-width: 700px;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    line-height: 1.75;
+    font-size: 24px;
+    text-align: center;
+    color: #efeeea;
+    text-shadow: 1px 0px 4px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   #home-text-container {
