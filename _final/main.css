@@ -12,7 +12,32 @@ font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
 font-size: 16px;
 line-height: 1.5;
 */
+.text-container {
+  background-color: #efeeea;
+  padding-bottom: 20px;
+}
+.text-container p {
+  margin: 0;
+  padding: 30px;
+  font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.container {
+  margin: 0px;
+  min-width: 375px;
+  background-color: #efeeea;
+}
+.container h1 {
+  color: #23395b;
+  display: flex;
+  justify-content: center;
+}
 
+.container ul {
+  color: #443627;
+  font-family: "Josefin Sans", sans-serif;
+}
 /*------------GLOBAL STYLES----------------*/
 
 html {
@@ -30,38 +55,13 @@ nav {
   .wrapper {
     margin: 0;
     min-width: 375px;
-    width: 100%; /*It's also common to set the wrapper to 100% 
+    width: 100%; /*wrapper width: It's common to set the wrapper to 100% 
         so you can use all the space.*/
     /* max-width: 992px;important so your wrapper starts at 100% (default) and
         expands to 992px or the width of your comp but doesn't 
         overstretch*/
   }
-  .text-container {
-    background-color: #efeeea;
-    padding-bottom: 20px;
-  }
-  .text-container p {
-    margin: 0;
-    padding: 30px;
-    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  .container {
-    margin: 0px;
-    min-width: 375px;
-    background-color: #efeeea;
-  }
-  .container h1 {
-    color: #23395b;
-    display: flex;
-    justify-content: center;
-  }
 
-  .container ul {
-    color: #443627;
-    font-family: "Josefin Sans", sans-serif;
-  }
   .footer-text-container {
     display: flex;
     justify-content: center;
@@ -69,6 +69,8 @@ nav {
     width: 100%;
   }
   .footer-text-container p {
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    line-height: 1.5;
     font-size: 12px;
     text-align: center;
     color: #efeeea;
@@ -483,6 +485,21 @@ nav {
     width: 100%;
     max-width: 768px;
   }
+  .footer-text-container {
+    display: flex;
+    justify-content: center;
+    background-color: #23395b;
+    width: 100%;
+  }
+  .footer-text-container p {
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: center;
+    color: #efeeea;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   /* -------------------HOME --------------*/
   .home-colorfill {
     background-color: #efeeea;
@@ -798,6 +815,21 @@ nav {
     /* max-width: 992px;important so your wrapper starts at 100% (default) and
         expands to 992px or the width of your comp but doesn't 
         overstretch*/
+  }
+  .footer-text-container {
+    display: flex;
+    justify-content: center;
+    background-color: #23395b;
+    width: 100%;
+  }
+  .footer-text-container p {
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+    color: #efeeea;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   /*---------------DONATE LARGE SCREEN----------------*/
   .mail-donation {
