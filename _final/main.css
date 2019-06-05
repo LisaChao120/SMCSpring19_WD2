@@ -16,18 +16,18 @@ line-height: 1.5;
 /*------------GLOBAL STYLES----------------*/
 
 html {
-  margin: 0px;
+  margin: 0;
   height: 100%;
-  scroll-behavior: smooth;
 }
 body {
   margin: 0px;
 }
-
+nav {
+  background-color: #bb9457;
+}
 /*--------------SMALL SCREEN------------------*/
 @media (min-width: 375px) {
   .wrapper {
-    background-color: #bb9457;
     margin: 0;
     min-width: 375px;
     width: 100%; /*It's also common to set the wrapper to 100% 
@@ -479,8 +479,9 @@ body {
 /*****************MEDIUM SCREEN*******************/
 @media (min-width: 768px) {
   .wrapper {
+    margin: 0;
+    width: 100%;
     max-width: 768px;
-    margin: 0 auto;
   }
   /* -------------------HOME --------------*/
   .home-colorfill {
@@ -790,8 +791,8 @@ body {
 /*****************LARGE SCREEN*******************/
 @media (min-width: 992px) {
   .wrapper {
-    background-color: #bb9457;
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;
     max-width: 992px; /*It's also common to set the wrapper to 100% 
         so you can use all the space.*/
     /* max-width: 992px;important so your wrapper starts at 100% (default) and
