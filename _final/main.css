@@ -89,6 +89,9 @@ body {
     margin: 0;
     padding: 30px;
     color: #443627;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .next-event {
     margin: 0 auto;
@@ -118,6 +121,9 @@ body {
     background-color: #23395b;
   }
   .home-banner p {
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
     width: 300px;
     color: #efeeea;
