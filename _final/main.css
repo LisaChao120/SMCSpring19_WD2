@@ -292,6 +292,7 @@ nav {
     align-content: space-between; /*equal horz space bt*/
   }
   /* -----------------ABOUT SMALL SCREEN----------------- */
+
   .about-list {
     /*paw bullets*/
     padding: 0 30px;
@@ -326,16 +327,21 @@ nav {
     font-size: 1.5rem;
   }
   .about-header {
-    text-align: center;
-    color: #efeeea;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #23395b;
   }
   .about-header h1 {
+    width: 300px;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    color: #efeeea;
     margin: 0 auto;
-    width: 200px;
+    padding: 20px 30px;
   }
+
   .about-img-container {
     width: 100%;
     height: 200px;
@@ -361,6 +367,18 @@ nav {
     display: flex;
     flex-direction: column;
   }
+
+  .flex-container-about p,
+  h1,
+  li {
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #443627;
+    margin: 0 auto;
+  }
+
   .about-box1 {
     background-color: #efeeea;
     margin: 0;
@@ -671,17 +689,23 @@ nav {
   .about-box2 p {
     margin: 0;
   }
+
   .about-header {
-    text-align: center;
-    color: #efeeea;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #23395b;
   }
   .about-header h1 {
+    width: 600px;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+    color: #efeeea;
     margin: 0 auto;
-    width: 400px;
+    padding: 20px 30px;
   }
+
   #until-every p {
     margin: 0 auto;
     padding: 0;
@@ -1069,5 +1093,21 @@ nav {
   .you-help strong {
     color: #23395b;
     font-size: 24px;
+  }
+  /* ----------ABOUT LARGE SCREEN  */
+  .about-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #23395b;
+  }
+  .about-header h1 {
+    width: 600px;
+    font-family: "Josefin Sans", Helvetica, Ariel, sans-serif;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+    color: #efeeea;
+    margin: 0 auto;
+    padding: 20px 30px;
   }
 }
