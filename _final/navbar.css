@@ -1,6 +1,3 @@
-/* .clearfix {
-  clear: both;
-} */
 .hamburger-container {
   cursor: pointer;
   padding: 20px 20px 0 20px;
@@ -106,6 +103,7 @@ nav {
   nav {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .navbar {
     display: none;
