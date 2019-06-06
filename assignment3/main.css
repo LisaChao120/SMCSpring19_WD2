@@ -1,0 +1,156 @@
+html {
+  /*border box fix must be on html tag before body tag*/
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+nav {
+  text-align: center;
+  background: white;
+  position: fixed; /*elements in fixed position are removed from the default page flow and stacking order*/
+  width: 100%; /*if don't set a width to a positioned element, it will only be as wide as its content*/
+  top: 0; /*puts nav bar at top of browser viewport*/
+  margin: 0 auto;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px; /*padding top btm is 15, left right is 20*/
+  text-decoration: none; /*removes the default underline on links*/
+  text-transform: uppercase;
+  font-weight: 700; /*equivalent to bold*/
+  color: #2b2d42;
+  size: 1.5rem;
+}
+nav a:hover {
+  color: aquamarine;
+}
+/* .hamburger-menu span {
+  background: #c7efcf;
+  width: 40px;
+  height: 5px;
+  display: block;
+  margin-bottom: 2px;
+  float: right;
+} */
+
+header {
+  height: 150px;
+  background: #fff07c;
+  color: lightgoldenrodyellow;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+/*****COLOR PALETTE**********
+yellow #fff07c
+peach #f7a9a8
+purple #ca7df9
+pink #ff99c8
+green #c7efcf 
+****************************/
+h1 {
+  font-family: Krub, Helvetica, Arial, sans-serif;
+}
+p {
+  font-family: Coustard, Georgia, Palatino, serif;
+}
+.container {
+  background-color: oldlace;
+}
+.red {
+  background-color: lightcoral;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
+}
+.green {
+  background-color: lightgreen;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
+}
+.blue {
+  background-color: lightskyblue;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
+}
+.yellow {
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
+}
+.cyan {
+  background-color: darkturquoise;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
+}
+.purple {
+  background-color: plum;
+  padding: 10px;
+  margin: 0 auto;
+  float: left;
+}
+.clear {
+  clear: none;
+}
+.floater-section {
+  float: left;
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+/* use clear fix to keep parent container from collapsing down since everything inside was floated */
+.clearfix {
+  clear: both;
+}
+/*****************SMALL SCREEN*******************/
+@media (min-width: 450px) {
+  .small-width-25 {
+    width: 25%;
+  }
+  .small-width-33 {
+    width: 33.3333%;
+  }
+  .small-width-50 {
+    width: 50%;
+  }
+  .small-width-100 {
+    width: 100%;
+  }
+}
+
+/*****************MEDIUM SCREEN*******************/
+@media (min-width: 768px) {
+  .med-width-25 {
+    width: 25%;
+  }
+  .med-width-33 {
+    width: 33.3333%;
+  }
+  .med-width-50 {
+    width: 50%;
+  }
+  .med-width-100 {
+    width: 100%;
+  }
+}
+/*****************LARGE SCREEN*******************/
+@media (min-width: 992px) {
+  .large-width-25 {
+    width: 25%;
+  }
+  .large-width-33 {
+    width: 33.3333%;
+  }
+  .large-width-50 {
+    width: 50%;
+  }
+  .large-width-100 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Which Friends character are you?</h1>
+      <form action="" method="POST">
+        <label for="friendsCharacters">Friends Characters</label>
+        <select name="characters" id="friendsCharacters">
+          <option value="rachel">Rachel Green</option>
+          <option value="monica">Monica Geller</option>
+          <option value="phoebe">Phoebe Buffay</option>
+          <option value="joey">Joey Tribbiani</option>
+          <option value="chandler">Chandler Bing</option>
+          <option value="ross">Ross Geller</option>
+        </select>
+      </form>
+    </main>
+    <script>
+      var characterDropdown = document.getElementById("friendsCharacters");
+      characterDropdown.addEventListener("change", myFunction(); {
+        myFunction () {
+          alert(
+            "Rachel Karen Green (Jennifer Aniston) is the spoiled but warm-hearted and likable daughter of a rich vascular surgeon and his wife."
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

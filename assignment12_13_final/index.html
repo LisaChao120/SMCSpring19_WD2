@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rover Rescue</title>
+    <!-- GOOGLE FONTS -->
+
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+      @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap");
+    </style>
+    <!-- STYLESHEETS -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="hamburger-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div class="flexbox-rr-logo">
+          <div class="rr-logo">
+            <h1>
+              <a href="index.html">
+                Rover
+                <img
+                  id="nav-logo-img"
+                  src="images/rover-logo-sm.png"
+                  alt="logo"
+                />
+                Rescue
+              </a>
+            </h1>
+          </div>
+          <!--closes RescueRover div-->
+        </div>
+
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="donate.html">Donate</a>
+            </li>
+            <li>
+              <a href="adopt.html">Adopt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="home-banner">
+        <p>
+          A non-profit organization dedicated to the rescue & placement of
+          homeless dogs from Los Angeles animal shelters.
+        </p>
+      </div>
+      <div class="content">
+        <div class="home-img-container">
+          <p>
+            Over 100 dogs are put to sleep in overcrowded Los Angeles area
+            animal shelters every day. Many of these homeless dogs have been
+            abandoned, abused or neglected, without ever knowing the love of a
+            caring human being.
+          </p>
+        </div>
+
+        <div class="home-content">
+          <div class="floater-section sm-width-100 med-width-50 lg-width-50">
+            <div class="next-event">
+              <p>
+                <strong> Mobile Adoption Event:</strong><br />
+                Saturday, June 8th<br />
+                11am - 2pm <br />
+                Centinela Feed & Pet Supply<br />
+                413 No. PCH<br />
+                Redondo Beach, CA 90277<br />
+                Come meet our adorable dogs available for adoption!
+              </p>
+            </div>
+          </div>
+          <div class="you-help">
+            <p>
+              <strong>Donate:</strong> your tax-deductible donation helps us
+              continue our life-saving work.
+              <br />
+              <strong> Sponsor a dog:</strong> find out how you can directly
+              save a life.
+              <br />
+              <strong> Volunteer:</strong> discover the joys of volunteering.
+              <br />
+              <strong>Foster a dog:</strong> foster homes are urgently needed.
+            </p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <footer id="footer" class="clearfix">
+        <div class="footer-text-container">
+          <p>
+            Rover Rescue is a non-profit 501(c)(3) organization<br />P.O. Box
+            424, Redondo Beach, CA 90277<br />Adoption Hotline 310.379.0154<br />©
+            2019 roverrescue.com
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../main.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".hamburger-container").click(function() {
+          $(".navbar").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>

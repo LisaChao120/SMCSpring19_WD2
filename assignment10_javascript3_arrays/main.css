@@ -1,0 +1,23 @@
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+main {
+  margin: 0 auto;
+}
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-opacity {
+  max-width: 100%;
+  opacity: 0.8;
+  min-height: 200px;
+}

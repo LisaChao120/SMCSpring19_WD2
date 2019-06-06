@@ -1,0 +1,156 @@
+/************************************
+ DEFAULT ***************************/
+/* .nav-fix {
+  height: 55px;
+  width: 100%;
+} */
+/* #hamburgerNavbar {
+  display: none; */
+body {
+  background-color: #2d0d04;
+}
+nav {
+  font-family: "Rye", cursive;
+  background-color: #2d0d04;
+  width: 100%;
+  padding: 10px 0px;
+  /* position: fixed; */
+  z-index: 10;
+}
+nav a {
+  width: 100%;
+  font-size: 22px;
+  text-decoration: none;
+  color: #f4b624;
+  line-height: 36px;
+}
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+nav li {
+  display: block;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+nav li:last-child {
+  border-bottom: none;
+}
+nav a:link {
+  text-decoration: none;
+  color: #eecc7d;
+}
+nav a:visited {
+  text-decoration: none;
+  color: #eecc7d;
+} /*visited links*/
+
+nav a:hover {
+  text-decoration: underline;
+  color: hsl(42, 77%, 71%);
+}
+nav a:active {
+  color: #eecc7d;
+  font-weight: bold;
+} /*pressed links*/
+button {
+  padding-top: 40px;
+  background-color: #2d0d04;
+  border: none;
+  width: 100px;
+  margin: 20px;
+}
+/*****************SMALL SCREEN*******************/
+@media (min-width: 450px) {
+  #hamburgerNavbar {
+    display: none;
+  }
+  .sm-index-logo {
+    display: inline-block;
+    margin: 20px;
+  }
+  .toggle {
+    display: inline-block;
+    float: right;
+  }
+}
+/*****************MEDIUM SCREEN*******************/
+@media (min-width: 768px) {
+  .toggle {
+    display: none;
+  }
+
+  .sm-index-logo {
+    display: inline-block;
+    margin: 20px;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+  nav {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px 50px;
+    margin: 0 auto;
+  }
+  nav li:last-child {
+    border-bottom: none;
+  }
+  nav a {
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5rem;
+  }
+}
+/*****************LARGE SCREEN*******************/
+@media (min-width: 992px) {
+  .toggle {
+    display: none;
+  }
+  .clearfix {
+    clear: both;
+  }
+  nav {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px 50px;
+    margin: 0 auto;
+  }
+  nav li:last-child {
+    border-bottom: none;
+  }
+  nav a {
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5rem;
+  }
+}

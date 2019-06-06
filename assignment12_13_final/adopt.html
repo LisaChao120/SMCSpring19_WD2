@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rover Rescue</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+      @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap");
+    </style>
+    <!-- STYLES -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-----wrapper is for the entire page----->
+      <nav>
+        <div class="hamburger-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div class="flexbox-rr-logo">
+          <div class="rr-logo">
+            <h1>
+              <a href="index.html">
+                Rover
+                <img
+                  id="nav-logo-img"
+                  src="images/rover-logo-sm.png"
+                  alt="logo"
+                />
+                Rescue
+              </a>
+            </h1>
+          </div>
+          <!--closes RescueRover div-->
+        </div>
+
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="donate.html">Donate</a>
+            </li>
+            <li>
+              <a href="adopt.html">Adopt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <div class="adopt-banner">
+          <p>
+            <strong id="upcoming">Adoption hotline: 310.379.0154</strong><br />
+            Meet any of our dogs by appointment <br />
+          </p>
+        </div>
+      </header>
+      <div class="adopt-img-container">
+        <div class="adopt-header">
+          <p>
+            Dogs available for adoption
+            <!-- <img
+            id="adopt-dog"
+            src="images/eric-ward-610868-unsplash.jpg"
+            alt="adopt image"
+          /> -->
+          </p>
+        </div>
+      </div>
+
+      <div class="text-container">
+        <section class="blog">
+          <div class="flex-container-ads">
+            <div class="adopt-ad">
+              <div class="dog-img-box">
+                <img src="images/chapo.jpg" alt="chapo" />
+              </div>
+
+              <div class="dog-info-box">
+                <div class="dog-name">
+                  <h2>Chapo</h2>
+                </div>
+
+                <div class="dog-stats">
+                  <ul>
+                    <li>Yorkie</li>
+                    <li>Male</li>
+                    <li>11 years</li>
+                    <li>4 lbs</li>
+                  </ul>
+                </div>
+
+                <div class="blog-btn">
+                  <button id="toggleChapo">Read Bio</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="chapo" style="display: none">
+              <p>
+                I’m sure Chapo was bought as a puppy. So cute and tiny. Now that
+                novelty has worn off. He’s 11! Just discarded. Chapo has so much
+                more love to give. He’s the perfect age! He’s not too old. He’s
+                tiny! Let Chapo live out his senior years the way that he
+                deserves. Loved and cherished.
+              </p>
+            </div>
+
+            <div class="adopt-ad">
+              <div class="dog-img-box">
+                <img src="images/mitch.jpg" alt="mitch" />
+              </div>
+              <div class="dog-info-box">
+                <div class="dog-name">
+                  <h2>Mitch</h2>
+                </div>
+                <div class="dog-stats">
+                  <ul>
+                    <li>Terrier</li>
+                    <li>Male</li>
+                    <li>1 y/o</li>
+                    <li>20 lbs</li>
+                  </ul>
+                </div>
+                <div class="blog-btn">
+                  <button id="toggleMitch">Read Bio</button>
+                </div>
+              </div>
+            </div>
+            <div id="mitch" style="display: none">
+              <p>
+                Mitch was originally adopted from Rover rescue in the late
+                summer of 2018. We kept in touch with his owner, thinking all
+                was good with Mitch. In March of 2019 we received a call that
+                broke our heart. Mitch was in a shelter in DENVER COLORADO! So
+                what do we do, we fly out to Denver to bail him and drive him
+                back home to Los Angeles. Mitch is such a love, a bit shy, super
+                loyal, and a bit oversized lap dog.
+              </p>
+            </div>
+
+            <div class="adopt-ad">
+              <div class="dog-img-box">
+                <img src="images/babu.jpg" alt="babu" />
+              </div>
+
+              <div class="dog-info-box">
+                <div class="dog-name">
+                  <h2>Babu</h2>
+                </div>
+
+                <div class="dog-stats">
+                  <ul>
+                    <li>Cocker Spaniel</li>
+                    <li>Female</li>
+                    <li>11 y/o</li>
+                    <li>12 lbs</li>
+                  </ul>
+                </div>
+                <div class="blog-btn">
+                  <button id="toggleBabu">Read Bio</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="babu" style="display: none">
+              <p>
+                Babu was rescued from a hoarding situation. When she came to us
+                she was a matted, neglected mess. babu is the most amazing
+                little dog. She’s just chill, and easy going. She deserves to
+                live her senior life surrounded by love.
+              </p>
+            </div>
+
+            <div class="adopt-ad">
+              <div class="dog-img-box">
+                <img src="images/pepsi.jpg" alt="pepsi" />
+              </div>
+
+              <div class="dog-info-box">
+                <div class="dog-name">
+                  <h2>Pepsi</h2>
+                </div>
+
+                <div class="dog-stats">
+                  <ul>
+                    <li>Lab/basset hound</li>
+                    <li>Female</li>
+                    <li>1 y/o</li>
+                    <li>15 lbs</li>
+                  </ul>
+                </div>
+                <div class="blog-btn">
+                  <button id="togglePepsi">Read Bio</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="pepsi" style="display: none">
+              <p>
+                Those short legs! Pepsi is a doll! She’s just a happy girl who
+                loves everyone but is not too hyper. We all think Pepsi is
+                Perfect. Come meet her and find out for your self!
+              </p>
+            </div>
+
+            <div class="adopt-ad">
+              <div class="dog-img-box">
+                <img src="images/toby.jpg" alt="toby" />
+              </div>
+
+              <div class="dog-info-box">
+                <div class="dog-name">
+                  <h2>Toby</h2>
+                </div>
+
+                <div class="dog-stats">
+                  <ul>
+                    <li>Wheaten Terrier</li>
+                    <li>Male</li>
+                    <li>1 y/o</li>
+                    <li>43 lbs</li>
+                  </ul>
+                </div>
+                <div class="blog-btn">
+                  <button id="toggleToby">Read Bio</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="toby" style="display: none">
+              <p>
+                How adorable is Toby? Toby is still very puppy like and will
+                need some basic training. He can be a bit shy at first but warms
+                up quickly. Sponsored by: Sally Salter in celebration of Steve
+                Gaines birthday.
+              </p>
+            </div>
+
+            <div class="adopt-ad">
+              <div class="dog-img-box">
+                <img src="images/wolf.jpg" alt="wolf" />
+              </div>
+
+              <div class="dog-info-box">
+                <div class="dog-name">
+                  <h2>Wolf</h2>
+                </div>
+
+                <div class="dog-stats">
+                  <ul>
+                    <li>Chihuahua</li>
+                    <li>Male</li>
+                    <li>5 y/o</li>
+                    <li>8 lbs</li>
+                  </ul>
+                </div>
+                <div class="blog-btn">
+                  <button id="toggleWolf">Read Bio</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="wolf" style="display: none">
+              <p>
+                Give this boy a squeaky toy and instant happiness! That’s how he
+                caught our eye at the shelter. He was so happy with his little
+                toy. Wolf bonds super quick with his human and loves to be held
+                like a baby.
+              </p>
+            </div>
+          </div>
+          <!--closes flex-container-ads-->
+        </section>
+      </div>
+
+      <footer id="footer" class="clearfix">
+        <div class="footer-text-container">
+          <p>
+            Rover Rescue is a non-profit 501(c)(3) organization<br />P.O. Box
+            424, Redondo Beach, CA 90277<br />Adoption Hotline 310.379.0154<br />©
+            2019 roverrescue.com
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!--closes wrapper div-->
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".hamburger-container").click(function() {
+          $(".navbar").toggle();
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#toggleChapo").click(function() {
+          if ($(this).text() === "Read Bio") {
+            $(this).text("Close Bio");
+            $("#chapo").show();
+          } else {
+            $(this).text("Read Bio");
+            $("#chapo").hide();
+          }
+        });
+
+        $("#toggleMitch").click(function() {
+          if ($(this).text() === "Read Bio") {
+            $(this).text("Close Bio");
+            $("#mitch").show();
+          } else {
+            $(this).text("Read Bio");
+            $("#mitch").hide();
+          }
+        });
+
+        $("#toggleBabu").click(function() {
+          if ($(this).text() === "Read Bio") {
+            $(this).text("Close Bio");
+            $("#babu").show();
+          } else {
+            $(this).text("Read Bio");
+            $("#babu").hide();
+          }
+        });
+
+        $("#togglePepsi").click(function() {
+          if ($(this).text() === "Read Bio") {
+            $(this).text("Close Bio");
+            $("#pepsi").show();
+          } else {
+            $(this).text("Read Bio");
+            $("#pepsi").hide();
+          }
+        });
+
+        $("#toggleToby").click(function() {
+          if ($(this).text() === "Read Bio") {
+            $(this).text("Close Bio");
+            $("#toby").show();
+          } else {
+            $(this).text("Read Bio");
+            $("#toby").hide();
+          }
+        });
+
+        $("#toggleWolf").click(function() {
+          if ($(this).text() === "Read Bio") {
+            $(this).text("Close Bio");
+            $("#wolf").show();
+          } else {
+            $(this).text("Read Bio");
+            $("#wolf").hide();
+          }
+        });
+      }); //closes document ready line
+    </script>
+  </body>
+</html>

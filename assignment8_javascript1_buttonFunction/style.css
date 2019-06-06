@@ -1,0 +1,139 @@
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+.hide {
+  height: 0;
+  overflow: hidden;
+}
+#toggle {
+  color: red;
+  font-size: 22px;
+}
+.container {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+nav.navbar {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  background-color: black;
+  width: 100%;
+  padding: 10px 0px;
+  position: fixed;
+}
+button a:link {
+  text-decoration: none;
+  color: red;
+}
+nav.navbar a {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  line-height: 36px;
+}
+nav.navbar ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+nav.navbar li {
+  display: inline-block;
+  padding: 0px 50px;
+}
+nav.navbar li:last-child {
+  border-bottom: none;
+}
+nav a:link {
+  text-decoration: none;
+  color: white;
+}
+nav a:visited {
+  text-decoration: none;
+  color: white;
+} /*visited links*/
+
+nav a:hover {
+  color: red;
+}
+nav a:active {
+  color: grey;
+} /*pressed links*/
+
+.content {
+  width: 100%;
+  margin: 56px auto 0;
+  padding: 0px;
+  min-height: 572px;
+  /* border: 2px solid red; */
+  position: relative;
+}
+.content .img-container {
+  min-height: 200px;
+}
+.content img {
+  max-width: 100%;
+  opacity: 0.2;
+}
+
+.hero-img-container img {
+  /* position: relative; */
+  width: 100%;
+  /* right: 10px; */
+}
+
+.title {
+  padding-top: 50px;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#HeroTitle {
+  text-align: center;
+  /* padding-top: 210px; */
+  margin: 0 auto;
+  color: white;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
+}
+#HeroSub {
+  text-align: center;
+  color: white;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-shadow: 1px 0px 4px black; /*this adds a border around the text and makes it pop out a little*/
+  margin: 0 auto;
+}
+.profile-img-container {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 50%;
+}
+.about-container {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+.lisa {
+  margin-bottom: 50px;
+  font-size: 65px;
+}
+p {
+  color: grey;
+}
+li {
+  color: grey;
+}
+.portfolio-img-container {
+  margin: 0;
+}
+/* .content .profile-img-container {
+  width: 300px;
+} */

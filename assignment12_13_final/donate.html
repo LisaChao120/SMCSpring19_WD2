@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rover Rescue</title>
+    <!-- GOOGLE FONTS -->
+    
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+      @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap");
+    </style>
+    <!-- STYLESHEETS -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
+   
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper"> <!-----wrapper is for the entire page----->
+      <nav>
+          <div class="hamburger-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+       
+          <div class="flexbox-rr-logo"> 
+          <div class="rr-logo">
+            <h1>
+              <a href="index.html">
+              Rover <img id="nav-logo-img" src="images/rover-logo-sm.png" alt="logo" /> Rescue
+              </a>
+            </h1>
+          </div> <!--closes RescueRover div-->
+        </div>    
+            
+          <div class="navbar">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="donate.html">Donate</a>
+              </li>
+              <li>
+                <a href="adopt.html">Adopt</a>
+              </li>
+            </ul>
+            </div>
+      </nav>
+
+      <div class="donate-banner">
+        <p>Your donation is completely tax deductible. It will help buy out a dog
+           on death row, help pay for boarding, medication or surgery. Remember,
+           we rescue dogs, even if they are sick or injured.
+        </p>
+      </div>
+       
+      <main class="color-fill">
+      <div class="form-container">
+          <form action="" method="POST">
+          <div id="contact-area">
+            Name (as appears on credit card)<br />
+            <input type="text" name="Name" id="name" /><br /><br />
+            Billing address<br />
+            <input type="text" name="Address" id="address" /><br /><br />
+            <input type="text" name="Address" id="address" /><br /><br />
+            
+            Credit Card Number<br />
+            <input type="text" name="CC" id="cc" /><br /><br />
+            Exp Month<br />
+            <input type="text" name="Exp" id="exp-mo" /><br /><br />
+            Exp Year<br />
+            <input type="text" name="Exp" id="exp-yr" /><br /><br />
+            SSV<br />
+            <input type="text" name="CVV" id="cvv" /><br /><br />
+            Email<br />
+            <input type="text" name="Email" id="email" /><br /><br />
+            Telephone<br />
+            <input type="text" name="Telephone" id="telephone" /><br /><br /><br />
+            Donation amount<br /><br />
+        </div> <!--closes contact-area div-->
+        
+        <div id="donation-amt">
+          <p ><input type="radio" class="oddsPref" name="oddsPref" value="10"/>$10</p>
+          <p><input type="radio" class="oddsPref" name="oddsPref" value="25" checked/>$25</p>
+          <p><input type="radio" class="oddsPref" name="oddsPref" value="50" />$50</p>
+          <p><input type="radio" class="oddsPref" name="oddsPref" value="100" />$100</p>
+          <p id="other">Other<input type="text" name="other" id="other" /></p><br /><br /><br />
+        </div><!--closes donation-amt div-->
+        
+        <button class="donateButton">
+          Donate
+        </button>
+
+      </div> <!-- closes form-container div-->
+    </form>
+
+ 
+  
+  
+  <div class="mail-donation">
+      <h3>Or you may send your tax deductible donation to:</h3>
+        <p>Rover Rescue<br>
+          P.O. Box 424<br/>
+          Redondo Beach, CA 90277
+        </p>
+    </div>
+    <div class="donate-img-container">
+          <!-- <img id="donate-dog" 
+      src="images/marliese-brandsma-1187380-unsplash.jpg" 
+      alt="donate image" /> -->
+    </div>
+  </main>
+ <footer id="footer" class="clearfix">
+    <div class="footer-text-container">
+      <p> Rover Rescue is a non-profit 501(c)(3) organization<br />P.O. Box
+          424, Redondo Beach, CA 90277
+          <br />Adoption Hotline 310.379.0154
+          <br />© 2019 roverrescue.com
+      </p>
+    </div>
+  </footer>
+</div> <!--closes wrapper div-->
+  
+<script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".hamburger-container").click(function() {
+        $(".navbar").toggle();
+      });
+    });
+  </script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+  $(".donateButton").click(function() {
+  // alert("Woof! Thank you for your donation");
+  // $("#contact-area").submit();
+  $(".form-container").replaceWith("<h1 id='woof'>Woof!</h1>");
+  $(".mail-donation").replaceWith("<h2 id='ty'>Thank you for your donation</h2>");
+  });
+  $('form').submit(function(event){
+    event.preventDefault();
+  });
+  
+</script>
+
+</body>
+</html>

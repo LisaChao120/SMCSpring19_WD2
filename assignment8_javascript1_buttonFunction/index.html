@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Raleway");
+    </style>
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="floater-section small-width-100 med-width-100 large-width-100"
+      >
+        <div class="content" id="hero-content">
+          <div class="title">
+            <h1 id="HeroTitle">Lisa Chao</h1>
+            <h2 id="HeroSub">Graphic Designer</h2>
+          </div>
+          <div class="hero-img-container">
+            <img
+              id="img-opacity"
+              src="images/homepage.jpg"
+              alt="portfolio hero image"
+              class="abs-pos"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <button id="fontButton">Change Font</button>
+    <button id="opacityButton">Change Opacity</button>
+    <script>
+      // const toggleButton = document.querySelector("toggleButton");
+      // const ALERT = document.querySelector("#toggle");
+
+      // toggleButton.classList.remove("hide");
+      // ALERT.classList.add("hide");
+
+      // function reveal(e) {
+      //   e.preventDefault();
+      //   toggleButton.classList.toggle("hide");
+      //   ALERT.classList.toggle("hide");
+      // }
+      // toggleButton.addEventListener("click", reveal, false);
+
+      // var myButton = document.getElementById("triggerButton");
+
+      var randomNumber = Math.random();
+      console.log(randomNumber);
+      var changeOpacity = function() {
+        var opacity = Math.random();
+        console.log(opacity);
+        var test = document.getElementById("img-opacity");
+        test.style.opacity = opacity;
+      };
+
+      var changeFont = function() {
+        var test = document.getElementById("HeroTitle");
+        test.style.font = "Arial";
+      };
+
+      var opacityButton = document.getElementById("opacityButton");
+      opacityButton.addEventListener("click", changeOpacity);
+
+      var fontButton = document.getElementById("fontButton");
+      fontButton.addEventListener("click", changeFont);
+    </script>
+  </body>
+</html>

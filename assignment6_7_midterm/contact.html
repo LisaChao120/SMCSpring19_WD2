@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Coffe Cartel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Martel|Prata");
+    </style>
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar.css" />
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="sm-index-logo">
+          <a href="index.html">
+            <img src="images/CClogo.svg" alt="CoffeeCartelSmallLogo" />
+          </a>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="nav-fix"></div>
+    </header>
+    <div class="container">
+      <div class="blk-fill">
+        <div class="contact-container">
+          <div class="floater-section sm-width-100 med-width-50 lg-width-50">
+            <div class="message-content clear-right">
+              <h2>Send us a message</h2>
+            </div>
+          </div>
+          <div class="floater-section sm-width-100 med-width-50 lg-width-50">
+            <div class="form-container">
+              <form class="message-form">
+                <textarea name="message" rows="10" cols="30"> </textarea>
+                <br />
+                <!-- <input type="submit" /> -->
+                <button type="button" onclick="alert('Cool beans!')">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="floater-section sm-width-100 med-width-50 lg-width-50">
+            <div class="subscribe-content">
+              <h2>Subscribe to Coffee Cartel</h2>
+            </div>
+          </div>
+          <div class="floater-section sm-width-100 med-width-50 lg-width-50">
+            <form class="subscribe-form">
+              <input type="text" name="email" /><br />
+              <button type="button" onclick="alert('Welcome to the Cartel')">
+                Subscribe
+              </button>
+              <!-- <input type="submit" name="subscribe" value="Subscribe" /> -->
+            </form>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- label for="toggle" type="checkbox"><div class="menu" -->
